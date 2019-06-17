@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="机器学习算法工程师的日常 在互联网公司做机器学习的时候，通常的日子是这样的： 根据行业的PPT或者业务中的某些痛点来提出技术方案 -&amp;gt; 然后开始收集数据，不仅要问遍组内，还要去其他组收集各种各样的需求 -&amp;gt; 根据之前的技术方案来进行数据的预处理 -&amp;gt; 撰写特征工程 -&amp;gt; 训练模型 -&amp;gt; 调参 -&amp;gt; 调参 -&amp;gt; 重新收集数据 -&amp;gt; 数据的预处理 -&amp;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逸之blog">
+<meta property="og:url" content="https://ericyoungbit.github.io/2019/06/17/机器学习算法工程师的日常/index.html">
+<meta property="og:site_name" content="逸之blog">
+<meta property="og:description" content="机器学习算法工程师的日常 在互联网公司做机器学习的时候，通常的日子是这样的： 根据行业的PPT或者业务中的某些痛点来提出技术方案 -&amp;gt; 然后开始收集数据，不仅要问遍组内，还要去其他组收集各种各样的需求 -&amp;gt; 根据之前的技术方案来进行数据的预处理 -&amp;gt; 撰写特征工程 -&amp;gt; 训练模型 -&amp;gt; 调参 -&amp;gt; 调参 -&amp;gt; 重新收集数据 -&amp;gt; 数据的预处理 -&amp;g">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-06T08:09:13.733Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="逸之blog">
+<meta name="twitter:description" content="机器学习算法工程师的日常 在互联网公司做机器学习的时候，通常的日子是这样的： 根据行业的PPT或者业务中的某些痛点来提出技术方案 -&amp;gt; 然后开始收集数据，不仅要问遍组内，还要去其他组收集各种各样的需求 -&amp;gt; 根据之前的技术方案来进行数据的预处理 -&amp;gt; 撰写特征工程 -&amp;gt; 训练模型 -&amp;gt; 调参 -&amp;gt; 调参 -&amp;gt; 重新收集数据 -&amp;gt; 数据的预处理 -&amp;g">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://ericyoungbit.github.io/2019/06/17/机器学习算法工程师的日常/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title> | 逸之blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">逸之blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学习改变命运</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/机器学习算法工程师的日常/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-06 16:09:13" itemprop="dateModified" datetime="2019-06-06T16:09:13+08:00">2019-06-06</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="机器学习算法工程师的日常"><a href="#机器学习算法工程师的日常" class="headerlink" title="机器学习算法工程师的日常"></a>机器学习算法工程师的日常</h1><ul>
+<li><p>在互联网公司做<strong>机器学习</strong>的时候，通常的日子是这样的：</p>
+<p>根据行业的PPT或者业务中的某些痛点来提出技术方案 -&gt; 然后开始收集数据，不仅要问遍组内，还要去其他组收集各种各样的需求 -&gt; 根据之前的技术方案来进行数据的预处理 -&gt; 撰写特征工程 -&gt; 训练模型 -&gt; 调参 -&gt; 调参 -&gt; 重新收集数据 -&gt; 数据的预处理 -&gt; 收集更多数据 -&gt; 调参 -&gt; 调参 -&gt; 调参 -&gt;…-&gt;放弃。。。。</p>
+</li>
+<li><h3 id="业务理解"><a href="#业务理解" class="headerlink" title="业务理解"></a><strong>业务理解</strong></h3><p>就做机器学习的经验来看，通常来说在做业务之前，一定要清楚的弄明白项目的<strong>业务需求</strong>是什么，弄清楚这个问题是什么比一开始就写代码重要得多。意思就是在回答问题之前，一定要把问题的内容弄清楚。有的时候，虽然看上去是一个很大的需求，但是实际操作起来的时候使用一些简单的办法也能够达到项目指标。有的时候，虽然看上去很简单，但是实际操作起来并不是一件容易的事情。从之前做理论数学的经验来看，通常数学里面的一些问题是是非题，不能够添加条件的。在 PDE 等方程领域，定理的条件越多，表示定理越不值钱。不过在工作中，这些条条框框会相对减少很多，只要能够达成项目目标，无论是添加样本，添加特征，添加服务器数量其实都是可以的，并且要把<strong>机器学习模型</strong>和<strong>业务指标</strong>有机结合才能够达到最终的项目指标。</p>
+</li>
+<li><p>“<strong>失败的项目里没有成功的个人</strong>”，因此，无论怎么做，最终都要保证项目尽量成功。</p>
+</li>
+<li><h3 id="数据清洗和特征工程"><a href="#数据清洗和特征工程" class="headerlink" title="数据清洗和特征工程"></a><strong>数据清洗和特征工程</strong></h3><p>而在机器学习算法工程师的日常生活中，除了上面的小段子之外，其实最重要的是<strong>样本</strong>层和特征层的处理工作。在学术界，都是使用开源的数据，别人都已经完全标记好了，学术圈的人通常来说只需要在这些数据的基础上提出更好的模型，更创新的算法即可。但是在工业界就完全不一样了，不要说有人帮你标记数据了，有的时候连数据在哪里都不知道，数据的质量如何也不知道，因此更多的时候是进行数据的处理和清洗工作。之前做一个项目的时候，准确率和召回率始终上不去，但是等把样本里面的脏数据清理掉之后，模型的效果瞬间提升了一个档次。在脏数据面前，再好的模型都是没有用的，在训练模型之前，一定要先看一下数据层的问题。</p>
+</li>
+</ul>
+<p>除了数据的问题，通常来说在一些场景下，样本的数量并没有那么大，因此深度学习等方案不一定特别适合。在这种情况下，一般就会使用传统的机器学习方法，并且会使用一些基于业务的<strong>特征工程</strong>。这种时候就需要机器学习从业者对业务有一个精准的理解，只要业务理解得好，有的时候写一些简单的规则就可以解决问题。特征工程也是机器学习里面的一个重要问题。</p>
+<ul>
+<li><h3 id="持续学习"><a href="#持续学习" class="headerlink" title="持续学习"></a><strong>持续学习</strong></h3><p>在人工智能这个领域，无论是 CV，NLP，还是机器学习，里面的技术迭代都是非常快的，而且是需要相对专业的人才能够从事这些领域。在这种情况下，机器学习从业者的持续学习就显得尤其重要，几年前的技术在新的业务场景下就未必适合，可能需要使用其他的模型或者框架才能够更好地解决问题。所以，除了完成日常的搬砖工作之外，建议每天抽一点时间来阅读论文，保持对业界技术的跟进和迭代。不过这个行业鱼龙混杂，有的时候论文或者 PPT 里面的技术框架其实没有办法复现，能够精准地判断哪些方案好，哪些方案差绝对是算法工程师必备的<strong>关键能力</strong>之一。</p>
+</li>
+<li><h3 id="编程能力"><a href="#编程能力" class="headerlink" title="编程能力"></a><strong>编程能力</strong></h3><p>如果是在工业界的话，编程能力是非常重要的。因为从事算法的人通常来说会有一些算法上的优化，工程上的改进，数据分析之类的工作。在这种情况下，首先需要有一定的业务直觉。而业务的经验积累需要通过各种各样的基础数据提取，在海量的数据分析工作中逐渐积累的。在这种情况下，提取数据的工具就是必须要掌握的，例如 SQL 等。其次，分析数据的工作也是必须要具备的，无论是使用 SQL 来进行分析，还是使用 Python 来做数据分析，都是自行编程解决的。再次，在从事机器学习方向的时候，不可避免的就会进行算法的效果对比。而在这种情况下，算法的效果对比是需要机器学习从业者通过写程序来实现的。最后，工业界的算法通常来说都强调<strong>上线</strong>，如果能够自行把离线，上线，效果验证，ABTest都做完，其实是最好的状况。在这种情况下，通常 Python 就不太够了，需要使用 C++ 或者 Java 等其他编程语言。因此，熟练使用多种编程语言也是一个算法工程师的能力。</p>
+</li>
+<li><h3 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a><strong>常用工具</strong></h3><p>在互联网公司里面笔者用过的机器学习工具大概有这几个：</p>
+<ol>
+<li><strong>XGBoost</strong>：做分类的工具，提供离线的Python训练和在线的C++调用功能，方便机器学习从业者训练模型和线上部署；不仅在推荐场景可以用，在安全，运维等领域都有着用武之地。</li>
+<li><strong>Tensorflow</strong>：这个也不用多说了，深度学习的经典工具之一，离线训练和在线服务都是不错的。</li>
+<li><strong>ScikitLearn</strong>：单机版本的机器学习工具。方便学生在校学习知识，文档详细感人，关键是还开源。其实在工业界，如果数据量不大的话，其实用 ScikitLearn 就基本上够用了。</li>
+<li><strong>Pandas</strong>：表格类数据或者时间序列数据的经典工具。尤其是在时间序列的处理上面有特别独到的优势，应该还有其他功能，但是笔者暂时了解不多。Pandas 的接口和函数特别多，每次遇到问题的时候可以搜一下，其实比自己重头写好得多。</li>
+<li><strong>Spark</strong>：在大数据的情况下用得比较多，通常是推荐系统一类的，海量样本的前提下，单机版的模型根本搞不定，因此会用分布式的工具。</li>
+<li><strong>SQL</strong>：提数工具。如果不掌握这个的话，基本上什么都做不了。。。。。</li>
+<li><strong>FbProphet</strong>：稍微小众一些，Facebook 的开源工具之一，在时间序列预测的场景下才能用到。</li>
+</ol>
+</li>
+<li><p><strong>对业务的理解。</strong>公司里面有很多东西并不是直接使用开源代码就能够发挥作用的，在公司里面无论做什么事情，最重要的一点就是对业务的理解。在对业务的理解方面，老员工相对于新人来说确实有着不少的优势。其次，在做业务的过程中，通常都会经历很多的坑，无论是别人主动挖的，还是自己踩坑踩出来的，都是自身宝贵的财富和经验。而这些经验只能够通过靠做大量的业务来获得。如果要想长期保持自身的优势，通过长期的训练和学习确实是一个有效的办法。无论是天才还是普通人，要想提升自身的技术，不花一定的时间去学习是不可行的。因此，无论在任何时候都不能够放弃让自己学习和充电的机会。</p>
+<p><strong>勇于接受新的挑战。</strong>公司里面除了已有的项目之外，通常来说都会开启各种各样的新项目，在这种情况下，如果有机会做新的项目，也就是别人没有做过的项目。这种机会已经要把握住，因为对于新人来说，能够接触全新的项目肯定是好过维护已有的项目的。但是几乎所有的人都是从维护旧的项目开始的，只有旧的项目做好了，才有机会拿到新的项目。</p>
+<p><strong>不要永远抱着已有的方向不放手。</strong>在公司里面，业务方向总会或多或少的发生变化，随着部门的调整，方向的变化，所做的内容总会发生一些变化。在工作的时候，最好不要抱着我就是来做这个方向的，除了这个方向之外其他的内容我一概不想做。因为当时的工作岗位未必能够提供你想做的方向，但是说不定能够提供其他的研究方向。有的时候，在公司里面，根据方向的变化来调整自己的工作内容也是一个必要的技能。而且，在公司的时候，一定要多做一些有挑战的项目，只有通过这些项目，才能够让自己的技术壁垒更加深厚。当然，在求职的时候，每个人都有着自己的想法和选择，所以，在求职的时候，是可以选择一个自己喜欢的方向来做的。</p>
+</li>
+</ul>
+<h3 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a><strong>经验总结</strong></h3><p>  通常来说，在干了两三年算法工程师之后：（以下是从其他地方看到的小段子，出处忘记了<del>~</del>）</p>
+<ol>
+<li>能够熟练写各种脚本；</li>
+<li>80%的时间在写脚本；</li>
+<li>能够说出几种机器学习算法的名字；</li>
+<li>轻松完成各种脏活累活（叫小弟做）；</li>
+<li>对无法解释的结果已经习以为常，能够强行解释一波，让领导信服；</li>
+<li>调参前，都会去寺庙烧柱香；</li>
+<li>桌上堆着很多崭新的技术书籍，没怎么翻过，大概都会有一本叫做《统计学习方法》的书。</li>
+</ol>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/17/概率学大师人物志/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/17/计算广告学/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Frank Yang</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习算法工程师的日常"><span class="nav-number">1.</span> <span class="nav-text">机器学习算法工程师的日常</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务理解"><span class="nav-number">1.0.1.</span> <span class="nav-text">业务理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据清洗和特征工程"><span class="nav-number">1.0.2.</span> <span class="nav-text">数据清洗和特征工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持续学习"><span class="nav-number">1.0.3.</span> <span class="nav-text">持续学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编程能力"><span class="nav-number">1.0.4.</span> <span class="nav-text">编程能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用工具"><span class="nav-number">1.0.5.</span> <span class="nav-text">常用工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#经验总结"><span class="nav-number">1.0.6.</span> <span class="nav-text">经验总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Frank Yang</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

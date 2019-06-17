@@ -290,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/13/EECS/">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/最小生成树(MST)问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Frank Yang">
@@ -310,7 +310,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/06/13/EECS/" class="post-title-link" itemprop="url">EECS</a>
+                <a href="/2019/06/17/最小生成树(MST)问题/" class="post-title-link" itemprop="url">未命名</a>
               
             
           </h1>
@@ -335,12 +335,24 @@
                 
               
 
-              <time title="创建时间：2019-06-13 13:40:22 / 修改时间：13:41:57" itemprop="dateCreated datePublished" datetime="2019-06-13T13:40:22+08:00">2019-06-13</time>
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-14 22:31:50" itemprop="dateModified" datetime="2019-04-14T22:31:50+08:00">2019-04-14</time>
               
             
           </span>
@@ -376,133 +388,16 @@
       
         
           
-            <h1 id="计算机科学学习框架（EE转CS导论）"><a href="#计算机科学学习框架（EE转CS导论）" class="headerlink" title="计算机科学学习框架（EE转CS导论）"></a>计算机科学学习框架（EE转CS导论）</h1><h2 id="why"><a href="#why" class="headerlink" title="why"></a>why</h2><ul>
-<li>CS代表了先进生产力</li>
-<li>如何把握时代的前进方向，例如中国社会的基本矛盾变为人民对精神文明的日益需求是否意味着互联网，AI的极大需求</li>
-<li>EE-&gt;CS,EE基础的大厦已经建成</li>
-</ul>
-<h2 id="what"><a href="#what" class="headerlink" title="what"></a>what</h2><ul>
-<li><p>Theoretical computer science</p>
+            <h1 id="最小生成树-MST-问题"><a href="#最小生成树-MST-问题" class="headerlink" title="最小生成树(MST)问题"></a>最小生成树(MST)问题</h1><p> 集合： 图（V，G）</p>
+<p>无向连通图G子图N点N-1边为生成树<br>$$<br>V\left(G^{\prime}\right)=V(G) ; E\left(G^{\prime}\right) \in E(G)<br>$$</p>
 <ul>
-<li>Theory of computation</li>
-<li>Information and coding theory</li>
-<li>Algorithms and data structures</li>
-<li>Programming language theory</li>
-<li>Formal methods  （形式化方法）</li>
-</ul>
-<p>要点：纯数学，纯理论，学术界门槛高，工业界需求低</p>
+<li><p>最小生成树：连通带权图权值大于0，权值最小生成树为最小生成树</p>
 </li>
-<li><p>Computer Systems</p>
-<ul>
-<li><p>Computer architecture and engineering</p>
-</li>
-<li><p>Computer Performance Analysis</p>
-</li>
-<li><p>Computer security and cryptography</p>
-</li>
-<li><p>Computer networks</p>
-</li>
-<li><p>Concurrent, parallel and distributed systems</p>
-<p>编程能力要求高（汇编，指令，系统层级），项目周期长，不宜入门，需博士训练</p>
+<li><p>prim算法：逐次加点</p>
 </li>
 </ul>
-</li>
-<li><p>Applied Computer Science</p>
-<ul>
-<li><p>Artificial intelligence</p>
-</li>
-<li><p>Computer graphics and visualization</p>
-</li>
-<li><p>Health informatics</p>
-</li>
-<li><p>Information science</p>
-</li>
-<li><p>Computational biology </p>
-</li>
-<li><p>Databases and data science</p>
-</li>
-<li><p>Computer Education</p>
-</li>
-<li><p>互联网应用编程</p>
-<p>学界门槛低，工业界需求高，一台电脑，一个大脑加纸笔</p>
-<ul>
-<li><p>数学</p>
-</li>
-<li><p>编程</p>
-</li>
-<li><p>肯吃苦</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>综上所述：</p>
-</li>
-<li><p>选择Applied Computer Science</p>
-<ul>
-<li>AI<ul>
-<li>基础：control, planning and scheduling, knowledge representation,  machine learning theory</li>
-<li>应用：NLP，CV，，</li>
-<li>选择NLP，推荐系统</li>
-<li>应用有实际问题，有多少问题就可以发多少paper，问题不够还可以自定义，关键是手快肯吃苦。</li>
-</ul>
-</li>
-<li>互联网应用编程<ul>
-<li>数学，编程</li>
-<li>利用本科的时间写个编译器/操作系统/数据库管理系统</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="how"><a href="#how" class="headerlink" title="how"></a>how</h2><p>1.计算机基础速成</p>
-<p>课程涵盖了很多基础知识：</p>
-<ul>
-<li>1 - 早期的计算 - Early Computing</li>
-<li>2 - 电子计算 - Electronic Computing</li>
-<li>3 - 布尔逻辑与逻辑电路 - Boolean Logic &amp; Logic Gates</li>
-<li>4 - 二进制 - Representing Numbers and Letters with Binary</li>
-<li>5 - 算术逻辑单元 - How Computers Calculate - the ALU</li>
-<li>6 - 寄存器 &amp; 内存 - Registers and RAM</li>
-<li>7 - 中央处理器 - The Central Processing Unit(CPU)</li>
-<li>8 - 指令和程序 - Instructions &amp; Programs</li>
-<li>9 -  高级 CPU 设计 - Advanced CPU Designs</li>
-<li>10 - 编程史话 - Early Programming</li>
-<li>11 - 编程语言 - The First Programming Languages</li>
-<li>12 - 编程原理：语句和函数 - Programming Basics: Statements &amp; Functions</li>
-<li>13 - 算法初步 - Intro to Algorithms</li>
-<li>14 - 数据结构 - Data Structures</li>
-<li>15 - 阿兰·图灵 - Alan Turing</li>
-<li>16 - 软件工程 - Software Engineering</li>
-<li>17 - 集成电路、摩尔定律 - Integrated Circuits &amp; Moore’s Law</li>
-<li>18 - 操作系统 - Operating Systems</li>
-<li>19 - 内存 &amp; 储存介质 - Memory &amp; Storage</li>
-<li>20 - 文件系统 - Files &amp; File Systems</li>
-<li>21 - 压缩 - Compression</li>
-<li>22 - 命令行界面 - Keyboards &amp; Command Line Interfaces</li>
-<li>23 - 屏幕 &amp; 2D 图形显示 - Screens &amp; 2D Graphics</li>
-<li>24 - 冷战和消费主义 - The Cold War and Consumerism</li>
-<li>25 - 个人计算机革命 - The Personal Computer Revolution</li>
-<li>26 - 图形用户界面 - Graphical User Interfaces</li>
-<li>27 - 3D 图形 - 3D Graphics</li>
-<li>28 - 计算机网络 - Computer Networks</li>
-<li>29 - 互联网 - The Internet</li>
-<li>30 - 万维网 - The World Wide Web</li>
-<li>31 - 网络安全 - Cybersecurity</li>
-<li>32 - 黑客与攻击 - Hackers &amp; Cyber Attacks</li>
-<li>33 - 加密 - Cryptography</li>
-<li>34 - 机器学习与人工智能 - Machine Learning &amp; Artificial Intelligence</li>
-<li>35 - 计算机视觉 - Computer Vision</li>
-<li>36 - 自然语言处理 - Natural Language Processing</li>
-<li>37 - 机器人 - Robots</li>
-<li>38 - 计算机中的心理学 - Psychology of Computing</li>
-<li>39 - 教育型科技 - Educational Technology</li>
-<li>40 - (完结) 奇点，天网，计算机的未来 - The Singularity, Skynet, and the Future of Computing</li>
-</ul>
-<p>2 在项目中学习，坚持why -what - how - do 的技术学习路线不动摇，坚决反对只看书不编程不google的形式主义学习作风。</p>
-<h2 id="do"><a href="#do" class="headerlink" title="do"></a>do</h2><ul>
-<li></li>
-</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1555249563292.png" alt="1555249563292"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1555249709349.png" alt="1555249709349"></p>
 
           
         
@@ -559,7 +454,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/13/hello-word/">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/中国国家治理的制度逻辑  一个组织学研究笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Frank Yang">
@@ -579,7 +474,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/06/13/hello-word/" class="post-title-link" itemprop="url">hello word</a>
+                <a href="/2019/06/17/中国国家治理的制度逻辑  一个组织学研究笔记/" class="post-title-link" itemprop="url">未命名</a>
               
             
           </h1>
@@ -604,9 +499,25 @@
                 
               
 
-              <time title="创建时间：2019-06-13 13:38:51" itemprop="dateCreated datePublished" datetime="2019-06-13T13:38:51+08:00">2019-06-13</time>
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-22 17:09:53" itemprop="dateModified" datetime="2019-05-22T17:09:53+08:00">2019-05-22</time>
+              
             
           </span>
 
@@ -641,7 +552,1710 @@
       
         
           
+            <h1 id="中国国家治理的制度逻辑-一个组织学研究笔记"><a href="#中国国家治理的制度逻辑-一个组织学研究笔记" class="headerlink" title="中国国家治理的制度逻辑  一个组织学研究笔记"></a>中国国家治理的制度逻辑  一个组织学研究笔记</h1><p>一统体制与有效治理：中国国家治理的一个深刻矛盾</p>
+<p>“一统体制与有效治理”矛盾的应对机制</p>
+<p>国家治理逻辑与中国官僚体制：一个韦伯理论视角</p>
+<p>合法性基础、权威类型与支配形式：</p>
+<p>君主官僚制：中国国家支配形式的一个历史考察</p>
+<p>君主官僚制”的延续与转型：当代中国 官僚体制分析</p>
+<p>中国政府的治理模式：一个“控制权”理论</p>
+<p>从不完全契约、产权到控制权</p>
+<p>“行政发包制”的重新思考</p>
+<p>理论模型的扩展：控制权分配与政府治理模式</p>
+<p>环境管制领域中的治理模式</p>
+<p>运动型治理机制</p>
+<p>叫魂事件、“大跃进”、“文革”：重新审视运动型治理机制</p>
+<p>常规与动员双重过程：官僚体制与运动型治理机制</p>
+<p>专断权力、卡理斯玛权威与运动型治理机制</p>
+<p>国家治理逻辑与政府行为</p>
+<p>政府内部上下级谈判：一个分析模型</p>
+<p>基层政府间的“共谋现象”</p>
+<p>“拼凑应对”：多重逻辑下的基层政府行为</p>
+<p>逆向软预算约束</p>
+<p>国家治理逻辑与中国社会</p>
+<p>通往集体债务之路：从官僚制逻辑到社会逻辑</p>
+<p>多重逻辑下的村庄选举</p>
+<p>无组织的利益与集体行动</p>
+<p>集体无作为：一种特殊的集体行动形式</p>
+<p>稳定、停滞与循环：中华帝国国家治理的基本特征</p>
+<p>当代中国的国家治理逻辑：延续与转型</p>
+<p>国家治理的挑战和未来</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/张五常及其经济学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/张五常及其经济学/" class="post-title-link" itemprop="url">未命名</a>
+              
             
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-22 20:47:10" itemprop="dateModified" datetime="2019-05-22T20:47:10+08:00">2019-05-22</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="张五常及其经济学"><a href="#张五常及其经济学" class="headerlink" title="张五常及其经济学"></a>张五常及其经济学</h1><ul>
+<li>产权经济学代表人物</li>
+<li>资本主义经济，市场经济</li>
+<li>1969年 《佃农理论》<br>2002年 《经济解释》<br>2008年 《中国的经济制度》<br>2009年 《多难登临录》<br>2010年 《新卖桔者言》</li>
+<li>卖桔者言</li>
+<li>交易成本</li>
+<li>吴敬琏</li>
+<li>《The Elements of Style》</li>
+<li>《卖桔者言》</li>
+<li>萨缪尔逊《经济学》</li>
+<li>马克思《资本论》</li>
+<li>案例分析从来是社会科学理论的温床。至今为止人类所知道的任何一种社会科学理论都是基于某种历史上的或现实的案例的启示。一个放之四海皆准的真理，一定可以用过去、现在和未来生动活泼的案例来展现</li>
+</ul>
+<p>价格理论（Price Theory）</p>
+<p>实证经济学</p>
+<p>同样的货品，同样的成本，以不同价格出售，叫作价格分歧（Price Discrimination ）。</p>
+<p>实施价格分歧必须有两个条件。第一个条件就是要将市场分开或将顾客分开，而经济学者都一致认为在同时同地将顾客分开是不可能的。这个观点显然是错了。价格的讯息费用相当高，而这讯息卖者要比买者知得多。只要买者相信自己议订的价够便宜，他不会再费时去查询，也没有意图去公布自己的买价。 </p>
+<p>　　第二个价格分歧的主要条件，就是付不同价钱的顾客的需求弹性（Price E1asticty of<br>Demand）必定有所不同——付较高价钱的弹性系数一定是较低。这个条件显然也是错了。讯息较少的人付价较高，而讯息的多少跟需求弹性的系数却没有一定的关系。在逻辑上，以需求弹性引证的价格分歧的分析，在基础上是有着很大的错误。这个错误是不容易在报章上向读者解释的。 </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/运筹学-Operations Research/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/运筹学-Operations Research/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-24 22:40:52" itemprop="dateModified" datetime="2019-03-24T22:40:52+08:00">2019-03-24</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="运筹学-Operations-Research"><a href="#运筹学-Operations-Research" class="headerlink" title="运筹学-Operations Research"></a>运筹学-Operations Research</h1><p>分支</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553412509480.png" alt="1553412509480"></p>
+<h2 id="Linear-Programming-and-Classical-Simplex-Methods"><a href="#Linear-Programming-and-Classical-Simplex-Methods" class="headerlink" title="Linear Programming and Classical Simplex Methods"></a>Linear Programming and Classical Simplex Methods</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553412906504.png" alt="1553412906504"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553412953049.png" alt="1553412953049"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413086519.png" alt="1553413086519"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413111188.png" alt="1553413111188"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413184370.png" alt="1553413184370"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413215053.png" alt="1553413215053"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413305956.png" alt="1553413305956"></p>
+<p>凸集</p>
+<p>解空间</p>
+<p>任意凸集交为凸集</p>
+<p>凸组合</p>
+<p>顶点</p>
+<p>单纯形</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413575634.png" alt="1553413575634"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553413608328.png" alt="1553413608328"></p>
+<h2 id="对偶理论"><a href="#对偶理论" class="headerlink" title="对偶理论"></a>对偶理论</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553414807326.png" alt="1553414807326"></p>
+<p>标准形</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553414951255.png" alt="1553414951255"></p>
+<p>目标规划</p>
+<p>整数规划</p>
+<p>图与网络</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/云计算与分布式系统-从并行处理到物联网/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/云计算与分布式系统-从并行处理到物联网/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-09 17:26:27" itemprop="dateModified" datetime="2019-05-09T17:26:27+08:00">2019-05-09</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="云计算与分布式系统-从并行处理到物联网"><a href="#云计算与分布式系统-从并行处理到物联网" class="headerlink" title="云计算与分布式系统-从并行处理到物联网"></a>云计算与分布式系统-从并行处理到物联网</h1><p>##　第一部分：系统建模，集群化与虚拟化</p>
+<h3 id="第一章-分布式系统模型与关键技术"><a href="#第一章-分布式系统模型与关键技术" class="headerlink" title="第一章 分布式系统模型与关键技术"></a>第一章 分布式系统模型与关键技术</h3><ul>
+<li>互联网，计算机网络，TCP/IP，</li>
+<li>HPC高性能计算</li>
+<li>HTC高吞吐量计算</li>
+<li>集群，并行，分布式，云计算，MPP（大规模并行处理器），P2P，网格，云，web2.0服务，物联网，虚拟化</li>
+<li>SOA体系结构（面向服务的体系架构）</li>
+<li>物联网：RFID，GPS，传感技术，CPS信息物理融合系统</li>
+<li>计算范式：，并发计算，并发编程，普适计算，集中式与分布式，并行与分布式交，云计算与分布式集中式并行计算交集</li>
+<li>所以云计算是一种效用计算或者服务计算形式</li>
+<li>分布式系统</li>
+<li>设计原则：效率，可信【服务质量（QoS）】，编程模型适应性，应用部署的灵活性</li>
+<li>摩尔定律：处理器速度18月翻一番</li>
+<li>Gilder定律：网络带宽1年一番</li>
+<li>并行度<ul>
+<li>位并行（BLP），</li>
+<li>指令级并行ILP：指令流水线，超标量，VLIW超长指令字的体系架构，多线程实践ILP，ILP需分支预测，动态规划，投机预测，高效编译</li>
+<li>数据级并行DLP，SIMD，向量机，</li>
+<li>任务级并行TLP:CMP片上多处理器,多核处理器</li>
+<li>作业级并行JLP</li>
+<li>细粒度向处理度粗粒度</li>
+</ul>
+</li>
+<li>效用计算，商业模型，付费服务，QoS，SLA服务级协议</li>
+<li>信息技术周期：单峰后慢爬坡</li>
+<li>物联网：H2H，H2T,T2T，IPV6</li>
+<li>多核CPU，多核CPU，众核GPU，MIPS，时钟速率5GHz，</li>
+<li>多线程</li>
+<li>内存，外部存储，广域网</li>
+<li>虚拟机，虚拟化中间件：虚拟机监视器VMM，</li>
+<li>云服务模型：私有云，公有云，混合云，社区云（受管理）</li>
+<li><ul>
+<li>IaaS基础设施即服务</li>
+<li>PaaS平台即服务</li>
+<li>SaaS软件即服务</li>
+</ul>
+</li>
+<li>SOA，面向消息的中间件，JMS，</li>
+<li>分布式操作系统</li>
+<li>并行和分布式编程模型<ul>
+<li>MPI消息传递接口</li>
+<li>mapreduce，Big Table,Hadoop，EC2，S3，</li>
+</ul>
+</li>
+</ul>
+<h3 id="第二章：可扩展并行计算集群"><a href="#第二章：可扩展并行计算集群" class="headerlink" title="第二章：可扩展并行计算集群"></a>第二章：可扩展并行计算集群</h3><ul>
+<li>计算机集群</li>
+<li></li>
+</ul>
+<h3 id="第三章：虚拟机，集群与数据中心虚拟化"><a href="#第三章：虚拟机，集群与数据中心虚拟化" class="headerlink" title="第三章：虚拟机，集群与数据中心虚拟化"></a>第三章：虚拟机，集群与数据中心虚拟化</h3><ul>
+<li>VM虚拟机</li>
+<li>虚拟化是一种计算机体系结构技术</li>
+</ul>
+<h2 id="第二部分：云平台，面向服务的体系结构和云编程"><a href="#第二部分：云平台，面向服务的体系结构和云编程" class="headerlink" title="第二部分：云平台，面向服务的体系结构和云编程"></a>第二部分：云平台，面向服务的体系结构和云编程</h2><h3 id="第四章：建构在虚拟化数据中心上的云平台体系"><a href="#第四章：建构在虚拟化数据中心上的云平台体系" class="headerlink" title="第四章：建构在虚拟化数据中心上的云平台体系"></a>第四章：建构在虚拟化数据中心上的云平台体系</h3><h3 id="第五章：面向服务的分布式体系结构"><a href="#第五章：面向服务的分布式体系结构" class="headerlink" title="第五章：面向服务的分布式体系结构"></a>第五章：面向服务的分布式体系结构</h3><h3 id="第六章：云编程与环境软件"><a href="#第六章：云编程与环境软件" class="headerlink" title="第六章：云编程与环境软件"></a>第六章：云编程与环境软件</h3><h2 id="第三部分：网格，P2P和未来互联网"><a href="#第三部分：网格，P2P和未来互联网" class="headerlink" title="第三部分：网格，P2P和未来互联网"></a>第三部分：网格，P2P和未来互联网</h2><h3 id="第七章：网格计算系统和资源管理"><a href="#第七章：网格计算系统和资源管理" class="headerlink" title="第七章：网格计算系统和资源管理"></a>第七章：网格计算系统和资源管理</h3><p>###　第八章：对等计算和覆盖网络</p>
+<h3 id="第九章：普适云计算，物联网与社会网络"><a href="#第九章：普适云计算，物联网与社会网络" class="headerlink" title="第九章：普适云计算，物联网与社会网络"></a>第九章：普适云计算，物联网与社会网络</h3>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/又是划水的一天/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/又是划水的一天/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-27 11:08:42" itemprop="dateModified" datetime="2019-04-27T11:08:42+08:00">2019-04-27</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="关于划水"><a href="#关于划水" class="headerlink" title="关于划水"></a>关于划水</h1><p>为什么每天都在划水</p>
+<p>难道不知道时间太短了吗</p>
+<p>急着毕业</p>
+<p>急着工作</p>
+<p>可是为什么而工作？</p>
+<p>不谈理想</p>
+<p>缺钱</p>
+<p>工作</p>
+<p>不会</p>
+<p>还浪费时间</p>
+<p>容忍自己</p>
+<p>在真实的世界</p>
+<p>日复一日的划水</p>
+<p>原来我只是</p>
+<p>在真实的世界虚拟地活着 </p>
+<p>在虚拟的世界真实地活着</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/特征工程简介/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/特征工程简介/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-06 15:48:16" itemprop="dateModified" datetime="2019-06-06T15:48:16+08:00">2019-06-06</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="特征工程简介"><a href="#特征工程简介" class="headerlink" title="特征工程简介"></a>特征工程简介</h1><ul>
+<li><p>在机器学习方面的成功很大程度上在于如果使用特征工程。</p>
+</li>
+<li><p>在机器学习中，经常是用一个预测模型（线性回归，逻辑回归，SVD等）和一堆原始数据来得到一些预测的结果，人们需要做的是从这堆原始数据中去提炼较优的结果，然后做到最优的预测。这个就包括两个方面，第一就是如何选择和使用各种模型，第二就是怎么样去使用这些原始的数据才能达到最优的效果。那么怎么样才能够获得最优的结果呢？贴上一句经典的话就是：</p>
+</li>
+</ul>
+<p>  Actually the sucess of all Machine Learning algorithms depends on how you present the data.<br>  —— Mohammad Pezeshki</p>
+<p>  直接翻译过来便是：事实上所有机器学习算法上面的成功都在于你怎么样去展示这些数据。由此可见特征工程在实际的机器学习中的重要性，从数据里面提取出来的特征好坏与否就会直接影响模型的效果。从某些层面上来说，所使用的特征越好，得到的效果就会越好。所需要的特征就是可以借此来描述已知数据的内在关系。总结一下就是：</p>
+<p>  Better feature means flexibility. Better feature means simpler models. Better feature means better results.</p>
+<p>  有的时候，可以使用一些不是最优的模型来训练数据，如果特征选择得好的话，依然可以得到一个不错的结果。很多机器学习的模型都能够从数据中选择出不错的结构，从而进行良好的预测。一个优秀的特征具有极强的灵活性，可以使用不那么复杂的，运算速度快，容易理解和维护的模型来得到不错的结果。</p>
+<ul>
+<li><h3 id="（II）什么才是特征工程？"><a href="#（II）什么才是特征工程？" class="headerlink" title="（II）什么才是特征工程？"></a>（II）什么才是特征工程？</h3><p>Feature Engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data.<br>—— Jason Brownlee</p>
+<p>Feature Engineering is manually designing what the input x’s should be.<br>—— Tomasz Malisiewicz</p>
+<p>从这个概念可以看出，特征工程其实是一个如何展示和表现数据的问题，在实际工作中需要把数据以一种“良好”的方式展示出来，使得能够使用各种各样的机器学习模型来得到更好的效果。如何从原始数据中去除不佳的数据，展示合适的数据就成为了特征工程的关键问题。</p>
+<h3 id="（III）特征有用性的预估"><a href="#（III）特征有用性的预估" class="headerlink" title="（III）特征有用性的预估"></a>（III）特征有用性的预估</h3><p>每次构造了一个特征，都需要从各个方面去证明该特征的有效性。一个特征是否重要主要在于该特征与要预测的东西是否是高度相关的，如果是高度相关，那么该特征就是十分重要的。比如常用的工具就是统计学里面的相关系数。</p>
+</li>
+<li><h3 id="（IV）特征的构造过程"><a href="#（IV）特征的构造过程" class="headerlink" title="（IV）特征的构造过程"></a>（IV）特征的构造过程</h3><p>在实际工作中首先肯定要确定具体的问题，然后就是数据的选择和准备过程，再就是模型的准备和计算工作，最后才是展示数据的预测结果。构造特征的一般步骤：</p>
+<h4 id="［1］任务的确定："><a href="#［1］任务的确定：" class="headerlink" title="［1］任务的确定："></a>［1］任务的确定：</h4><p>根据具体的业务确定需要解决的问题。</p>
+<h4 id="［2］数据的选择："><a href="#［2］数据的选择：" class="headerlink" title="［2］数据的选择："></a>［2］数据的选择：</h4><p>整合数据，收集数据。这个时候需要对这些数据的可用性进行评估，可以分成几个方面来考虑。获取这批数据的<strong>难易程度</strong>，比方说有的数据非常隐私，这批数据获得的难度就很大。其次就是这批数据的<strong>覆盖率</strong>。比方说要构造某个年龄的特征，那么这些用户中具有年龄特征的比例是多少就是一个关键的指标。如果覆盖率低，那么最后做出的特征可以影响的用户数量就会有限制。如果覆盖率高，那么年龄特征做得好，对最后的模型训练结果都会有一个明显的提升。再就是这批数据的<strong>准确率</strong>，因为从网上或者其他地方获取的数据，会由于各种各样的因素（用户的因素，数据上报的因素）导致数据不能够完整的反映真实的情况。这个时候就需要事先对这批数据的准确性作出评估。</p>
+<h4 id="［3］预处理数据："><a href="#［3］预处理数据：" class="headerlink" title="［3］预处理数据："></a>［3］预处理数据：</h4><p>设计数据展现的格式，清洗数据，选择合适的样本使得机器学习模型能够使用它。比方说一些年龄特征是空值或者负数或者大于200等，或者说某个页面的播放数据大于曝光数据，这些就是数据的不合理，需要在使用之前把这一批数据排除掉。这个时候清洗异常样本就显得至关重要。</p>
+<h4 id="［4］特征的构造："><a href="#［4］特征的构造：" class="headerlink" title="［4］特征的构造："></a>［4］特征的构造：</h4><p>转化数据，使之成为有效的特征。常用的方法是标准化，归一化，特征的离散化等。</p>
+</li>
+</ul>
+<p>  <strong>（4.1）标准化（Standardization）</strong>：</p>
+<p>  比方说有一些数字的单位是千克，有一些数字的单位是克，这个时候需要统一单位。如果没有标准化，两个变量混在一起搞，那么肯定就会不合适。</p>
+<p>  <strong>（4.2）归一化（Normalization）</strong>：</p>
+<p>  归一化是因为在特征会在不同的尺度下有不同的表现形式，归一化会使得各个特征能够同时以恰当的方式表现。比方说某个专辑的点击播放率一般不会超过0.2，但是专辑的播放次数可能会达到几千次，所以说为了能够在模型里面得到更合适结果，需要先把一些特征在尺度上进行归一化，然后进行模型训练。进行比例缩放或者归一化的时候，通常采取的方案有线性（linearization）最大最小归一化，对数（logarithm）归一化，或者 z-score 的归一化。这里的归一化的关键之处在于数据的变化（Data Transforming）。对于处理一些大尺度数据（比方说某个视频被所有用户观看的次数之类的），一般会使用对数来处理数据，或者双曲线函数。例如：f(x)=log(x+1) 或者 f(x)=x/(x+1)。</p>
+<ul>
+<li><p><strong>（4.3）特征的离散化（Discretization）</strong>：</p>
+<p>离散化是指把特征进行必要的离散处理，比方说年龄特征是一个连续的特征，但是把年龄层分成5－18岁（中小学生），19－23岁（大学生），24－29岁（工作前几年），30－40岁（成家立业），40－60岁（中年人）从某些层面来说比连续的年龄数据（比如说某人年龄是20岁1月3日之类的）更容易理解不同年龄层人的特性。这里可以根据特征的分布图像做出不同的分割，比方说通过等频率分割（Equal-Frequency）得到的特征比等区间分割（Equal-Interval）得到的特征具有更好的区分性。典型的离散化步骤：对特征做排序－&gt; 选择合适的分割点－&gt; 作出对整体的分割 －&gt; 查看分割是否合理，是否能够达到停止条件。</p>
+</li>
+</ul>
+<p>  <strong>（4.4）特征的二值化（Binarization）</strong>：</p>
+<p>  二值化指的是把某个特征映射成 0 或者 1 两个值，比方说判断某个用户是否收听某个节目，用 1 表示该用户收听这个节目，否则用 0 表示该用户没有收听这个节目。</p>
+<p>  <strong>（4.5）特征的交叉</strong>：</p>
+<p>  比方说，某个男性用户在一级分类新闻资讯的取值是1，那么他在这个新闻咨询下的所有专辑和节目的取值都是1。对娱乐新闻的取值也是1，对八卦头条的取值也是1，对NBA战况直播的取值还是1。也就是说（男性，娱乐新闻），（男性，八卦头条），（男性，NBA战况直播）这三个分类的取值都是1。这样看起来就不符合常理，照理说男性用户对NBA的兴趣应该是远大于娱乐新闻的。比较合理的做法是男性在某个专辑的取值是所有男性在这个专辑的点击率，也就是说（男性，娱乐新闻）的取值是男性对娱乐新闻的点击率，（男性，NBA战况直播）的取值是男性对NBA战况的点击率。此时的值不再是 0 或者 1，而是 [0,1] 之间的某个实数，可以对这个实数进行加减乘除等运算操作。除了性别和点击率的交叉特征，还可以进行年龄，地域，收入等特征和点击率的交叉。</p>
+<h4 id="5-选择特征的常用方法："><a href="#5-选择特征的常用方法：" class="headerlink" title="[5] 选择特征的常用方法："></a>[5] 选择特征的常用方法：</h4><p>  <strong>（5.1）过滤（Filter）</strong>：</p>
+<p>  过滤这种方法是选定一个指标来评估这个特征的可行性，根据指标值来对已经构造的特征进行排序工作，去掉无法达到要求的特征。这个时候，选择一个合适的指标来判断特征是否有效就是关键所在。从统计学的角度来看，相关系数（Correlation Coefficient）是一个评价两个随机变量 X 和 Y 是否线性相关的一个重要指标。就是相关系数的计算方法。如果相关系数是负数，那么说明两个变量是线性反相关的；如果相关系数是正数，那么说明两个变量是线性相关的。不过需要主要的是，即使相关系数是零，也只是说明两个变量是线性无关的，并不能推出它们之间是独立的。此时知道的就是一个线性分类器并不能把这个特征的正负样本分开，需要把该特征和其他特征交叉或者做其余的特征运算，形成一个或者多个新的特征，让这些新的特征发挥新的价值，做好进一步的分类工作。</p>
+<p>  <strong>（5.2）包装（Wrapper）</strong>：</p>
+<p>  包装这种方法和前面的过滤方法不一样。包装方法需要首先选定一种评估模型效果的方法，比方说 AUC（Area Under the Curve），MAE（Mean Absolute Error），Mean Squared Error（MSE）等。此时有两个不同的方案，分别是前向特征选择（Forward Feature Selection）和后向特征选择（Backward Feature Selection）。前向特征选择是从空集（Empty Set）开始，使用一种贪心算法，每次在现有特征的基础上逐渐添加一个使得模型效果更好的特征。反之，后向特征选择是从（Full Set）开始，每次去掉一个让模型效果提升最多的特征。</p>
+<p>  <strong>（5.3）嵌入（Embedding）</strong>：</p>
+<p>  嵌入特征选择方法和算法本身紧密结合，在模型训练的过程中完成特征的选择。例如：决策树（Decision Tree）算法每次都是优先选择分类能力最强的特征；逻辑回归（Logistic Regression）算法加上 L1 和 L2 等惩罚项之后，也会使得某些信号比较弱的特征权重很小甚至为 0。至于 Logistic Regression 的一些算法，可以参考 TG（Truncated Gradient Algorithm），FOBOS（Forward and Backward Splitting），RDA（Regularized Dual Averaging Algorithm）， FTRL（Follow-the-Regularized-Leader Algorithm）算法，参考文献：Ad Click Prediction: a View from the Trenches。</p>
+<h4 id="［6］模型的使用："><a href="#［6］模型的使用：" class="headerlink" title="［6］模型的使用："></a>［6］模型的使用：</h4><p>  创造模型，选择合适的模型（LR，SVM，SVD等），用合适的模型来进行预测，用各种统计指标来判断该特征是否合适。</p>
+<h4 id="［7］上线的效果："><a href="#［7］上线的效果：" class="headerlink" title="［7］上线的效果："></a>［7］上线的效果：</h4><p>  通过在线测试来看效果。数据的转换（Transforming Data）就是把数据从原始的数据状态转换成适合模型计算的状态，从某些层面上来说，“数据转换“和”特征构造“的过程几乎是一致的。</p>
+<h3 id="（V）特征工程的迭代过程"><a href="#（V）特征工程的迭代过程" class="headerlink" title="（V）特征工程的迭代过程"></a>（V）特征工程的迭代过程</h3><p>  特征工程的迭代步骤：</p>
+<h4 id="［1］选择特征："><a href="#［1］选择特征：" class="headerlink" title="［1］选择特征："></a>［1］选择特征：</h4><p>  需要进行头脑风暴（brainstorm）。通过分析具体的问题，查看大量的数据，从数据中观察出数据的关键之处；</p>
+<h4 id="［2］设计特征："><a href="#［2］设计特征：" class="headerlink" title="［2］设计特征："></a>［2］设计特征：</h4><p>  这个需要具体问题具体分析，可以自动进行特征提取工作，也可以进行手工进行特征的构造工作，甚至混合两种方法；</p>
+<h4 id="［3］判断特征："><a href="#［3］判断特征：" class="headerlink" title="［3］判断特征："></a>［3］判断特征：</h4><p>  使用不同的特征构造方法，来从多个层面来判断这个特征的选择是否合适；</p>
+<h4 id="［4］计算模型："><a href="#［4］计算模型：" class="headerlink" title="［4］计算模型："></a>［4］计算模型：</h4><p>  通过模型计算得到模型在该特征上所提升的准确率。</p>
+<h4 id="［5］上线测试："><a href="#［5］上线测试：" class="headerlink" title="［5］上线测试："></a>［5］上线测试：</h4><p>  通过在线测试的效果来判断特征是否有效。监控重要特征，防止特征的质量下滑，影响模型的效果。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/随机信号分析二轮复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/随机信号分析二轮复习/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-07 13:58:15" itemprop="dateModified" datetime="2019-04-07T13:58:15+08:00">2019-04-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="随机信号分析二轮复习"><a href="#随机信号分析二轮复习" class="headerlink" title="随机信号分析二轮复习"></a>随机信号分析二轮复习</h1><h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><p>参考钟开莱《初等概率论》《概率论教程》</p>
+<p> W. Feller 的经典著作《概率论及其应用》</p>
+<p>陈希孺《概率论与数理统计》</p>
+<p>初等概率论会涉及如下主要内容：</p>
+<ul>
+<li>概率定义的引入。首先通过如 “古典概型”、“几何概型” 等具体模型，了解一些朴素的概率思想。接着就会逐步引入概率的公理化定义。由于这个阶段没有测度论的数学基础，只能比较粗浅的讲一点 “概率空间” 的内容，并不涉及精细的可测空间的内容。在这一部分，还会介绍条件概率，独立性，全概率公式以及贝叶斯公式的基本内容。</li>
+</ul>
+<p>$$<br>P(A)=\lim <em>{n \rightarrow \infty} \frac{n</em>{A}}{n}<br>$$</p>
+<p>$$<br>P(A | B)=\frac{P(A B)}{P(B)}<br>$$</p>
+<p>$$<br>P(A \cup B)=P(A)+P(B)-P(A B)<br>$$</p>
+<ul>
+<li>概率加法定理</li>
+</ul>
+<p>$$<br>P\left(A_{1} \cup A_{2} \cup \cdots \cup A_{n}\right)=\sum_{i=1}^{n} P(A_i)-\sum_{1\le i\le j \le n} P(A_i A_j) +\sum_{1\le i\le j \le k \le n} P(A_i A_j A_k)-\cdots + (-1)^{n-1} P(A_1 A_2\cdots A_n)<br>$$</p>
+<ul>
+<li>概率乘法公式</li>
+</ul>
+<p>$$<br>P(A B)=P(B) P(A | B)=P(A) P(B | A)<br>$$</p>
+<p>$$<br>\begin{aligned} P\left(A_{1} A_{2} \cdots A_{n}\right) &amp;=P\left(A_{1}\right) P\left(A_{2} | A_{1}\right) P\left(A_{3} | A_{1} A_{2}\right) \ &amp; \dots P\left(A_{n} | A_{1} A_{2} \cdots A_{n-1}\right) \end{aligned}<br>$$</p>
+<ul>
+<li>全概率公式</li>
+</ul>
+<p>$$<br>P(A)=\sum_{i=1}^{n} P\left(B_{i}\right) P\left(A | B_{i}\right)<br>$$</p>
+<ul>
+<li>贝叶斯公式</li>
+</ul>
+<p>$$<br>P\left(B_{j} | A\right)=\frac{P\left(B_{j}\right) P\left(A | B_{j}\right)}{\sum_{i=1}^{n} P\left(B_{i}\right) P\left(A | B_{i}\right)}<br>$$</p>
+<ul>
+<li>相互独立性，需$2^{n}-n-1$个方程满足</li>
+</ul>
+<p>$$<br>P\left(A_{1} A_{i_{2}} \cdots A_{i_j}\right)=P\left(A_{i_{1}}\right) P\left(A_{i_{2}}\right) \cdots P\left(A_{i_j}\right)<br>$$</p>
+<p>两两独立<br>$$<br>P\left(A_{i_{1}} A_{i_{2}}\right)=P\left(A_{i_{1}}\right) P\left(A_{i_{2}}\right)<br>$$</p>
+<p>随机变量及其概率分布。由于 “可测性” 等基本概念的缺乏，虽然会给出随机变量的一般定义，但通常并不是特别强调这一点，重点会放在介绍离散型和连续性随机变量的分布上，例如</p>
+<ul>
+<li>两点分布 (也叫贝努利分布)</li>
+</ul>
+<p>$$<br>P(X=1)=p, \quad P(X=0)=1-p \quad(0&lt;p&lt;1)<br>$$</p>
+<ul>
+<li>二项分布<br>$$<br>P_{n}(m)=C_{n}^{m} p^{m} q^{n-m} \quad(0 \leqslant m \leqslant n)<br>$$</li>
+</ul>
+<p>泊松分布<br>$$<br>P(X=k)=\frac{\lambda^{k} \mathrm{e}^{-\lambda}}{k !}, \quad k=0,1, \cdots, \quad \lambda&gt;0<br>$$</p>
+<ul>
+<li>几何分布</li>
+</ul>
+<p>均匀分布<br>$$<br>F(x)=\left{\begin{array}{cc}{0,} &amp; {x&lt;a} \ {\frac{x-a}{b-a},} &amp; {a \leqslant x&lt;b} \ {1,} &amp; {b \leqslant x}\end{array}\right.<br>$$</p>
+<p>指数分布<br>$$<br>f(x)=\frac{1}{\mu} \exp \left(-\frac{x}{\mu}\right) \quad x&gt;0<br>$$</p>
+<p>$$<br>f(x)=\left{\begin{array}{cl}{\lambda \mathrm{e}^{-\lambda x},} &amp; {x&gt;0,} \ {0,} &amp; {x \leqslant 0}\end{array}\right. \quad(\lambda&gt;0)<br>$$</p>
+<p>正态分布：<br>$$<br>\phi\left(x_{ ;} \mu, \sigma^{2}\right)=\frac{1}{\sigma \sqrt{2 \pi}} \exp \left{-(x-\mu)^{2} / 2 \sigma^{2}\right}, \quad x \in R<br>$$</p>
+<p>$$<br>\varphi(x)=\varphi(x, 0,1)=\frac{1}{\sqrt{2 \pi}} \mathrm{e}^{-\frac{x^{2}}{2}}, \quad x \in R<br>$$</p>
+<p>$$<br>\begin{aligned} \varphi(x, y)=&amp; \frac{1}{2 \pi \sigma_{1} \sigma_{2} \sqrt{1-\rho^{2}}} \exp \left{-\frac{1}{2\left(1-\rho^{2}\right)}\left[\frac{\left(x-\mu_{1}\right)^{2}}{\sigma_{1}^{2}}\right.\right.\ &amp;-2 \rho \frac{\left(x-\mu_{1}\right)\left(y-\mu_{2}\right)}{\sigma_{1} \sigma_{2}}+\frac{\left(y-\mu_{2}\right)^{2}}{\sigma_{2}^{2}} ] } \ &amp; x \in R \quad y \in R \end{aligned}<br>$$</p>
+<ul>
+<li>瑞利分布</li>
+</ul>
+<p>$$<br>f(x)=\frac{x}{\sigma^{2}} \exp \left(-\frac{x^{2}}{2 \sigma^{2}}\right) \quad x \geqslant 0<br>$$</p>
+<ul>
+<li>韦伯分布（雷达地杂波）</li>
+</ul>
+<p>$$<br>f(x)=\left{\begin{array}{ll}{\frac{b}{a}\left(\frac{x}{a}\right)^{b-1} \exp \left[-\left(\frac{x}{a}\right)^{b}\right]} &amp; {x \geqslant 0} \ {0} &amp; {x&lt;0}\end{array}\right.<br>$$</p>
+<ul>
+<li>对数正态分布（雷达海杂波）</li>
+</ul>
+<p>$$<br>f(x)=\left{\begin{array}{ll}{\frac{1}{x \sqrt{2 \pi} \sigma} \exp \left[-\frac{\ln ^{2}(x / m)}{2 \sigma^{2}}\right]} &amp; {x \geqslant 0} \ {0} &amp; {x&lt;0}\end{array}\right.<br>$$</p>
+<ul>
+<li>拉普拉斯分布（用于语音图像信号重建）</li>
+</ul>
+<p>$$<br>f(x)=\frac{1}{2} c \exp (-c|x-m|)，c&gt;0<br>$$</p>
+<p>类似单变量微积分和多变量微积分，这部分除了涉及一维随机变量，也会有高维随机变量，也称作随机向量。随之会衍生出联合分布、边缘分布以及条件分布的概念。这一部分还有一块重要内容叫做“随机变量函数的概率分布”，即对于随机变量 X，考虑 f(X)分布的求解方法，其中 f是一个函数。<br>$$<br>f_{Y}(y)=f_{X}\left(x_{1}\right)\left|J_{1}\right|+\cdots+f_{x}\left(x_{n}\right)\left|J_{n}\right|<br>$$</p>
+<p>$$<br>f_{Y}(y)=f_{X}(x)|J|_{x=g^{-1}(y)}, \quad J=\frac{d x}{d y}<br>$$</p>
+<ul>
+<li>数字特征。一般来说，随机变量的数字特征包括数学期望$E(X)​$ </li>
+</ul>
+<p>$$<br>E(X)=\int_{-\infty}^{+\infty}x f_{x}(x) \mathrm{d} x<br>$$</p>
+<ul>
+<li>方差$D(X) $</li>
+</ul>
+<p>$$<br>D(X)=\int_{-\infty}^{+\infty}[x-E(X)]^{2} f_{x}(x) \mathrm{d} x<br>$$</p>
+<p>$$<br>\begin{aligned} D(X) &amp;=E\left{[X-E(X)]^{2}\right\rangle \ &amp;= E\left{X^{2}-2 X \cdot E(X)+[E(X)]^{2}\right\rangle \ &amp;= E\left(X^{2}\right)-2 E(X) E(X)+[E(X)]^{2} \ &amp;=E\left(X^{2}\right)-[E(X)]^{2} \end{aligned}<br>$$</p>
+<p>协方差$cov(X,Y)$<br>$$<br>\operatorname{cov}(X, Y)=E{[X-E(X)][Y-E(Y)]}<br>$$</p>
+<p>$$<br>D(X)=\operatorname{cov}(X, X)<br>$$</p>
+<p>$$<br>D(X \pm Y)=D(X)+D(Y) \pm 2 \operatorname{cov}(X, Y)<br>$$</p>
+<p>$$<br>\operatorname{cov}(X, Y)=E(X Y)-E(X) E(Y)<br>$$</p>
+<p>相关系数$\rho(X)$<br>$$<br>\rho_{X Y}=\frac{\operatorname{cov}(X, Y)}{\sqrt{D(X)} \sqrt{D(Y)}}<br>$$</p>
+<ul>
+<li><p>不(线性)相关$\rho (X,Y)=0$  ,$cov(X,Y)=0$ ,</p>
+</li>
+<li><p>相互独立$f(x,y)=f(x)f(y)$,</p>
+<p>$E(XY)=E(x)E(Y)$ 可以推出不相关</p>
+</li>
+<li><p>正交</p>
+</li>
+</ul>
+<p>$E(XY)=0=&gt;cov(X,Y)=-E(x)E(Y)​$ </p>
+<p>原点矩中心矩</p>
+<p>条件期望以及母函数和特征函数等。要掌握并会求解一些重要概率分布的数字特征。</p>
+<ul>
+<li>极限定理。包括大数定律和中心极限定理。这部分内容是概率论中最具有 “统计” 思想的部分，并且它们也确实对后来的数理统计学的学习具有很重要的意义。</li>
+</ul>
+<p>大数定理<br>$$<br>\lim <em>{n \rightarrow \infty} P\left{\left|\frac{1}{n} \sum</em>{i=1}^{n} X_{i}-\frac{1}{n} \sum_{i=1}^{n} E\left(X_{i}\right)\right|&lt;\varepsilon\right}=1<br>$$<br>Chebyshev不等式<br>$$<br>P{|X-E(X)| \geqslant \varepsilon} \leqslant \frac{D(X)}{\varepsilon^{2}}<br>$$<br>中心极限定理</p>
+<p>iid中心极限定理<br>$$<br>\lim <em>{n \rightarrow \infty} P\left{\frac{\sum</em>{i=1}^{n} X_{i}-n \mu}{\sqrt{n} \sigma} \leqslant x\right}=\Phi(x)<br>$$</p>
+<ul>
+<li><p>数理统计部分</p>
+<p>略</p>
+</li>
+<li><p>关于应用随机过程**(如随机信号分析)，这门课的内容比较多元化，例如一些偏重工科背景的高校，在这门课中会加入平稳过程谱分析方面的内容。如果想更多了解具有数理金融背景的内容，建议可以再重点学一下鞅论和布朗运动 (Brownian motion)。</p>
+</li>
+</ul>
+<ol>
+<li>马氏链。马氏链实际包括离散时间马氏链和连续时间马氏链。由于测度论还没有学，一些定理结论无法给出严格证明，但这并不妨碍大家理解马氏链的物理直观。其中关于常返性以及不变分布等问题是本课程最核心的议题。作为马氏链最重要的一些模型，大家注意学习简单随机游动 (simple random walk)，分枝过程(branching process)，泊松过程(poisson process) 以及生灭过程(birth-death process)。作为实际应用还可以了解一点排队过程。</li>
+<li>鞅论以及布朗运动。鞅论是随机过程理论中非常重要的部分，现代对它的兴趣很多是出于它在数理金融研究中的基础地位。布朗运动是一种具有非常好的性质的过程，也是学习随机分析学的入门基础。它的重要性是被广泛认可的，关于布朗运动的内容也是随机过程中最为丰富的部分之一。</li>
+</ol>
+<h2 id="随机信号分析"><a href="#随机信号分析" class="headerlink" title="随机信号分析"></a>随机信号分析</h2><ul>
+<li>随机变量的特征函数</li>
+</ul>
+<p>$$<br>\Phi_{x}(\omega)=E[\exp (j \omega X)]=\int_{-\infty}^{+\infty} f_{X}(x) \exp (j \omega x) d x<br>$$</p>
+<p>$$<br>f_{x}(x)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} \Phi_{x}(\omega) \exp (-j \omega x) \mathrm{d} \omega<br>$$</p>
+<p>$$<br>f_{X}(x)=\frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{x^{2}}{2}\right)<br>$$</p>
+<p>$$<br>\Phi_{X}(\omega)=\exp \left(-\frac{\omega^{2}}{2}\right)<br>$$</p>
+<p>$$<br>\Phi_{Y}(\omega)=\exp (j m \omega) \Phi_{X}(\sigma \omega)=\exp \left(-\frac{\sigma^{2} \omega^{2}}{2}+j m \omega\right)<br>$$</p>
+<p>$$<br>m_{n}=(-\mathrm{j})^{n} \frac{\mathrm{d}^{\mathrm{n}} \Phi_{X}(0)}{\mathrm{d} \omega^{n}}<br>$$</p>
+<ul>
+<li>随机过程</li>
+</ul>
+<p>$$<br>X_{T}={X(t, \omega) ; t \in T}<br>$$</p>
+<ul>
+<li>均值$\mu_{X}(t) \hat{=} m(t)=E{X(t)}$</li>
+<li>方差$\sigma_{X}^{2}(t) \triangleq D_{x}(t)=E\left{\left[X(t)-\mu_{x}(t)\right]^{2}\right}$</li>
+<li>自协方差:</li>
+</ul>
+<p>$C_{X}(s, t) \triangleq E\left{\left[X(s)-\mu_{X}(s)\right]\left[X(t)-\mu_{X}(t)\right]\right}$</p>
+<ul>
+<li><p>自相关函数$R_{X}(s, t) \triangleq E{X(s) X(t)}$</p>
+<p>$\begin{aligned} C_{X}(s, t) &amp; \hat{=} E\left{\left[X(s)-\mu_{X}(s)\right]\left[X(t)-\mu_{X}(t)\right]\right} \ &amp;=E{X(s) X(t)}-\mu_{X}(s) \cdot \mu_{X}(t) \ &amp;=R_{X}(s, t)-\mu_{X}(s) \cdot \mu_{X}(t) \end{aligned}$</p>
+<p>$\sigma_{X}^{2}(t)=D_{X}(t)=C_{X}(t, t)=R_{X}(t, t)-\left[\mu_{X}(t)\right]^{2}$</p>
+</li>
+</ul>
+<p>两个随机过程下</p>
+<ul>
+<li>互协方差</li>
+</ul>
+<p>$C_{X Y}(s, t) \triangleq E\left{\left[X(s)-\mu_{X}(s)\right]\left[Y(t)-\mu_{Y}(t)\right]\right}$</p>
+<ul>
+<li>互相关</li>
+</ul>
+<p>$R_{x y}(s, t) \triangleq E{X(s) Y(t)}$</p>
+<p>$C_{X Y}(s, t)=R_{X Y}(s, t)-\mu_{X}(s) \cdot \mu_{Y}(t)$</p>
+<ul>
+<li>严格平稳</li>
+</ul>
+<p>$f_{X}\left(x_{1}, \cdots, x_{N}, t_{1}+c, \cdots, t_{N}+c\right)=f_{X}\left(x_{1}, \cdots, x_{N}, t_{1}, \cdots, t_{N}\right)$</p>
+<ul>
+<li>广义平稳</li>
+</ul>
+<p>$m_{x}(t)=m_{x}$<br>$R_{x}\left(t_{1}, t_{2}\right)=R_{x}(\tau), \quad \tau=t_{1}-t_{2}$</p>
+<p>平稳过程相关系数$r_{X}(\tau)=\frac{K_{x}(\tau)}{\sigma_{X}^{2}}=\frac{R_{X}(\tau)-m_{X}^{2}}{\sigma_{x}^{2}}$</p>
+<p>相关时间$\tau_{0}=\int_{0}^{+\infty} r_{X}(\tau) \mathrm{d} \tau$</p>
+<p>$\left|r_{X}\left(\tau_{0}\right)\right| \leqslant 0.05$</p>
+<ul>
+<li>各态历经</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612050618.png" alt="1554612050618"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612082173.png" alt="1554612082173"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554611945258.png" alt="1554611945258"></p>
+<h3 id="随机信号的功率谱分析"><a href="#随机信号的功率谱分析" class="headerlink" title="随机信号的功率谱分析"></a>随机信号的功率谱分析</h3><ul>
+<li>平稳过程的谱分析</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612461194.png" alt="1554612461194"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612504487.png" alt="1554612504487"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612571517.png" alt="1554612571517"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612673905.png" alt="1554612673905"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554612697059.png" alt="1554612697059"></p>
+<p>即为维纳-辛钦定理</p>
+<p>白噪声</p>
+<p>随机过程通过线性系统的分析</p>
+<p>随机过程的微积分</p>
+<p>匹配滤波</p>
+<p>窄带随机过程</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/随机信号分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/随机信号分析/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-26 22:43:00" itemprop="dateModified" datetime="2019-03-26T22:43:00+08:00">2019-03-26</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="随机信号分析"><a href="#随机信号分析" class="headerlink" title="随机信号分析"></a>随机信号分析</h1><h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2><p>随机变量，分布函数，随机向量，中心极限定理，大数定理。。。引入时间因子，用随机过程描绘随机现象演化的动力学模型</p>
+<h2 id="随机过程"><a href="#随机过程" class="headerlink" title="随机过程"></a>随机过程</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601068308.png" alt="1553601068308"></p>
+<ul>
+<li>分类</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601198672.png" alt="1553601198672"></p>
+<p>以统计特征或概率特征分类：</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601260061.png" alt="1553601260061"></p>
+<p><strong>两种分类方法不独立</strong></p>
+<ul>
+<li>随机过程数字特征</li>
+</ul>
+<ol>
+<li>单个随机过程情形</li>
+</ol>
+<p>如均值 方差 协方差 相关函数 特征函数</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601517096.png" alt="1553601517096"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601545389.png" alt="1553601545389"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601591448.png" alt="1553601591448"></p>
+<ol start="2">
+<li>两个随机过程情形</li>
+</ol>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601713131.png" alt="1553601713131"></p>
+<p>统计不相关（不相关）：</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553601792711.png" alt="1553601792711"></p>
+<ul>
+<li>随机过程的有限维分布族</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553602563466.png" alt="1553602563466"></p>
+<p>理解：1、对随机过程的测量具有时间可追溯性，测量时间改变顺序，不会改变测量结果，也就是说已发生的事即成为无法改变的历史，纵使时光倒流。2、相容性所说的是一旦当你开始对某个随机过程开始测量，得到了随机过程的一个实现（或者说样本），那么接下来你所有的测量都只会观察到该样本，而不会观察到其他样本，也就是说随机过程的各种可能的实现（样本）在测量上是相互正交的。这有点像量子力学里，当你对光进行观测时，要么观测到它的波动性，要么观测到它的粒子性，不可能同时观测到两者同时存在，尽管光即是粒子又是波。</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553603061870.png" alt="1553603061870"></p>
+<p>独立性</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553603182974.png" alt="1553603182974"></p>
+<ul>
+<li>条件数学期望</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553603286136.png" alt="1553603286136"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553603501552.png" alt="1553603501552"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553603548549.png" alt="1553603548549"></p>
+<p>理解：</p>
+<p>有Bayes公式<img src="https://www.zhihu.com/equation?tex=%5Cmathbb%7BP%7D%28A%7CB%29%3D%5Cmathbb%7BP%7D%28AB%29%2F%5Cmathbb%7BP%7D%28B%29" alt="\mathbb{P}(A|B)=\mathbb{P}(AB)/\mathbb{P}(B)"></p>
+<p>对于事件A，考虑其示性函数<img src="https://www.zhihu.com/equation?tex=1_%7BA%7D" alt="1_{A}">。那么我们有<img src="https://www.zhihu.com/equation?tex=%5Cmathbb%7BP%7D%28A%29%3D%5Cmathbb%7BE%7D%281_A%29" alt="\mathbb{P}(A)=\mathbb{E}(1_A)">. 同理我们有<img src="https://www.zhihu.com/equation?tex=%5Cmathbb%7BP%7D%28A%7CB%29%3D%5Cmathbb%7BE%7D%281_A%7CB%29" alt="\mathbb{P}(A|B)=\mathbb{E}(1_A|B)">. 所以条件概率只是条件期望的一个特例。</p>
+<p>条件期望<strong>是高等概率论中最重要的概念之一</strong>，在鞅论、统计学、reinforcement learning中都有重要应用。详见《高等概率论》 程士宏</p>
+<ul>
+<li><p>随机过程的微分积分</p>
+</li>
+<li><p>均方连续，微分，积分（公式证明的关键就是期望与极限（微分积分）可交换）</p>
+</li>
+<li><p>平稳性</p>
+</li>
+</ul>
+<p>严平稳：任意有限维分布函数与时间起点无关。</p>
+<p>循环平稳（雷达信号，阵列信号）</p>
+<p>宽平稳</p>
+<p>1.平稳随机过程的均值与时间无关，是一个常数。</p>
+<ol start="2">
+<li>平稳随机过程的自相关函数只与计算时取的时间间隔有关。</li>
+<li>二阶矩有限</li>
+</ol>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553605592033.png" alt="1553605592033"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553605756577.png" alt="1553605756577"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553605987689.png" alt="1553605987689"></p>
+<ul>
+<li>遍历性</li>
+</ul>
+<p>各态历经性</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606083975.png" alt="1553606083975"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606124262.png" alt="1553606124262"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606202874.png" alt="1553606202874"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606285600.png" alt="1553606285600"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606318463.png" alt="1553606318463"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606364221.png" alt="1553606364221"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606452120.png" alt="1553606452120"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606611804.png" alt="1553606611804"></p>
+<p>WSS：广义平稳过程</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606692066.png" alt="1553606692066"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606798505.png" alt="1553606798505"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553606818106.png" alt="1553606818106"></p>
+<h2 id="随机信号的频域分析"><a href="#随机信号的频域分析" class="headerlink" title="随机信号的频域分析"></a>随机信号的频域分析</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553608591559.png" alt="1553608591559"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553608797127.png" alt="1553608797127"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553608865261.png" alt="1553608865261"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553608951557.png" alt="1553608951557"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609013931.png" alt="1553609013931"></p>
+<h2 id="随机信号通过线性系统的分析"><a href="#随机信号通过线性系统的分析" class="headerlink" title="随机信号通过线性系统的分析"></a>随机信号通过线性系统的分析</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609059200.png" alt="1553609059200"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609226379.png" alt="1553609226379"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609254872.png" alt="1553609254872"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609390973.png" alt="1553609390973"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553609455751.png" alt="1553609455751"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610473427.png" alt="1553610473427"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610493464.png" alt="1553610493464"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610539921.png" alt="1553610539921"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610585246.png" alt="1553610585246"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610622788.png" alt="1553610622788"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610652584.png" alt="1553610652584"></p>
+<h2 id="窄带随机信号"><a href="#窄带随机信号" class="headerlink" title="窄带随机信号"></a>窄带随机信号</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610671649.png" alt="1553610671649"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610765936.png" alt="1553610765936"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610814239.png" alt="1553610814239"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553610926835.png" alt="1553610926835"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553611004572.png" alt="1553611004572"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553611056773.png" alt="1553611056773"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553611113815.png" alt="1553611113815"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553611249368.png" alt="1553611249368"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553611299278.png" alt="1553611299278"></p>
+<h2 id="随机信号通过非线性系统的分析"><a href="#随机信号通过非线性系统的分析" class="headerlink" title="随机信号通过非线性系统的分析"></a>随机信号通过非线性系统的分析</h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/算法思维/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/算法思维/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-06 18:01:55" itemprop="dateModified" datetime="2019-04-06T18:01:55+08:00">2019-04-06</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="算法思维"><a href="#算法思维" class="headerlink" title="算法思维"></a>算法思维</h2><p>什么是对于数学的适应性呢？Kolmogorov 总结为以下三点： </p>
+<p>(1)算法能力：即对于复杂式子作高明的变形，对于用标准方法解不了的方程式作巧妙的解决的能力（仅记住许多定理、公式是不行的）。 </p>
+<p>(2)几何学直观：对于抽象的东西，能够在头脑中像画画一样描绘出来并加以思考。<br>(3)一步一步地作逻辑性推理的能力：例如能够正确地应用数学归纳法。 </p>
+
           
         
       
@@ -685,6 +2299,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
 
 
           </div>
@@ -724,7 +2342,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">54</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
