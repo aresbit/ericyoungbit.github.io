@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="机器学习的回顾和展望 学习理论learning theory  机器学习–》深度学习  前苏联的概率学家、机器学习理论的先驱 V.Vapnik 提出SVM  Random Forest 也得益于统计学家 Leo Breiman 的贡献  理论的学习其实对算法的设计研究是有着极其重要的影响的。  国外一些做深度学习应用方面特别前沿的人，说（理论）在深度学习的时代毫无用处，因为你们理论通常是一些不等式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习理论研究进展">
+<meta property="og:url" content="https://ericyoungbit.github.io/2019/06/17/机器学习理论研究进展/index.html">
+<meta property="og:site_name" content="逸之blog">
+<meta property="og:description" content="机器学习的回顾和展望 学习理论learning theory  机器学习–》深度学习  前苏联的概率学家、机器学习理论的先驱 V.Vapnik 提出SVM  Random Forest 也得益于统计学家 Leo Breiman 的贡献  理论的学习其实对算法的设计研究是有着极其重要的影响的。  国外一些做深度学习应用方面特别前沿的人，说（理论）在深度学习的时代毫无用处，因为你们理论通常是一些不等式">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-17T06:19:29.376Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="机器学习理论研究进展">
+<meta name="twitter:description" content="机器学习的回顾和展望 学习理论learning theory  机器学习–》深度学习  前苏联的概率学家、机器学习理论的先驱 V.Vapnik 提出SVM  Random Forest 也得益于统计学家 Leo Breiman 的贡献  理论的学习其实对算法的设计研究是有着极其重要的影响的。  国外一些做深度学习应用方面特别前沿的人，说（理论）在深度学习的时代毫无用处，因为你们理论通常是一些不等式">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://ericyoungbit.github.io/2019/06/17/机器学习理论研究进展/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>机器学习理论研究进展 | 逸之blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">逸之blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学习改变命运</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/机器学习理论研究进展/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">机器学习理论研究进展
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:42:44 / 修改时间：14:19:29" itemprop="dateCreated datePublished" datetime="2019-06-17T13:42:44+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="机器学习的回顾和展望"><a href="#机器学习的回顾和展望" class="headerlink" title="机器学习的回顾和展望"></a>机器学习的回顾和展望</h1><ul>
+<li><p>学习理论learning theory</p>
+</li>
+<li><p>机器学习–》深度学习</p>
+</li>
+<li><p>前苏联的概率学家、机器学习理论的先驱 V.Vapnik 提出SVM</p>
+</li>
+<li><p>Random Forest 也得益于统计学家 Leo Breiman 的贡献</p>
+</li>
+<li><p>理论的学习其实对算法的设计研究是有着极其重要的影响的。</p>
+</li>
+<li><p>国外一些做深度学习应用方面特别前沿的人，说（理论）在深度学习的时代毫无用处，因为你们理论通常是一些不等式，比如算法设计出来之后，理论会告诉你这个算法的准确度或者说错误率的上界，但通常这个得出来的数值奇大无比，他们还做了一个比较形象的比喻，说就好比证明一只鸡的体重一定要小于一吨一样</p>
+</li>
+<li><p>机器学习理论究竟是做什么来用的，它是不是只是为了证明这个界（bound），为了说明算法在实际应用的错误率能小于多少，还是说它在传达一些更高层的信息。我个人的观点是，机器学习理论是后者，绝对不是为了证明一个算法的边界如何；机器学习理论的目的，在于提供对机器学习的问题的洞察和理解。</p>
+</li>
+<li><p>第二点，很多人会有这样的观点，我们现在是一个大数据时代，像 ImageNet 这样的数据库资源有上千万。在过去，做机器学习理论的研究者可能处理的都是小数据集，也许理论还有一定的价值，但是今天我们做的都是动辄上千万的数据，是不是我们根本就完全不需要机器学习理论呢？我给大家提一个问题，一千万个数据就真的是大数据吗？我个人认为是小的数据，而且是非常非常小的。为什么呢？今天上千万的数据几乎都出现在视觉这个领域，人或者其他一些高等动物的视觉，经过多长的时间才形成这样的一个神经网络，能够以极快的速度去视觉感知、认知。这个长度是以亿年为单位，在亿年这样的进化过程当中，每一个时点都是生物以整体的角度在学习和进化，如果你从这个进化的角度来考虑，我们把进化看作一个学习的过程，这不是我提出来的理论，这是图灵奖得主 Leslie Valiant 提出来的。所以大家这么考虑，如果整个的生物群体经历上亿年的进化过程，接触到的数据是什么量级，我认为比千千万不知道要增加多少个零，所以我们今天的数据是非常小的数据。</p>
+</li>
+<li><p>那么，我们今天的神经网络和生物的进化以亿万年的进化得到的数据有多大的不同？我给大家举一个例子。大家知道人脑或很多高等动物的大脑也是由神经元组成的，比如说人脑有着 10 的 11 次方的神经元，大概 10 的 14 到 15 次方的连接。我个人认为动物的神经网络和机器神经网络的最大不同在哪儿呢？</p>
+<p>一个是在于结构，第二在于速度，第三在于运行机制。结构我刚刚讲了一点，在于容量不同，下面我谈一点很显著的区别就是速度。人脑中神经元的种类非常多，现在已知的就有上千种，当然我们可以考虑其中非常主流的一些神经元，对于这样的神经元，大家知道神经元和神经元之间信息的传递是靠一些生物电信号，实际上是化学物质的传递。在人或动物的大脑中，信息从一个神经元传递到相邻的神经元所需要的时间，大家知道是一个什么量级吗？是几十毫秒的量级。几十毫秒什么概念？比如说你突然看到一个场景、一幅图像，你马上就有一个反应，这个反应的时间肯定是在 1 秒钟之内。如果你的整个反应是在 1 秒钟之内，这意味着信息在你大脑的神经网络中传递的深度至多是多少，如果你这个大脑中从一个神经元到达下一层神经元传递的速度是几十毫秒的话，这意味着你大脑处理视觉信息所用的神经网络的深度至多就是几十层，如果你的大脑反应过来，可能已经过去将近 10 秒钟了。所以大家要意识到，我们今天所训练的最最先进的神经网络，和人脑中的、动物大脑中的神经网络依然是截然不同的。两者不一样的地方其实远远大于他们相似的地方。</p>
+<p>再举一个比较典型的例子，我们今天的神经网络，实际上都是用计算机模拟出来的，并不是一个真正的硬件。我们在计算机上进行模拟，认为层与层之间的信息的传递完全是同步的，必须上一层的信息全部同时传递到下一层的神经元才能够进行处理。在人脑中没有这样的同步控制信号，所以人脑中的神经元完全是高度分布式的一种计算，所以这就是一个重大的不同。所以今天我们深度学习所用的神经网络，即使从生物、从仿生的角度来讲，其实跟真正的生物依然差别很大。所以要想深度理解，必须有一个很基础的理论。当然我们也要面对现实，机器学习这个领域过去发展了几十年，所建立起来的机器学习的过去经典的理论，比如 SVM 等等这一系列的方法，它对于今天的深度学习确实没有非常好的解释或者说认知，但是这也正是一个很好的机会、一个挑战：我们应该如何建立一个新的理论去认知深度学习？根本目的是，我们能不能够将来设计出更加有效的方法？给大家举一个例子，人脑以这么慢的信息传递速度，其实在很多很多的问题上要比今天的深度学习训练出来的网络效果要好得多，如果我们要能够基于这些理论设计出类似于我刚才讲的人脑的一些方法，岂不是要比今天的深度学习的性能要提高百千万倍？</p>
+</li>
+<li><p>首先，我们来看看机器学习理论最核心的一个观点就是 generalization（泛化）。谈泛化之前，我们先了解一下机器学习理论是做什么的。机器学习理论是为了给整个机器学习建立完整的框架，所以必须要有很严谨的形式。概括来说，机器学习理论是建立在概率统计的基本理论框架之上。它研究的核心问题在于，如果要实现一个具体的学习任务，需要多少资源能达到这个目的。而在机器学习中，很重要的资源就是数据，所以我们就是要研究究竟需要多少数据我才能够学好。当然如果在数据已经给定的前提下，不同的方法规定了相同的数据，机器学习的成果是不一样的，所以也可以表示出来。</p>
+</li>
+<li><p>机器学习理论的一个基本框架：我们要通过收集数据来学习出一个模型，拿到这个模型以后我们根本的任务是做预测，这个预测是在未知的数据上去做的，所以一个很关键的问题是，我们的目的是希望在未知数据上学出来的模型能够表现出很好的性质，而不仅仅局限在我们已经收集到的数据。</p>
+</li>
+<li><p>非常典型的机器学习的过程：收集数据、建模、做出预测</p>
+</li>
+<li><p>哲学思想（奥卡姆剃刀理论）：「Everything should be made as simple as possible but no simpler」，这句话是爱因斯坦说的，意思是做理论的时候一定要尽可能的简单，但是你又不能过于简单。对应物理模型的时候一定要找到一些模型，允许存在一定的误差，但是又不能过于简单</p>
+</li>
+<li><p>VC理论：Vapnik和Chervonenkis，在学习的时候，其实有一个很重要的假设，也是一个基本的理论框架，就是我们一定假设我们观测到的数据，是按照一定的随机性产生的。比如我们现在拿到一个任务，要研究一个图像分类问题。我现在手里有1千万图像，例如ImageNet，大家可以想象这个ImageNet是从世界上所有可能的、相关性的图像中随机抽取来的，这个假设其实是相当合理的。这里面的数据认为是随机抽取来的，而且这个随机抽取我们可以认为它是按照某种分布状态随机抽取的。并且我们还可以假定，未来当我们从这些数据上学出一个分类器、学出一个模型之后，我们要应用场合的数据。也就是我们真正要去实际应用的时候，那些数据也是随机抽取出来的，并且应该和训练数据从同样的分布中抽取出来的，这种假设是有一定的必然性的。如果我未来应用的场合和我做训练的场景不是同一个分布，稍有区别还可以，但如果应用场景和训练场景没有任何关联，那么机器学习不可能获得成功。这是一些基本定义。还有一个定义，即你在学习时需要有一个模型，这个模型可能是一个线性模型，比如前面举的例子；也可能是SVM这样的非线性模型。如果是线性模型大家都理解，而SVM可以看成是高维空间，甚至是无穷维这样的线性模型。或者你在学一个深度学习、学一个网络，但是无论你是用哪一种模型，其实你都把分类器限制在某一个集合里了。线性模型就是所有的线性模型集合，SVM是在Hilbert空间中的线性分类器。如果你是一个Network，当你把Network的层级、结构都固定了，那就是在这样固定的层数结构下面，所有可能的Network的集合。因为不同的参数会得到不同的Network。当然如果你层数和结构可变的话，我可以把我的集合再扩展。这样的集合通常叫做假设空间（hypothesis space）。。换句话说你学习的模型总是从一个限定里面得出来的，而不是凭空选择的。这个概念其实非常重要。</p>
+</li>
+<li><p>泛化。什么叫做泛化，泛化其实非常简单。前面谈到，学习的目的是希望学好一个模型，并且让这个模型在未来要应用场景的数据上有非常高的准确度。所谓泛化的错误，就是指一个模型在未来的应用场景下的错误率，叫做泛化。为什么叫泛化呢？我们可以把它和我们经验的错误，或说在训练数据中的错误做对比。通常大家训练一个问题的时候，你拿到很多训练数据，你可以学一个分类器，在训练数据上得到一个错误率。而这个训练的错误率和刚才讲的泛化的错误率实际上后面要看到，这二者是有非常本质的区别的。这个区别正是机器学习理论要研究的内容。</p>
+</li>
+<li><p>过度拟合（over-fitted）。由于你是从一个很大的集合中挑选出来的这个模型，尽管这个模型把你的数据处理的非常好，但是你过度拟合了，没有达到泛化的目的。</p>
+</li>
+<li><p>如何保证机器学习有一个很好的泛化能力呢？这里面就提到一个很重要的概念uniform generation。简单来讲它意思是说，你现在的目的是保证你学出来的分类器未来能有很好的效果，而你要想保证这一点，实际在很大程度上是要保证你刚才模型侯选的这个空间里几乎所有的分类器都得有一个比较好的泛化能力，同时具有一个比较好的泛化能力。只有做到这一点的时候，你学出来分类器才能有一个比较好的泛化能力，因为你在观测到训练数据之前，不知道你学出来的将会是哪一个分类器，所以你如果能保证对集合里面所有可能的分类器都有很好的泛化能力，就能保证你学出来的也有这样的能力。</p>
+</li>
+<li><p>那么如何才能够保证所有的集合里面侯选的分类器都有很好的泛化能力呢？它和什么有关呢？我今天不讲太多数学上的细节，它的核心点在于，你侯选模型的集合究竟有多大。具体到这一个符号，指的是，如果你侯选的模型集合是有限的，只含有有限多的分类器，这个符号就代表了它所含分类器的个数。简而言之模型含有的分类器越多，那么要保证学出来的分类器有较好的泛化能力，就需要更多的数据。</p>
+</li>
+<li><p>VC维度（VC dimesnion）。它非常好的刻画了无穷大的集合，如果它含有的都是分类器的话，它的复杂度有多大。大家会发现它的应用范围之广，你会发现它在计算机很多领域都有广泛应用。</p>
+</li>
+<li></li>
+</ul>
+<p>简言之VC维度越大，说明模型越复杂。这样的模型想要训练好，就需要有很多的训练数据。如果感兴趣的老师、同学们可以具体去看一些例子，常见模型是可以计算VC维度的。如果用线性模型这种很经典的模型，它可以给大家一个大致的量化说明。如果你的模型的VC维度是10，你需要多少训练数据？我认为大概需要VC维度10倍，也就是100个训练数据。所以如果你的VC维度是1亿的模型，而你只有1千个训练数据，那就不可能训练好，过度拟合的肯定很严重。但如果你VC dimesnion比数据量小太多，就走向了另一个极端——拟合不足（under-fitted）。就是说最好的模型还不能拟合训练数据，所以在这些方面大家要多做注意。</p>
+<ul>
+<li><p>正则化（regularization）</p>
+</li>
+<li><p>结构风险最小化（SRM）</p>
+</li>
+<li><p>VC Theory和算法关系不大，它刻画的是集合的复杂程度；</p>
+</li>
+<li><p>Margin Theory大家可能都听说过，像SVM、Boosting这样的方法都包含有Large Margin的概念。它到底是什么含义呢？</p>
+<p>Margin Theory在SVM中怎么用大家都比较熟悉了，想象一下：比如空间中有正负两类点，现在要找一条线把这两类点分开。需要找一种个分法使得这两类点分完了以后，离分类面的间距越大越好，而<strong>这个间距就叫Margin。</strong></p>
+<p><strong>Boosting的Margin实际上体现了这个Boosting所用的基本分类器对数据分类结果的置信度（confidence）</strong></p>
+<p>Margin既可以对SVM刻画泛化，也可以对Boosting刻画泛化</p>
+</li>
+</ul>
+<p>大概在1995、1996年，人们提出了adaBoost算法。</p>
+<p>Algorithmic Stability（算法稳定性）：它的核心是说，当算法用一个训练数据集可以训练出一个结果，假如我的训练数据集有1万个数据，我把其中9999个都保持不变，就把其中的1个数据换成一个新的，那么这个时候你的学习算法学出来的分类器会不会有一个显著的变化？如果没有显著的变化，那么这个学习算法是stable的。如果有显著变化，我们说这个算法是不stable的。</p>
+<h3 id="深度学习算法"><a href="#深度学习算法" class="headerlink" title="深度学习算法"></a>深度学习算法</h3><p>今天大家用的这个深度学习的网络，它的VC Dimension是多少？数学上可以证明，如果用全连接的网络，它的VC Dimension基本上就是它的编的数目，可是今天我们用的网络，通常编的数目是我们训练数据要高一个数量级，编的数目就是我们参数的个数，所以实际上我们是在一个什么样的模型中间去学习呢？是在一个VC Dimension大概是10倍于训练数据的空间在做，这跟我们之前提到，你的训练数据 10倍于VC Dimension的空间做，是不一样的。在VC Dimension是训练数据10倍的情况下，如果你用training error最小化这样的简单的算法，是不能指望得到任何好的成果的。所以从我个人的角度来看，深度学习之所以能在VC Dimension是数据量的10倍的复杂度的模型里学习，并且能够取得成功，极大地依赖于SGD的算法。</p>
+<p>毫无疑问，深度学习的训练是最困难的，经常会发生以下几个现象中的一个或者多个。</p>
+<ul>
+<li>第一，过拟合。我一训练，training error很快下降了，但是一测试发现，测试数据集和训练数据集的差别巨大，什么原因呢？由于深度学习通常用的网络或者模型是非常复杂的，所以你一旦要在整个模型中找到一个training loss非常低的点，或者说你SGD在走的这条路径当中，实际上算法稳定性是有一定概率意义的，可能你这次走坏了，没走好，实际上stability就不存在了，这是第一种现象。在今天的深度学习中，过拟合还是一个非常常见的现象。</li>
+<li>第二种，training loss的问题。你训练很长时间就是不降下来，这是什么原因呢？我个人认为，这个原因就是，SGD由于是随机的，实在是没有找到一个loss，能够下降到可接受的点，比如说在很平坦的区域就卡在那儿了，大家看到有很多做深度学习应用的研究者，比如Bengio，给了很多这样的报告，经常出现训练不下降了，是因为你可能陷在一个很平坦的区域，在很大的一个领域里面你的training loss几乎没有什么变化，这个结论是不是真的对？我认为还不一定完全正确，还需要有更多的研究。</li>
+<li>还有其他一些现象，比如不同的超参数得到的训练结果差异非常大，大家知道深度学习里面有很多超参数要去调，你的这个数不一样，训练的结果完全不一样，所以这些都可以从理论学习的层面去研究，不仅研究，而且希望能够对大家未来能够有一切指导性，就是我如何能够设计这个算法，使其达到最终比较好的目的。如果从学术的角度来讲，这应该也是一个很值得探讨的问题，从应用的角度来讲，对于提高我们训练的效率是很有价值的。</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/17/最小生成树(MST)问题/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Frank Yang</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">55</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习的回顾和展望"><span class="nav-number">1.</span> <span class="nav-text">机器学习的回顾和展望</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#深度学习算法"><span class="nav-number">1.0.1.</span> <span class="nav-text">深度学习算法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Frank Yang</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
