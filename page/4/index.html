@@ -290,6 +290,1555 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/计算机科学学习框架（EE转CS导论）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/计算机科学学习框架（EE转CS导论）/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-13 15:48:29" itemprop="dateModified" datetime="2019-06-13T15:48:29+08:00">2019-06-13</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="计算机科学学习框架（EE转CS导论）"><a href="#计算机科学学习框架（EE转CS导论）" class="headerlink" title="计算机科学学习框架（EE转CS导论）"></a>计算机科学学习框架（EE转CS导论）</h1><h2 id="why"><a href="#why" class="headerlink" title="why"></a>why</h2><ul>
+<li>CS代表了先进生产力</li>
+<li>如何把握时代的前进方向，例如中国社会的基本矛盾变为人民对精神文明的日益需求是否意味着互联网，AI的极大需求</li>
+<li>EE-&gt;CS,EE基础的大厦已经建成</li>
+</ul>
+<h2 id="what"><a href="#what" class="headerlink" title="what"></a>what</h2><ul>
+<li><p>Theoretical computer science</p>
+<ul>
+<li>Theory of computation</li>
+<li>Information and coding theory</li>
+<li>Algorithms and data structures</li>
+<li>Programming language theory</li>
+<li>Formal methods  （形式化方法）</li>
+</ul>
+<p>要点：纯数学，纯理论，学术界门槛高，工业界需求低</p>
+</li>
+<li></li>
+<li><p>Computer Systems</p>
+<ul>
+<li><p>Computer architecture and engineering</p>
+</li>
+<li><p>Computer Performance Analysis</p>
+</li>
+<li><p>Computer security and cryptography</p>
+</li>
+<li><p>Computer networks</p>
+</li>
+<li><p>Concurrent, parallel and distributed systems</p>
+<p>编程能力要求高（汇编，指令，系统层级），项目周期长，不宜入门，需博士训练</p>
+</li>
+</ul>
+</li>
+<li><p>Applied Computer Science</p>
+<ul>
+<li><p>Artificial intelligence</p>
+</li>
+<li><p>Computer graphics and visualization</p>
+</li>
+<li><p>Health informatics</p>
+</li>
+<li><p>Information science</p>
+</li>
+<li><p>Computational biology </p>
+</li>
+<li><p>Databases and data science</p>
+</li>
+<li><p>Computer Education</p>
+</li>
+<li><p>互联网应用编程</p>
+<p>学界门槛低，工业界需求高，一台电脑，一个大脑加纸笔</p>
+<ul>
+<li><p>数学</p>
+</li>
+<li><p>编程</p>
+</li>
+<li><p>肯吃苦</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>综上所述：</p>
+</li>
+<li><p>选择Applied Computer Science</p>
+<ul>
+<li>AI<ul>
+<li>基础：control, planning and scheduling, knowledge representation,  machine learning theory</li>
+<li>应用：NLP，CV，，</li>
+<li>选择NLP，推荐系统</li>
+<li>应用有实际问题，有多少问题就可以发多少paper，问题不够还可以自定义，关键是手快肯吃苦。</li>
+</ul>
+</li>
+<li>互联网应用编程<ul>
+<li>数学，编程</li>
+<li>利用本科的时间写个编译器/操作系统/数据库管理系统</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="how"><a href="#how" class="headerlink" title="how"></a>how</h2><p>1.计算机基础速成</p>
+<p>课程涵盖了很多基础知识：</p>
+<ul>
+<li>1 - 早期的计算 - Early Computing</li>
+<li>2 - 电子计算 - Electronic Computing</li>
+<li>3 - 布尔逻辑与逻辑电路 - Boolean Logic &amp; Logic Gates</li>
+<li>4 - 二进制 - Representing Numbers and Letters with Binary</li>
+<li>5 - 算术逻辑单元 - How Computers Calculate - the ALU</li>
+<li>6 - 寄存器 &amp; 内存 - Registers and RAM</li>
+<li>7 - 中央处理器 - The Central Processing Unit(CPU)</li>
+<li>8 - 指令和程序 - Instructions &amp; Programs</li>
+<li>9 -  高级 CPU 设计 - Advanced CPU Designs</li>
+<li>10 - 编程史话 - Early Programming</li>
+<li>11 - 编程语言 - The First Programming Languages</li>
+<li>12 - 编程原理：语句和函数 - Programming Basics: Statements &amp; Functions</li>
+<li>13 - 算法初步 - Intro to Algorithms</li>
+<li>14 - 数据结构 - Data Structures</li>
+<li>15 - 阿兰·图灵 - Alan Turing</li>
+<li>16 - 软件工程 - Software Engineering</li>
+<li>17 - 集成电路、摩尔定律 - Integrated Circuits &amp; Moore’s Law</li>
+<li>18 - 操作系统 - Operating Systems</li>
+<li>19 - 内存 &amp; 储存介质 - Memory &amp; Storage</li>
+<li>20 - 文件系统 - Files &amp; File Systems</li>
+<li>21 - 压缩 - Compression</li>
+<li>22 - 命令行界面 - Keyboards &amp; Command Line Interfaces</li>
+<li>23 - 屏幕 &amp; 2D 图形显示 - Screens &amp; 2D Graphics</li>
+<li>24 - 冷战和消费主义 - The Cold War and Consumerism</li>
+<li>25 - 个人计算机革命 - The Personal Computer Revolution</li>
+<li>26 - 图形用户界面 - Graphical User Interfaces</li>
+<li>27 - 3D 图形 - 3D Graphics</li>
+<li>28 - 计算机网络 - Computer Networks</li>
+<li>29 - 互联网 - The Internet</li>
+<li>30 - 万维网 - The World Wide Web</li>
+<li>31 - 网络安全 - Cybersecurity</li>
+<li>32 - 黑客与攻击 - Hackers &amp; Cyber Attacks</li>
+<li>33 - 加密 - Cryptography</li>
+<li>34 - 机器学习与人工智能 - Machine Learning &amp; Artificial Intelligence</li>
+<li>35 - 计算机视觉 - Computer Vision</li>
+<li>36 - 自然语言处理 - Natural Language Processing</li>
+<li>37 - 机器人 - Robots</li>
+<li>38 - 计算机中的心理学 - Psychology of Computing</li>
+<li>39 - 教育型科技 - Educational Technology</li>
+<li>40 - (完结) 奇点，天网，计算机的未来 - The Singularity, Skynet, and the Future of Computing</li>
+</ul>
+<p>2 在项目中学习，坚持why -what - how - do 的技术学习路线不动摇，坚决反对只看书不编程不google的形式主义学习作风。</p>
+<h2 id="do"><a href="#do" class="headerlink" title="do"></a>do</h2><ul>
+<li></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/计算机程序设计/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/计算机程序设计/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-04 15:09:01" itemprop="dateModified" datetime="2019-04-04T15:09:01+08:00">2019-04-04</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="计算机程序设计"><a href="#计算机程序设计" class="headerlink" title="计算机程序设计"></a>计算机程序设计</h1><h2 id="计算机基础知识"><a href="#计算机基础知识" class="headerlink" title="计算机基础知识"></a>计算机基础知识</h2><p>参考书籍：</p>
+<ul>
+<li>《C primer plus》</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200094357.png" alt="1554200094357"></p>
+<ul>
+<li>冯诺依曼原理：存储程序，执行</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200515424.png" alt="1554200515424"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200540670.png" alt="1554200540670"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200567253.png" alt="1554200567253"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200611609.png" alt="1554200611609"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200851866.png" alt="1554200851866"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200913307.png" alt="1554200913307"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554200929990.png" alt="1554200929990"></p>
+<ul>
+<li>数制：二进制，十六进制 浮点数…</li>
+<li>布尔代数，逻辑代数，图灵机，可计算性</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201209582.png" alt="1554201209582"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201237409.png" alt="1554201237409"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201255891.png" alt="1554201255891"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201268611.png" alt="1554201268611"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201317483.png" alt="1554201317483"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201333139.png" alt="1554201333139"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201441763.png" alt="1554201441763"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201474718.png" alt="1554201474718"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201505609.png" alt="1554201505609"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201525293.png" alt="1554201525293"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201543920.png" alt="1554201543920"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201591900.png" alt="1554201591900"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201703519.png" alt="1554201703519"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201725635.png" alt="1554201725635"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554201760840.png" alt="1554201760840"></p>
+<h2 id="C语言基础"><a href="#C语言基础" class="headerlink" title="C语言基础"></a>C语言基础</h2><ul>
+<li>顺序</li>
+<li>选择</li>
+<li>循环</li>
+<li>输入输出</li>
+<li>if else switch do while for while break continue goto return </li>
+<li>数据类型</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554202547786.png" alt="1554202547786"></p>
+<ul>
+<li>关键字</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554202433937.png" alt="1554202433937"></p>
+<p>…..</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(ture)</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">10</span>;i&gt;<span class="number">0</span>;--i)</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"hello world\n"</span>);</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>数组，字符串</li>
+<li>函数</li>
+<li>编译预处理</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554202970922.png" alt="1554202970922"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203016998.png" alt="1554203016998"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203045554.png" alt="1554203045554"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203081213.png" alt="1554203081213"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203168425.png" alt="1554203168425"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203201925.png" alt="1554203201925"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203250718.png" alt="1554203250718"></p>
+<ul>
+<li><p>指针</p>
+</li>
+<li><p>结构体</p>
+</li>
+<li><p>文件</p>
+</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203741989.png" alt="1554203741989"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203752552.png" alt="1554203752552"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203765745.png" alt="1554203765745"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203795550.png" alt="1554203795550"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554203840785.png" alt="1554203840785"></p>
+<ul>
+<li>链表</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">head</span>;</span></span><br></pre></td></tr></table></figure>
+
+<p>熟悉完基本的 c 语言后可以有三个方向进行</p>
+<ul>
+<li>继续学习C++，恶心之路</li>
+<li>学习python,轻松面对对象，完成程序语法抽象，上手各种编程黑魔法，提高工作效率</li>
+<li>学习数据结构与算法，深入理解程序构造</li>
+</ul>
+<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><p>参考书籍：《python编程快速上手-让繁琐工作自动化》</p>
+<ul>
+<li>python基础语法</li>
+<li>控制流</li>
+<li>模块</li>
+<li>函数</li>
+<li>异常处理</li>
+<li>简单数据结构：列表（list）,tuple,字典，集合</li>
+<li>迭代器，生成器</li>
+<li>文件</li>
+<li>面对对象</li>
+<li>函数式</li>
+<li>正则表达式</li>
+<li>CGI编程</li>
+<li>MySQL</li>
+<li>多线程</li>
+<li>网络编程</li>
+<li>….</li>
+<li>开始黑魔法</li>
+<li>爬虫</li>
+</ul>
+<p>这时候可以处理一些简单问题了，不妨慢下脚步，选择更加激动人心的计算机科学学习之路，一方面转去学习数据结构与算法，或者转向网络编程框架的学习，编写自己的网页，或者简单的图像处理，数据科学，人工智能，机器学习 ，深度学习，神经网络之类，也不妨来学习一下神书《SICP》,依赖于SICP我们可以理解由c语言到Python编程范式变化如此之大的原因<strong>抽象</strong>，<strong>组合</strong>，也可以深入理解日后的面向API调用编程的web框架，分布式系统，云计算等等复杂系统</p>
+<h2 id="SICP-in-Python"><a href="#SICP-in-Python" class="headerlink" title="SICP in Python"></a>SICP in Python</h2><p>参考</p>
+<ul>
+<li><p>《SICP》</p>
+</li>
+<li><p>《SICP in Python》</p>
+</li>
+<li><p>understand precisely how computers interpret computer programs and carry out computational processes.</p>
+</li>
+<li><p>a language is not something you learn so much as something you join.</p>
+</li>
+</ul>
+<p>关键词</p>
+<ul>
+<li><p>computational processes</p>
+</li>
+<li><p>programming language</p>
+</li>
+<li><p>abstract</p>
+</li>
+<li><p>data</p>
+</li>
+<li><p>functions</p>
+</li>
+<li><p><strong>primitive expressions and statements</strong>, which represent the simplest building  blocks that the language provides</p>
+</li>
+<li><p><strong>means of combination</strong>,by which compound elements are built from simpler ones,and</p>
+</li>
+<li><p><strong>means of abstraction</strong>, by which compound elements can be named and manipulated as units.</p>
+</li>
+<li><p>第一章：使用函数构建抽象</p>
+</li>
+<li><p>计算过程</p>
+</li>
+<li><p>面向过程编程的抽象</p>
+</li>
+<li><p>数据流的处理</p>
+</li>
+<li><p>状态转移</p>
+</li>
+<li><p>自动机</p>
+</li>
+<li><p>时序逻辑</p>
+</li>
+<li><p>第二章：使用对象构建抽象</p>
+</li>
+<li><p>选择器</p>
+</li>
+<li><p>构造器</p>
+</li>
+<li><p>模块化</p>
+</li>
+<li><p>。。。</p>
+</li>
+<li><p>第三章：计算机程序的构造与解释</p>
+</li>
+<li><p>解释器：两个可变的递归函数</p>
+<ul>
+<li>求解环境中的表达式</li>
+<li>在参数上调用函数</li>
+</ul>
+</li>
+<li><p>递归函数</p>
+</li>
+<li><p>数据结构</p>
+</li>
+<li><p>记忆（memory）:用于提升重复计算的递归函数效率的机制</p>
+</li>
+<li><p>状态机</p>
+</li>
+<li><p>元语言：在谈论某种语言时使用的语言</p>
+</li>
+</ul>
+<p>停一下，状态不好，抑郁了，大学算是废了，我是废物，垃圾，什么都不会，没有毅力，可是我好穷，我没有退路，现在我压力好大，每天睡不好，吃饭会很恶心，可是我没有退路了。</p>
+<h2 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a>数据结构与算法</h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/计算广告学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/计算广告学/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-08 14:54:27" itemprop="dateModified" datetime="2019-05-08T14:54:27+08:00">2019-05-08</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="计算广告学"><a href="#计算广告学" class="headerlink" title="计算广告学"></a>计算广告学</h1><h2 id="广告的基础知识"><a href="#广告的基础知识" class="headerlink" title="广告的基础知识"></a>广告的基础知识</h2><ul>
+<li><p>广告（advertising）的定义：</p>
+<p>《现代广告学》：广告是由已确定的出资人通过各种媒介进行的有关产品的，通常是有偿的，有组织的，综合的，劝服的非人员的信息传播活动</p>
+</li>
+<li><p>广告的主体：广告主，媒介，受众</p>
+</li>
+<li><p>广告的本质：借助媒介，完成较低成本的用户接触</p>
+</li>
+<li><p>品牌广告：品牌形象，提高长期转化率</p>
+</li>
+<li><p>效果广告：短期用户转换</p>
+</li>
+<li><p>广告有效性模型：</p>
+<ul>
+<li>选择：曝光（广告位），关注（兴趣，不要打断用户任务等）</li>
+<li>解释：理解（匹配），信息接受（认同，认可）</li>
+<li>态度：保持（艺术性），购买（价格敏感，杀熟）</li>
+</ul>
+</li>
+<li><p>传统广告策略，在线广告创意原则</p>
+</li>
+<li><p>广告与销售的区别：潜在用户，明确需求</p>
+</li>
+<li><p>在线广告的独特性</p>
+<ul>
+<li>技术与计算导向</li>
+<li>可测量性</li>
+<li>标准化</li>
+</ul>
+</li>
+<li><p>在线广告市场</p>
+</li>
+<li><p>在线广告的核心计算问题：max (a),to ROI(u,a,c),find the best match between a given context c,and a suitable ad a.</p>
+<ul>
+<li>优化角度：<ul>
+<li>特征提取，特征工程，机器学习，从众定向</li>
+<li>微观优化：CTR预测</li>
+<li>宏观优化：竞价市场机制</li>
+<li>受限优化：在线分配</li>
+<li>强化学习：探索利用</li>
+<li>个性化重定向：推荐技术</li>
+</ul>
+</li>
+<li>从系统角度<ul>
+<li>候选查询：实时索引</li>
+<li>特征存储：No-SQL技术</li>
+<li>离线学习：hadoop</li>
+<li>在线学习：流计算</li>
+<li>交易市场：实时竞价</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在线广告计算的主要挑战</p>
+<ul>
+<li>大规模，高并发</li>
+<li>动态性</li>
+<li>丰富的查询信息</li>
+<li>探索与发现</li>
+</ul>
+</li>
+<li><p>搜索（相关性），广告（投资回报率）与推荐（用户兴趣）的区别</p>
+</li>
+<li><p>投资回报（ROI）分析</p>
+<ul>
+<li>点击率（CTR）</li>
+<li>点击价值</li>
+<li>eCPM</li>
+<li>CPM:固定eCPM</li>
+<li>,CPC：动态CTR，固定点击价值</li>
+<li>CPA，CPS,ROI市场：动态CTR，点击价值</li>
+</ul>
+</li>
+<li><p>在线广告系统</p>
+<ul>
+<li>受众定向平台：海量数据挖掘平台，机器学习平台，分布式架构</li>
+<li>高并发投送系统</li>
+<li>数据高吞吐量，高带宽</li>
+<li>流计算平台：实时日志，挖掘，反作弊，计价</li>
+</ul>
+</li>
+</ul>
+<h2 id="广告合约系统"><a href="#广告合约系统" class="headerlink" title="广告合约系统"></a>广告合约系统</h2><ul>
+<li>用开源工具搭建广告系统。如hadoop,hbase,hive ,pig,storm,,,</li>
+<li>跨语言服务搭建工具：C++，java,python…</li>
+<li>合约广告系统<ul>
+<li>广告排期系统</li>
+<li>代理商</li>
+<li>代表</li>
+<li>担保式投送（GD）：量优先，CPM（千次展示付费）</li>
+<li>广告投放机（CPM方式，受众定向，GD合约）</li>
+</ul>
+</li>
+<li>在线分配问题，在线随机分配算法</li>
+<li>hadoop:分布式文件系统，一个海量数据处理的编程框架</li>
+<li>HDFS架构，</li>
+<li>mapreduce,分布式计算编程框架，用调度计算替换调度数据，计算流程类似UNIX PIPE。，多样编程接口</li>
+<li>常用统计模型<ul>
+<li>指数族分布：最大似然ML估计可以通过充分统计量连接到数据，内存计算</li>
+<li>指数族混合分布，EM，迭代</li>
+</ul>
+</li>
+</ul>
+<h2 id="受众定向"><a href="#受众定向" class="headerlink" title="受众定向"></a>受众定向</h2><ul>
+<li><p>中国互联网生态：粗犷</p>
+</li>
+<li><p>受众售卖VS广告位售卖</p>
+</li>
+<li><p>受众定向：为AUC打标签</p>
+</li>
+<li><p>常见受众定向方式，重定位，上下文，行为</p>
+</li>
+<li><p>主题模型</p>
+</li>
+<li><p>数据加工与交易</p>
+<h2 id="竞价广告系统"><a href="#竞价广告系统" class="headerlink" title="竞价广告系统"></a>竞价广告系统</h2><ul>
+<li><p>位置拍卖</p>
+</li>
+<li><p>广告网络</p>
+</li>
+<li><p>广告检索</p>
+</li>
+<li><p>流量预测</p>
+</li>
+<li><p>点击率预测，逻辑回归，动态特征</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="搜索广告与广告网络"><a href="#搜索广告与广告网络" class="headerlink" title="搜索广告与广告网络"></a>搜索广告与广告网络</h2><ul>
+<li>探索与利用</li>
+<li>搜索广告</li>
+<li>流计算平台</li>
+<li>广告购买平台</li>
+</ul>
+<h2 id="广告交易市场"><a href="#广告交易市场" class="headerlink" title="广告交易市场"></a>广告交易市场</h2><ul>
+<li>实时竞价</li>
+<li>流量交易</li>
+<li>流量预测</li>
+<li>点击价值估计</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/机器学习算法工程师的日常/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/机器学习算法工程师的日常/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-06 16:09:13" itemprop="dateModified" datetime="2019-06-06T16:09:13+08:00">2019-06-06</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="机器学习算法工程师的日常"><a href="#机器学习算法工程师的日常" class="headerlink" title="机器学习算法工程师的日常"></a>机器学习算法工程师的日常</h1><ul>
+<li><p>在互联网公司做<strong>机器学习</strong>的时候，通常的日子是这样的：</p>
+<p>根据行业的PPT或者业务中的某些痛点来提出技术方案 -&gt; 然后开始收集数据，不仅要问遍组内，还要去其他组收集各种各样的需求 -&gt; 根据之前的技术方案来进行数据的预处理 -&gt; 撰写特征工程 -&gt; 训练模型 -&gt; 调参 -&gt; 调参 -&gt; 重新收集数据 -&gt; 数据的预处理 -&gt; 收集更多数据 -&gt; 调参 -&gt; 调参 -&gt; 调参 -&gt;…-&gt;放弃。。。。</p>
+</li>
+<li><h3 id="业务理解"><a href="#业务理解" class="headerlink" title="业务理解"></a><strong>业务理解</strong></h3><p>就做机器学习的经验来看，通常来说在做业务之前，一定要清楚的弄明白项目的<strong>业务需求</strong>是什么，弄清楚这个问题是什么比一开始就写代码重要得多。意思就是在回答问题之前，一定要把问题的内容弄清楚。有的时候，虽然看上去是一个很大的需求，但是实际操作起来的时候使用一些简单的办法也能够达到项目指标。有的时候，虽然看上去很简单，但是实际操作起来并不是一件容易的事情。从之前做理论数学的经验来看，通常数学里面的一些问题是是非题，不能够添加条件的。在 PDE 等方程领域，定理的条件越多，表示定理越不值钱。不过在工作中，这些条条框框会相对减少很多，只要能够达成项目目标，无论是添加样本，添加特征，添加服务器数量其实都是可以的，并且要把<strong>机器学习模型</strong>和<strong>业务指标</strong>有机结合才能够达到最终的项目指标。</p>
+</li>
+<li><p>“<strong>失败的项目里没有成功的个人</strong>”，因此，无论怎么做，最终都要保证项目尽量成功。</p>
+</li>
+<li><h3 id="数据清洗和特征工程"><a href="#数据清洗和特征工程" class="headerlink" title="数据清洗和特征工程"></a><strong>数据清洗和特征工程</strong></h3><p>而在机器学习算法工程师的日常生活中，除了上面的小段子之外，其实最重要的是<strong>样本</strong>层和特征层的处理工作。在学术界，都是使用开源的数据，别人都已经完全标记好了，学术圈的人通常来说只需要在这些数据的基础上提出更好的模型，更创新的算法即可。但是在工业界就完全不一样了，不要说有人帮你标记数据了，有的时候连数据在哪里都不知道，数据的质量如何也不知道，因此更多的时候是进行数据的处理和清洗工作。之前做一个项目的时候，准确率和召回率始终上不去，但是等把样本里面的脏数据清理掉之后，模型的效果瞬间提升了一个档次。在脏数据面前，再好的模型都是没有用的，在训练模型之前，一定要先看一下数据层的问题。</p>
+</li>
+</ul>
+<p>除了数据的问题，通常来说在一些场景下，样本的数量并没有那么大，因此深度学习等方案不一定特别适合。在这种情况下，一般就会使用传统的机器学习方法，并且会使用一些基于业务的<strong>特征工程</strong>。这种时候就需要机器学习从业者对业务有一个精准的理解，只要业务理解得好，有的时候写一些简单的规则就可以解决问题。特征工程也是机器学习里面的一个重要问题。</p>
+<ul>
+<li><h3 id="持续学习"><a href="#持续学习" class="headerlink" title="持续学习"></a><strong>持续学习</strong></h3><p>在人工智能这个领域，无论是 CV，NLP，还是机器学习，里面的技术迭代都是非常快的，而且是需要相对专业的人才能够从事这些领域。在这种情况下，机器学习从业者的持续学习就显得尤其重要，几年前的技术在新的业务场景下就未必适合，可能需要使用其他的模型或者框架才能够更好地解决问题。所以，除了完成日常的搬砖工作之外，建议每天抽一点时间来阅读论文，保持对业界技术的跟进和迭代。不过这个行业鱼龙混杂，有的时候论文或者 PPT 里面的技术框架其实没有办法复现，能够精准地判断哪些方案好，哪些方案差绝对是算法工程师必备的<strong>关键能力</strong>之一。</p>
+</li>
+<li><h3 id="编程能力"><a href="#编程能力" class="headerlink" title="编程能力"></a><strong>编程能力</strong></h3><p>如果是在工业界的话，编程能力是非常重要的。因为从事算法的人通常来说会有一些算法上的优化，工程上的改进，数据分析之类的工作。在这种情况下，首先需要有一定的业务直觉。而业务的经验积累需要通过各种各样的基础数据提取，在海量的数据分析工作中逐渐积累的。在这种情况下，提取数据的工具就是必须要掌握的，例如 SQL 等。其次，分析数据的工作也是必须要具备的，无论是使用 SQL 来进行分析，还是使用 Python 来做数据分析，都是自行编程解决的。再次，在从事机器学习方向的时候，不可避免的就会进行算法的效果对比。而在这种情况下，算法的效果对比是需要机器学习从业者通过写程序来实现的。最后，工业界的算法通常来说都强调<strong>上线</strong>，如果能够自行把离线，上线，效果验证，ABTest都做完，其实是最好的状况。在这种情况下，通常 Python 就不太够了，需要使用 C++ 或者 Java 等其他编程语言。因此，熟练使用多种编程语言也是一个算法工程师的能力。</p>
+</li>
+<li><h3 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a><strong>常用工具</strong></h3><p>在互联网公司里面笔者用过的机器学习工具大概有这几个：</p>
+<ol>
+<li><strong>XGBoost</strong>：做分类的工具，提供离线的Python训练和在线的C++调用功能，方便机器学习从业者训练模型和线上部署；不仅在推荐场景可以用，在安全，运维等领域都有着用武之地。</li>
+<li><strong>Tensorflow</strong>：这个也不用多说了，深度学习的经典工具之一，离线训练和在线服务都是不错的。</li>
+<li><strong>ScikitLearn</strong>：单机版本的机器学习工具。方便学生在校学习知识，文档详细感人，关键是还开源。其实在工业界，如果数据量不大的话，其实用 ScikitLearn 就基本上够用了。</li>
+<li><strong>Pandas</strong>：表格类数据或者时间序列数据的经典工具。尤其是在时间序列的处理上面有特别独到的优势，应该还有其他功能，但是笔者暂时了解不多。Pandas 的接口和函数特别多，每次遇到问题的时候可以搜一下，其实比自己重头写好得多。</li>
+<li><strong>Spark</strong>：在大数据的情况下用得比较多，通常是推荐系统一类的，海量样本的前提下，单机版的模型根本搞不定，因此会用分布式的工具。</li>
+<li><strong>SQL</strong>：提数工具。如果不掌握这个的话，基本上什么都做不了。。。。。</li>
+<li><strong>FbProphet</strong>：稍微小众一些，Facebook 的开源工具之一，在时间序列预测的场景下才能用到。</li>
+</ol>
+</li>
+<li><p><strong>对业务的理解。</strong>公司里面有很多东西并不是直接使用开源代码就能够发挥作用的，在公司里面无论做什么事情，最重要的一点就是对业务的理解。在对业务的理解方面，老员工相对于新人来说确实有着不少的优势。其次，在做业务的过程中，通常都会经历很多的坑，无论是别人主动挖的，还是自己踩坑踩出来的，都是自身宝贵的财富和经验。而这些经验只能够通过靠做大量的业务来获得。如果要想长期保持自身的优势，通过长期的训练和学习确实是一个有效的办法。无论是天才还是普通人，要想提升自身的技术，不花一定的时间去学习是不可行的。因此，无论在任何时候都不能够放弃让自己学习和充电的机会。</p>
+<p><strong>勇于接受新的挑战。</strong>公司里面除了已有的项目之外，通常来说都会开启各种各样的新项目，在这种情况下，如果有机会做新的项目，也就是别人没有做过的项目。这种机会已经要把握住，因为对于新人来说，能够接触全新的项目肯定是好过维护已有的项目的。但是几乎所有的人都是从维护旧的项目开始的，只有旧的项目做好了，才有机会拿到新的项目。</p>
+<p><strong>不要永远抱着已有的方向不放手。</strong>在公司里面，业务方向总会或多或少的发生变化，随着部门的调整，方向的变化，所做的内容总会发生一些变化。在工作的时候，最好不要抱着我就是来做这个方向的，除了这个方向之外其他的内容我一概不想做。因为当时的工作岗位未必能够提供你想做的方向，但是说不定能够提供其他的研究方向。有的时候，在公司里面，根据方向的变化来调整自己的工作内容也是一个必要的技能。而且，在公司的时候，一定要多做一些有挑战的项目，只有通过这些项目，才能够让自己的技术壁垒更加深厚。当然，在求职的时候，每个人都有着自己的想法和选择，所以，在求职的时候，是可以选择一个自己喜欢的方向来做的。</p>
+</li>
+</ul>
+<h3 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a><strong>经验总结</strong></h3><p>  通常来说，在干了两三年算法工程师之后：（以下是从其他地方看到的小段子，出处忘记了<del>~</del>）</p>
+<ol>
+<li>能够熟练写各种脚本；</li>
+<li>80%的时间在写脚本；</li>
+<li>能够说出几种机器学习算法的名字；</li>
+<li>轻松完成各种脏活累活（叫小弟做）；</li>
+<li>对无法解释的结果已经习以为常，能够强行解释一波，让领导信服；</li>
+<li>调参前，都会去寺庙烧柱香；</li>
+<li>桌上堆着很多崭新的技术书籍，没怎么翻过，大概都会有一本叫做《统计学习方法》的书。</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/概率学大师人物志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/概率学大师人物志/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-06 16:54:34" itemprop="dateModified" datetime="2019-04-06T16:54:34+08:00">2019-04-06</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="概率学大师人物志"><a href="#概率学大师人物志" class="headerlink" title="概率学大师人物志"></a>概率学大师人物志</h1><ul>
+<li>Doob</li>
+</ul>
+<p>1953年杜布（J. L. Doob,1910-2004）的《随机过程》出版，建立了随机函数理论的公理结构，推动了鞍理论的发展。</p>
+<p><a href="https://en.wikipedia.org/wiki/Joseph_L._Doob" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Joseph_L._Doob</a></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554526167037.png" alt="1554526167037"></p>
+<ul>
+<li>Polya；1920年创造了“中心极限定理”一词，《如何解题》</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554526766707.png" alt="1554526766707"></p>
+<ul>
+<li>Kolmogorov : 神说要让世人理解概率，于是就有了Kolnogorov</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554527320824.png" alt="1554527320824"></p>
+<ul>
+<li>Gramer</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554527400154.png" alt="1554527400154"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554540834641.png" alt="1554540834641"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1554540859630.png" alt="1554540859630"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/复旦《神经网络与深度学习》讲义/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/17/复旦《神经网络与深度学习》讲义/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-27 20:28:03" itemprop="dateModified" datetime="2019-03-27T20:28:03+08:00">2019-03-27</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="复旦《神经网络与深度学习》讲义"><a href="#复旦《神经网络与深度学习》讲义" class="headerlink" title="复旦《神经网络与深度学习》讲义"></a>复旦《神经网络与深度学习》讲义</h1><ul>
+<li>大纲</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683078456.png" alt="1553683078456"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683136598.png" alt="1553683136598"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683175587.png" alt="1553683175587"></p>
+<ul>
+<li>机器学习</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683281469.png" alt="1553683281469"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683319267.png" alt="1553683319267"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683379437.png" alt="1553683379437"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683423544.png" alt="1553683423544"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683470542.png" alt="1553683470542"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683493344.png" alt="1553683493344"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683537103.png" alt="1553683537103"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683602038.png" alt="1553683602038"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683660873.png" alt="1553683660873"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683681543.png" alt="1553683681543"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683737125.png" alt="1553683737125"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683785689.png" alt="1553683785689"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683836966.png" alt="1553683836966"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683858473.png" alt="1553683858473"></p>
+<ul>
+<li>线性模型</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553683924031.png" alt="1553683924031"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684000963.png" alt="1553684000963"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684120506.png" alt="1553684120506"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684152365.png" alt="1553684152365"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684177323.png" alt="1553684177323"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684205220.png" alt="1553684205220"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684216997.png" alt="1553684216997"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684693872.png" alt="1553684693872"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684718908.png" alt="1553684718908"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684745124.png" alt="1553684745124"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684776555.png" alt="1553684776555"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684806243.png" alt="1553684806243"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684832246.png" alt="1553684832246"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684860213.png" alt="1553684860213"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684888761.png" alt="1553684888761"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684919118.png" alt="1553684919118"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684946004.png" alt="1553684946004"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553684992064.png" alt="1553684992064"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685031367.png" alt="1553685031367"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685125207.png" alt="1553685125207"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685145889.png" alt="1553685145889"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685176405.png" alt="1553685176405"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685400646.png" alt="1553685400646"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685512058.png" alt="1553685512058"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685537043.png" alt="1553685537043"></p>
+<ul>
+<li>卷积神经网络</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685577753.png" alt="1553685577753"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553685681477.png" alt="1553685681477"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686568787.png" alt="1553686568787"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686584631.png" alt="1553686584631"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686614007.png" alt="1553686614007"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686640300.png" alt="1553686640300"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686677479.png" alt="1553686677479"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686703311.png" alt="1553686703311"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686726093.png" alt="1553686726093"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686748173.png" alt="1553686748173"></p>
+<ul>
+<li>RNN</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686973636.png" alt="1553686973636"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553686993892.png" alt="1553686993892"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687052567.png" alt="1553687052567"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687096642.png" alt="1553687096642"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687138455.png" alt="1553687138455"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687221490.png" alt="1553687221490"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687238782.png" alt="1553687238782"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687257949.png" alt="1553687257949"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687270681.png" alt="1553687270681"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687321185.png" alt="1553687321185"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687339809.png" alt="1553687339809"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687394839.png" alt="1553687394839"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687433971.png" alt="1553687433971"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687469751.png" alt="1553687469751"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687497075.png" alt="1553687497075"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687508984.png" alt="1553687508984"></p>
+<ul>
+<li>注意力与记忆机制</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687579855.png" alt="1553687579855"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687599225.png" alt="1553687599225"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687646801.png" alt="1553687646801"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687657456.png" alt="1553687657456"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687680273.png" alt="1553687680273"></p>
+<p>分布式，记忆力，网络，，</p>
+<ul>
+<li>无监督学习</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687768048.png" alt="1553687768048"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687827617.png" alt="1553687827617"></p>
+<ul>
+<li>概率图模型</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687953830.png" alt="1553687953830"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687973694.png" alt="1553687973694"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553687997408.png" alt="1553687997408"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688040981.png" alt="1553688040981"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688078552.png" alt="1553688078552"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688098792.png" alt="1553688098792"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688138619.png" alt="1553688138619"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688183906.png" alt="1553688183906"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688237735.png" alt="1553688237735"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688260039.png" alt="1553688260039"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688303163.png" alt="1553688303163"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553688334564.png" alt="1553688334564"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/番茄工作法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1257,1089 +2806,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/初等微积分：无穷小方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/初等微积分：无穷小方法/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-27 11:52:27" itemprop="dateModified" datetime="2019-04-27T11:52:27+08:00">2019-04-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="初等微积分：无穷小方法"><a href="#初等微积分：无穷小方法" class="headerlink" title="初等微积分：无穷小方法"></a>初等微积分：无穷小方法</h2><p>14章：</p>
-<ol>
-<li>实数与超实数</li>
-<li>微分法</li>
-<li>连续函数</li>
-<li>积分法</li>
-<li>极限，解析几何与逼近</li>
-<li>积分的应用</li>
-<li>三角函数</li>
-<li>指数与对数函数</li>
-<li>无穷级数</li>
-<li>向量</li>
-<li>偏微分法</li>
-<li>多重积分</li>
-<li>向量分析</li>
-<li>微分方程</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/程序设计语言学习框架/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/程序设计语言学习框架/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-16 15:58:24" itemprop="dateModified" datetime="2019-06-16T15:58:24+08:00">2019-06-16</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="程序设计语言学习框架"><a href="#程序设计语言学习框架" class="headerlink" title="程序设计语言学习框架"></a>程序设计语言学习框架</h1><h2 id="why"><a href="#why" class="headerlink" title="why"></a>why</h2><ul>
-<li>熟悉程序语言特性能增进表达能力，特别是抽象思维表达-语言边界就是思维的边界</li>
-<li>增强选择适用语言的能力</li>
-<li>增强学习新语言能力</li>
-<li>影语言设计的因素<ul>
-<li>计算机体系结构<ul>
-<li>命令式语言-冯诺依曼结构（存储数据与程序，CPU执行指令）：C，模拟存储器的变量，数组，基于操作的赋值语句，迭代形式的循环，非递归式循环</li>
-<li>函数式-非冯诺依曼：无变量，无赋值，无循环，绑定参数，</li>
-<li>并行：cuda</li>
-</ul>
-</li>
-</ul>
-</li>
-<li></li>
-</ul>
-<h2 id="what"><a href="#what" class="headerlink" title="what"></a>what</h2><ul>
-<li><p>自然语言：图像声音文字-抽象语言-通信信道，信息的载体，规则-语法，字符，字符串合法的集合的意义-语义，不同环境下-语用，语言的冗余-安全性，歧义语言</p>
-</li>
-<li><p>形式语言，自动机，上下文无关语言，正则语言，，</p>
-</li>
-<li><p>程序设计语言，与机器通信的机制，分层抽象，表达软件</p>
-</li>
-<li><p>指令，地址码，操作码（存，取，比较，四则运算（+ - * /）），取指，译码-执行，，，</p>
-<p>解决问题的工具—–解决问题的问题域</p>
-</li>
-<li><p>汇编：助记符,变量，数组，赋值，控制函数，过程，块，过程式语言，-操作的抽象</p>
-</li>
-<li><p>数据的抽象-面对对象，封装数据结构与操作</p>
-</li>
-<li><p>函数式编程</p>
-</li>
-<li><p>逻辑编程</p>
-</li>
-<li><p>AI框架</p>
-</li>
-</ul>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1560601629381.png" alt="1560601629381"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1560601669823.png" alt="1560601669823"></p>
-<ul>
-<li>语言的引用(参考)手册(LRM)：规定了该语言的语法和它的<br>语义，以及用该语言元素写的程序如何组织</li>
-<li>处理机器：编译，解释</li>
-<li>解释：逐行解释执行，交互解释环境REPL</li>
-<li>编译：独立编译单元，上下文优化</li>
-<li>翻译器：c预处理器，python - &gt; c，图灵等价</li>
-<li>BNF范式：计算机语言的形式语法符号集，EBNF</li>
-<li>C：基于经验的语言</li>
-</ul>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1560602772896.png" alt="1560602772896"></p>
-<ul>
-<li>自动机：语言L，字符集$\Sigma $ ,识别语言L的机器M，接受或拒绝字符串</li>
-<li>编译器的语法分析部分就是一个识别语言L的自动机M，</li>
-<li>语法分析器：给定程序语法正确否</li>
-<li>语言生成器</li>
-<li>文法：形式语言的产生机制，文法的机制，描述语法</li>
-<li>上下文无关文法：乔姆斯基（0123级语言的自动机（文法）），上下文无关，正则，，正则文法描述语言的标记，上下文无关文法描述程序设计语言，BNF等同于上下文无关，BNF是元语言，描述语言的语言</li>
-<li>语法分析树</li>
-<li>yacc</li>
-<li>属性文法 </li>
-<li>操作语义</li>
-<li>公理语义</li>
-<li>指称语义，基于递归函数理论，最严格描述程序意义的方法，为每一个语言实体定义一个数学对象以及一个映射函数</li>
-<li>程序状态：变量名，当前值，上下文环境，副作用，闭包，，表达式，</li>
-<li>语法分析器parser</li>
-<li>词法分析，模式匹配器，词素lexeme,标记token,状态图，有限自动机识别正则语言，正则表达式是正则语言的生成装置，词法分析器是有限自动机，识别程序名，保留字，字面常量，lex</li>
-<li>语法分析:<ul>
-<li>自顶向下语法分析器，先序遍历，最左派生，递归下降语法分析器，语法分析表，LL算法，从左到右，最左派生，</li>
-<li>自底向上语法分析器，LR算法，最右派生，</li>
-</ul>
-</li>
-<li>名字，绑定，类型检测，作用域</li>
-<li></li>
-</ul>
-<h2 id="how"><a href="#how" class="headerlink" title="how"></a>how</h2><h2 id="do"><a href="#do" class="headerlink" title="do"></a>do</h2>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/程序设计/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/程序设计/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-29 15:16:40" itemprop="dateModified" datetime="2019-04-29T15:16:40+08:00">2019-04-29</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h1><p>参考教材：</p>
-<p>建议初期双语阅读</p>
-<p>《C++Primer》</p>
-<p>《C Primer Plus》</p>
-<p>《The C Programming Language》</p>
-<p>编程思想</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 贪婪法</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (money &gt;= ONEJIAO) &#123;onejiao++; money -= ONEJIAO;&#125;</span><br><span class="line">  <span class="keyword">while</span> (money &gt;= FIVEFEN) &#123;fivefen++; money -= FIVEFEN;&#125;</span><br><span class="line">  <span class="keyword">while</span> (money &gt;= TWOFEN) &#123;twofen++; money -= TWOFEN;&#125;</span><br><span class="line">  <span class="keyword">while</span> (money &gt;= ONEFEN) &#123;onefen++; money -= ONEFEN;&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//多维数组</span></span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>; i&lt; NumOfRowA; ++i)</span><br><span class="line">     <span class="keyword">for</span> (j=<span class="number">0</span>; j &lt; NumOfColA; ++j)  &#123;</span><br><span class="line">	    <span class="built_in">cout</span> &lt;&lt; <span class="string">"a["</span> &lt;&lt; i &lt;&lt; <span class="string">"]["</span> &lt;&lt; j &lt;&lt; <span class="string">"] = "</span>;   </span><br><span class="line">	    <span class="built_in">cin</span> &gt;&gt; a[i][j];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 矩阵乘法</span></span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>; i&lt; NumOfRowA; ++i)</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt; NumOfColB; ++j)    </span><br><span class="line">      &#123; c[i][j] = <span class="number">0</span>;   </span><br><span class="line">         <span class="keyword">for</span> (k=<span class="number">0</span>; k&lt;NumOfColA; ++k)  </span><br><span class="line">               c[i][j] += a[i][k] * b[k][j];</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 查找问题</span></span><br><span class="line"><span class="comment">// 二分查找</span></span><br><span class="line"><span class="keyword">while</span> ( lh &lt;= rh )</span><br><span class="line">   &#123; mid = ( lh + rh ) / <span class="number">2</span>;</span><br><span class="line">     <span class="keyword">if</span> ( x== <span class="built_in">array</span>[mid] ) &#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="string">"的位置是："</span> &lt;&lt; mid &lt;&lt; <span class="built_in">endl</span>; </span><br><span class="line">	<span class="keyword">break</span>; </span><br><span class="line">          &#125;</span><br><span class="line">     <span class="keyword">if</span> ( x &lt; <span class="built_in">array</span>[mid]) rh = mid - <span class="number">1</span>; <span class="keyword">else</span> lh = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//选择排序</span></span><br><span class="line"><span class="keyword">for</span> (lh = <span class="number">0</span>; lh &lt; <span class="number">10</span>; lh++)</span><br><span class="line">       &#123; rh = lh;</span><br><span class="line">         <span class="keyword">for</span> (k = lh; k &lt; <span class="number">10</span>; ++k)</span><br><span class="line">                <span class="keyword">if</span> ( <span class="built_in">array</span>[k] &lt; <span class="built_in">array</span>[rh] )   rh = k;</span><br><span class="line">         tmp = <span class="built_in">array</span>[lh];  <span class="built_in">array</span>[lh] = <span class="built_in">array</span>[rh];</span><br><span class="line">         <span class="built_in">array</span>[rh] = tmp;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//冒泡法</span></span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>; i&lt;n; ++i)</span><br><span class="line">     &#123;flag = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt;n-i; ++j)</span><br><span class="line">        <span class="keyword">if</span> (a[j+<span class="number">1</span>] &lt; a[j])</span><br><span class="line">          &#123;tmp = a[j]; a[j] = a[j+<span class="number">1</span>]; a[j+<span class="number">1</span>] = tmp; flag = <span class="literal">true</span>;&#125;</span><br><span class="line">      <span class="keyword">if</span> (!flag) <span class="keyword">break</span>;<span class="comment">/* 一趟冒泡中没有发生交换，排序结束*/</span></span><br><span class="line">     &#125;</span><br><span class="line"><span class="comment">//函数模板</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class">     <span class="title">T</span> <span class="title">max</span>(<span class="title">T</span> <span class="title">a</span>, <span class="title">T</span> <span class="title">b</span>)</span></span><br><span class="line"><span class="class">     &#123;</span> <span class="keyword">return</span> a&gt;b ? a : b；&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//递归</span></span><br><span class="line"><span class="comment">// Hanoi 塔函数</span></span><br><span class="line"><span class="keyword">void</span>  Hanoi(<span class="keyword">int</span> n,  <span class="keyword">char</span> start, <span class="keyword">char</span> finish, <span class="keyword">char</span> temp)</span><br><span class="line">       &#123; <span class="keyword">if</span> (n==<span class="number">1</span>)  &#123;</span><br><span class="line">           MoveSingleDisk(start, finish);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123; </span><br><span class="line">                 Hanoi(n<span class="number">-1</span>, start, temp, finish);</span><br><span class="line">                 MoveSingleDisk(start, finish);</span><br><span class="line">                 Hanoi(n<span class="number">-1</span>, temp, finish, start);</span><br><span class="line">                 &#125;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//全排列问题</span></span><br><span class="line">算法可以简单地写作,其中perm代表全排列函数。</span><br><span class="line">perm(&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;)=<span class="number">1</span>perm(&#123;<span class="number">2</span>,<span class="number">3</span>&#125;)+<span class="number">2</span>perm(&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)+<span class="number">3</span>perm(&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)</span><br><span class="line">perm(&#123;<span class="number">2</span>,<span class="number">3</span>&#125;)=<span class="number">2</span>perm(&#123;<span class="number">3</span>&#125;)+<span class="number">3</span>perm(&#123;<span class="number">2</span>&#125;)</span><br><span class="line">perm(&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)=<span class="number">1</span>perm(&#123;<span class="number">3</span>&#125;)+<span class="number">3</span>perm(&#123;<span class="number">1</span>&#125;)</span><br><span class="line">perm(&#123;<span class="number">1</span>,<span class="number">2</span>&#125;)=<span class="number">1</span>perm(&#123;<span class="number">2</span>&#125;)+<span class="number">2</span>perm(&#123;<span class="number">1</span>&#125;)</span><br><span class="line">   Void PermuteWithFixedPrefix (<span class="keyword">char</span> str[ ], <span class="keyword">int</span> k)</span><br><span class="line">&#123;<span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ( k == <span class="built_in">strlen</span>(str) )  <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">   <span class="keyword">else</span>  <span class="keyword">for</span> (i=k; i&lt;<span class="built_in">strlen</span>(str); ++i)</span><br><span class="line">              &#123;swap(str, k, i);</span><br><span class="line">               PermuteWithFixedPrefix (str, k+<span class="number">1</span>);</span><br><span class="line">               swap(str, k, i);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//总结:基于递归的算法有回溯法，分治法，动态规划，核心思想是状态转移方程式</span></span><br><span class="line"> <span class="comment">// 回溯法</span></span><br><span class="line"><span class="comment">/*分书问题 有编号为0，1，2，3，4的5本书，准备分给5个人A，B，C，D，E，每个人的阅读兴趣用一个二维数组描述：</span></span><br><span class="line"><span class="comment">     Like[i][j] = true  i喜欢书j</span></span><br><span class="line"><span class="comment">     Like[i][j] = false  i不喜欢书j</span></span><br><span class="line"><span class="comment">     写一个程序，输出所有皆大欢喜的分书方案</span></span><br><span class="line"><span class="comment">     用一个二维数组like存储用户的兴趣</span></span><br><span class="line"><span class="comment">用一个一维数组book记录书是否被分掉。如果book[i] = false表示第i本书尚未被分掉，等于1则表示以被分掉</span></span><br><span class="line"><span class="comment">用一个一维数组take表示某本书分给了某人。Take[i] = j表示第j本书给了第i个人</span></span><br><span class="line"><span class="comment">设计一个函数try(i)给第i个人分书。</span></span><br><span class="line"><span class="comment">依次尝试把书j分给人i。</span></span><br><span class="line"><span class="comment">如果第i个人不喜欢第j本书，则尝试下一本书，如果喜欢，并且第j本书尚未分配，则把书j分配给i。</span></span><br><span class="line"><span class="comment">如果i是最后一个人，则方案数加1，输出该方案。否则调用try（i+1)为第i+1个人分书。</span></span><br><span class="line"><span class="comment">回溯。让第i个人退回书j，尝试下一个j，即寻找下一个可行的方案</span></span><br><span class="line"><span class="comment">由于在每次try中都要用到like，book,take以及目前找到的方案数n，因此可将它们作为全局变量，以免每次函数调用时都要带一大串参数。*/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">trynext</span><span class="params">(<span class="keyword">int</span> i)</span></span></span><br><span class="line"><span class="function"></span>&#123; <span class="keyword">int</span> j, k;</span><br><span class="line">  <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt;<span class="number">5</span>; ++j)</span><br><span class="line">     &#123; <span class="keyword">if</span> (like[i][j] &amp;&amp; book[j])</span><br><span class="line">              &#123; take[i] = j; book[j] = <span class="literal">false</span>;</span><br><span class="line">                 <span class="keyword">if</span> (i == <span class="number">4</span>)  &#123;</span><br><span class="line">	          n++;</span><br><span class="line">                     <span class="built_in">cout</span> &lt;&lt; <span class="string">"\n第"</span> &lt;&lt; n &lt;&lt; <span class="string">"种方案: "</span>&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	          <span class="built_in">cout</span> &lt;&lt; <span class="string">"人\t书"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                     <span class="keyword">for</span> (k=<span class="number">0</span>; k&lt;<span class="number">5</span>; k++) </span><br><span class="line">                        <span class="built_in">cout</span> &lt;&lt; <span class="keyword">char</span>(k+<span class="string">'A'</span>) &lt;&lt; <span class="string">'\t'</span> &lt;&lt; take[k] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                   <span class="keyword">else</span>  trynext(i+<span class="number">1</span>);</span><br><span class="line">                 book[j] = <span class="literal">true</span>;</span><br><span class="line">               &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//八皇后问题在一个8*8的棋盘上放8个皇后，使8个皇后中没有两个以上的皇后会在同一行、同一列或同一对角线上</span></span><br><span class="line">&#123; m = <span class="number">0</span>;  <span class="comment">/*从空配置开始*/</span></span><br><span class="line">  good = <span class="literal">true</span>;  <span class="comment">/*配置中的皇后不冲突*/</span></span><br><span class="line">  <span class="keyword">do</span> &#123; <span class="keyword">if</span> (good)</span><br><span class="line">         <span class="keyword">if</span> (m == <span class="number">8</span>)</span><br><span class="line">           &#123;输出解；</span><br><span class="line">            重新寻找下一可行的解；</span><br><span class="line">            &#125;</span><br><span class="line">           <span class="keyword">else</span>  向前试探，扩展至下一列；</span><br><span class="line">        <span class="keyword">else</span>  回朔，形成下一候选解；</span><br><span class="line">       good = 检查当前候选解的合理性；</span><br><span class="line">      &#125; <span class="keyword">while</span> (m != <span class="number">0</span>);</span><br><span class="line"> &#125; </span><br><span class="line"><span class="comment">// 棋盘的数据结构的设计:一维数组如col[3]的值为4，就表示第三列的皇后在第四行,另外，为了使程序在找完了全部解后回溯到最初位置，设定col[0]的初值为0。当回溯到第0列时，说明程序已求得全部解(或无解)，结束程序执行。</span></span><br><span class="line"><span class="comment">//</span></span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/波利亚《怎样解题》/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/波利亚《怎样解题》/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-02 12:08:40" itemprop="dateModified" datetime="2019-04-02T12:08:40+08:00">2019-04-02</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="波利亚《怎样解题》"><a href="#波利亚《怎样解题》" class="headerlink" title="波利亚《怎样解题》"></a>波利亚《怎样解题》</h1><h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>分析问题</p>
-<p>解决问题</p>
-<p>独立思考</p>
-<p>进行创造性活动</p>
-<ul>
-<li>逻辑分析方法</li>
-<li>探索性思维能力</li>
-</ul>
-<h2 id="怎样解题表"><a href="#怎样解题表" class="headerlink" title="怎样解题表"></a>怎样解题表</h2><ul>
-<li>弄清问题</li>
-</ul>
-<p>未知数，已知数，条件，初始条件，边界条件</p>
-<p>引入范式</p>
-<p>引入符号</p>
-<p>引入流程控制</p>
-<ul>
-<li>拟定计划</li>
-</ul>
-<p>见过吗</p>
-<p>回忆，调用解题套路</p>
-<p>找出已知与未知得联系</p>
-<p>回到定义</p>
-<p>引入辅助元素</p>
-<p>分解问题</p>
-<p>重塑问题</p>
-<p>是否利用完已知条件</p>
-<ul>
-<li><p>实现计划</p>
-</li>
-<li><p>回顾</p>
-</li>
-</ul>
-<h2 id="第一部分-在教室中"><a href="#第一部分-在教室中" class="headerlink" title="第一部分 在教室中"></a>第一部分 在教室中</h2><h2 id="第二部分-怎样解题-一段对话"><a href="#第二部分-怎样解题-一段对话" class="headerlink" title="第二部分 怎样解题-一段对话"></a>第二部分 怎样解题-一段对话</h2><ul>
-<li>熟悉问题</li>
-<li>深入了解问题</li>
-<li>探索有意得问题</li>
-<li>实现</li>
-<li>回顾</li>
-</ul>
-<h2 id="第三部分-探索法-heuristic-启发式"><a href="#第三部分-探索法-heuristic-启发式" class="headerlink" title="第三部分 探索法(heuristic)(启发式)"></a>第三部分 探索法(heuristic)(启发式)</h2><ul>
-<li>类比</li>
-<li>辅助元素</li>
-<li>辅助问题</li>
-<li>数学归纳法</li>
-<li>符号</li>
-</ul>
-<p>演绎归纳</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/编程语言入门/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/编程语言入门/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-09 17:00:11" itemprop="dateModified" datetime="2019-06-09T17:00:11+08:00">2019-06-09</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="编程语言入门"><a href="#编程语言入门" class="headerlink" title="编程语言入门"></a>编程语言入门</h1><p>选择入门语言考虑以下几点：</p>
-<ol>
-<li>开箱即用。容易下载，下载后安装简便，安装后不用配置即可使用。当然熟悉后可以自己增加配置。</li>
-<li>语法简单。有自动类型推导，不需要写变量类型。语法噪音少，简洁明了。</li>
-<li>有好的REPL环境。写一两行就可以得到结果，不像C/C++和Java一样要写一段代码，而且要编译后才可以有结果输出。</li>
-<li>突破命令式编程的禁锢。不只有命令式编程范式，要有函数式编程的支持，比如lambda函数、模式匹配、高阶函数、良好的递归支持等。</li>
-<li>不过早的暴露计算机系统的复杂性。没有指针，没有内存分配管理，语言中的基本概念不和系统关联，让初学者专注于程序的逻辑和语义。</li>
-<li>能更好的培养抽象和组合的思维。支持基本的代数数据类型，支持函子，容易从小函数组合构造出复杂的函数，让初学者尽早的习惯良好的抽象思维方式。</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/边缘奇迹-相变与临界/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/边缘奇迹-相变与临界/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:16" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:16+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-04 16:43:07" itemprop="dateModified" datetime="2019-04-04T16:43:07+08:00">2019-04-04</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="边缘奇迹-相变与临界"><a href="#边缘奇迹-相变与临界" class="headerlink" title="边缘奇迹-相变与临界"></a>边缘奇迹-相变与临界</h1><p>无</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2381,7 +2852,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">56</span>
+                    <span class="site-state-item-count">62</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
