@@ -290,6 +290,898 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/24/面试时经典智力题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/24/面试时经典智力题/" class="post-title-link" itemprop="url">面试时经典智力题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-24 10:07:04" itemprop="dateCreated datePublished" datetime="2019-06-24T10:07:04+08:00">2019-06-24</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/24/C-C++-经典面试题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/24/C-C++-经典面试题/" class="post-title-link" itemprop="url">C/C++经典面试题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-24 09:15:52 / 修改时间：10:05:35" itemprop="dateCreated datePublished" datetime="2019-06-24T09:15:52+08:00">2019-06-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="C-C-面试的一些笔记"><a href="#C-C-面试的一些笔记" class="headerlink" title="C/C++ 面试的一些笔记"></a>C/C++ 面试的一些笔记</h1><ul>
+<li><p>面试题1：变量的声明和定义有什么区别</p>
+<p>为变量分配地址和存储空间的称为定义，不分配地址的称为声明。</p>
+</li>
+<li><p>sizeof和strlen的区别</p>
+<p>sizeof是一个操作符，strlen是库函数</p>
+</li>
+<li><p>C语言的关键字 static 和 C++ 的关键字 static 有什么区别</p>
+<p>在C中static用来修饰局部静态变量和外部静态变量、函数。而C++中除了上述功能外，还用来定义类的成员变量和函数。即静态成员和静态成员函数。</p>
+</li>
+<li><p>Ｃ中的malloc和Ｃ＋＋中的new有什么区别</p>
+<ul>
+<li>new、delete 是操作符，可以重载，只能在C++中使用。</li>
+<li>malloc、free是函数，可以覆盖，C、C++中都可以使用。</li>
+<li>new 可以调用对象的构造函数，对应的delete调用相应的析构函数。</li>
+<li>malloc仅仅分配内存，free仅仅回收内存，并不执行构造和析构函数</li>
+<li>new、delete返回的是某种数据类型指针，malloc、free返回的是void指针。</li>
+</ul>
+</li>
+<li><p>写一个“标准”宏MIN</p>
+<p>#define min(a,b)((a) &lt;= (b) ? (a) : (b))</p>
+</li>
+<li><p>简述C、C++程序编译的内存分配情况</p>
+<ul>
+<li><p>从静态存储区域分配,例如全局变量，static变量等。</p>
+</li>
+<li><p>在栈上分配（局部变量）</p>
+</li>
+<li><p>堆:即动态内存分配</p>
+</li>
+<li><p>一个C、C++程序编译时内存分为5大存储区：堆区、栈区、全局区、文字常量区、程序代码区。</p>
+<p>嵌入式C，一个指针可以是volatile吗</p>
+</li>
+</ul>
+<p>可以</p>
+</li>
+<li><p>简述strcpy、sprintf与memcpy的区别</p>
+<ul>
+<li>，strcpy的两个操作对象均为字符串，sprintf的操作源对象可以是多种数据类型，目的操作对象是字符串，memcpy 的两个对象就是两个任意可操作的内存地址，并不限于何种数据类型。</li>
+</ul>
+</li>
+<li><p>面向对象的三大特征</p>
+<ul>
+<li>封装性：将客观事物抽象成类</li>
+<li>继承性：广义的继承有三种实现形式：实现继承（使用基类的属性和方法而无需额外编码的能力)、可视继承(子窗体使用父窗体的外观和实现代码)、接口继承(仅使用属性和方法,实现滞后到子类实现)。</li>
+<li>多态性：是将父类对象设置成为和一个或更多它的子对象相等的技术。用子类对象给父类对象赋值之后，父类对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。</li>
+</ul>
+</li>
+<li><p>C++的空类有哪些成员函数</p>
+<ul>
+<li> 缺省构造函数。<br> 缺省拷贝构造函数。<br> 缺省析构函数。<br> 缺省赋值运算符。<br> 缺省取址运算符。<br> 缺省取址运算符 const。</li>
+</ul>
+</li>
+<li><p>谈谈你对拷贝构造函数和赋值运算符的认识</p>
+<p>拷贝构造函数生成新的类对象，而赋值运算符不能。</p>
+<p>当有类中有指针类型的成员变量时，一定要重写拷贝构造函数和赋值运算符，不要使用默认</p>
+</li>
+<li><p>用C++设计一个不能被继承的类</p>
+</li>
+<li><p>虚函数表的工作原理。</p>
+</li>
+<li><p>简述类成员函数的重写、重载和隐藏的区别</p>
+<p>被重写的和重写的函数在两个类中，而重载和被重载的函数在同一个类中。</p>
+<p>说明：虽然重载和覆盖都是实现多态的基础，但是两者实现的技术完全不相同，达到的目的也是完全不同的，覆盖是动态态绑定的多态，而重载是静态绑定的多态。</p>
+</li>
+</ul>
+<ul>
+<li><p>简述多态实现的原理</p>
+<p>编译器发现一个类中有虚函数，便会立即为此类生成虚函数表 vtable。虚函数表的各表项为指向对应虚函数的指针。编译器还会在此类中隐含插入一个指针vptr（对vc编译器来说，它插在类的第一个位置上）指向虚函数表。调用此类的构造函数时，在类的构造函数中，编译器会隐含执行vptr与vtable的关联代码，将vptr指向对应的vtable，将类与此类的vtable联系了起来。另外在调用类的构造函数时，指向基础类的指针此时已经变成指向具体的类的this指针，这样依靠此this指针即可得到正确的vtable，。如此才能真正与函数体进行连接，这就是动态联编，实现多态的基本原理。</p>
+<p>一定要区分虚函数，纯虚函数、虚拟继承的关系和区别。牢记虚函数实现原理，因为多态C++面试的重要考点之一，而虚函数是实现多态的基础。</p>
+</li>
+<li><p>链表和数组有什么区别</p>
+<ul>
+<li>空间，查找，删除，越界</li>
+</ul>
+</li>
+<li><p>单链表反序</p>
+</li>
+<li><p>简述队列和栈的异同</p>
+</li>
+<li><p>能否用两个栈实现一个队列的功能</p>
+</li>
+<li><p>计算一颗二叉树的深度</p>
+</li>
+<li><p>编码实现直接插入排序，冒泡排序，选择排序，堆排序，基数排序</p>
+</li>
+<li><p>编程规范可总结为：程序的可行性，可读性、可移植性以及可测试性。</p>
+</li>
+<li><p>C++的引用和C语言的指针有什么区别</p>
+<p>引用必须被初始化，但是不分配存储空间。指针不声明时初始化，在初始化的时候需要分配存储空间。</p>
+<ul>
+<li>引用初始化以后不能被改变，指针可以改变所指的对象。</li>
+<li>不存在指向空值的引用，但是存在指向空值的指针。</li>
+<li></li>
+</ul>
+</li>
+<li><p>在二元树中找出和为某一值的所有路径</p>
+</li>
+<li><p>typedef和define有什么区别</p>
+<ul>
+<li>用法不同：typedef用来定义一种数据类型的别名，增强程序的可读性。define主要用来定义常量，以及书写复杂使用频繁的宏。</li>
+<li>执行时间不同：typedef是编译过程的一部分，有类型检查的功能。define是宏定义，是预编译的部分，其发生在编译之前，只是简单的进行字符串的替换，不进行类型的检查。</li>
+<li>typedef定义是语句，因为句尾要加上分号。而define不是语句，千万不能在句尾加分号。</li>
+</ul>
+</li>
+<li><p>关键字const是什么</p>
+<p>const用来定义一个只读的变量或对象。主要优点：便于类型检查、同宏定义一样可以方便地进行参数的修改和调整、节省空间，避免不必要的内存分配、可为函数重载提供参考</p>
+<p>：const修饰函数参数，是一种编程规范的要求，便于阅读，一看即知这个参数不能被改变，实现时不易出错。</p>
+</li>
+<li><p>static有什么作用</p>
+<p>static在C中主要用于定义全局静态变量、定义局部静态变量、定义静态函数。在C++中新增了两种作用：定义静态数据成员、静态函数成员。<br>注意：因为static定义的变量分配在静态区，所以其定义的变量的默认值为0，普通变量的默认值为随机数，在定义指针变量时要特别注意。</p>
+</li>
+<li><p>：extern有什么作用</p>
+<p>extern标识的变量或者函数声明其定义在别的文件中，提示编译器遇到此变量和函数时在其它模块中寻找其定义。</p>
+</li>
+<li><p>流操作符重载为什么返回引用</p>
+<p>因此这两个操作符的返回值应该是一个仍旧支持这两个操作符的流引用。其他的数据类型都无法做到这一点。</p>
+</li>
+<li><p>简述指针常量与常量指针区别</p>
+<ul>
+<li>指针常量强调的是指针的不可改变性，而常量指针强调的是指针对其所指对象的不可改变性。</li>
+</ul>
+</li>
+<li><p>数组名和指针的区别</p>
+<p>一定要记得数组名并不是真正意义上的指针，它的内涵要比指针丰富的多。但是当数组名当做参数传递给函数后，其失去原来的含义，变作普通的指针。另外要注意sizeof不是函数，只是操作符。</p>
+</li>
+<li><p>如何避免“野指针”</p>
+<ul>
+<li>指针声明时初始化，可以是具体的地址值，也可让它指向NULL。</li>
+<li>指针指向的内存空间被释放后指针应该指向NULL。</li>
+<li>指针操作超越了变量的作用范围</li>
+<li></li>
+</ul>
+</li>
+<li><p>常引用有什么作用</p>
+<p>避免实参在调用函数中被意外的改变。</p>
+</li>
+<li><p>编码实现字符串转化为数字</p>
+</li>
+<li><p>构造函数能否为虚函数</p>
+</li>
+<li><p>谈谈你对面向对象的认识</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/22/C语言入门之从零开始的-JSON-库教程学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/22/C语言入门之从零开始的-JSON-库教程学习/" class="post-title-link" itemprop="url">C语言入门之从零开始的 JSON 库教程学习</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-22 13:13:34" itemprop="dateCreated datePublished" datetime="2019-06-22T13:13:34+08:00">2019-06-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-24 09:14:48" itemprop="dateModified" datetime="2019-06-24T09:14:48+08:00">2019-06-24</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="C语言系列-JSON库实现"><a href="#C语言系列-JSON库实现" class="headerlink" title="C语言系列-JSON库实现"></a>C语言系列-JSON库实现</h1><h2 id="why"><a href="#why" class="headerlink" title="why"></a>why</h2><ul>
+<li>语言学习之路：<ul>
+<li>语法书籍阅读（一本一天）</li>
+<li>简单编程练习（手熟，培养语感）</li>
+<li>数据结构与算法学习及刷题（培养能力思维）</li>
+<li>完成小的开发任务</li>
+<li>完成工作开发需求</li>
+</ul>
+</li>
+<li>所以在学习完C语言语法后，不妨实现一个JSON库</li>
+</ul>
+<h2 id="what"><a href="#what" class="headerlink" title="what"></a>what</h2><p>JSON: <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation(JavaScript 对象表示法)</p>
+<p>JSON 是存储和交换文本信息的语法。类似 XML。</p>
+<p>JSON 比 XML 更小、更快，更易解析。</p>
+<h3 id="与-XML-相同之处"><a href="#与-XML-相同之处" class="headerlink" title="与 XML 相同之处"></a>与 XML 相同之处</h3><ul>
+<li>JSON 是纯文本</li>
+<li>JSON 具有”自我描述性”（人类可读）</li>
+<li>JSON 具有层级结构（值中存在值）</li>
+<li>JSON 可通过 JavaScript 进行解析</li>
+<li>JSON 数据可使用 AJAX 进行传输</li>
+</ul>
+<h3 id="与-XML-不同之处"><a href="#与-XML-不同之处" class="headerlink" title="与 XML 不同之处"></a>与 XML 不同之处</h3><ul>
+<li>没有结束标签</li>
+<li>更短</li>
+<li>读写的速度更快</li>
+<li>能够使用内建的 JavaScript eval() 方法进行解析</li>
+<li>使用数组</li>
+<li>不使用保留字</li>
+</ul>
+<h3 id="为什么使用-JSON？"><a href="#为什么使用-JSON？" class="headerlink" title="为什么使用 JSON？"></a>为什么使用 JSON？</h3><p>对于 AJAX 应用程序来说，JSON 比 XML 更快更易使用：</p>
+<p>使用 XML</p>
+<ul>
+<li>读取 XML 文档</li>
+<li>使用 XML DOM 来循环遍历文档</li>
+<li>读取值并存储在变量中</li>
+</ul>
+<p>使用 JSON</p>
+<ul>
+<li>读取 JSON 字符串</li>
+<li>用 eval() 处理 JSON 字符串</li>
+</ul>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><ul>
+<li>JSON 语法是 JavaScript 语法的子集。</li>
+<li>数据在名称/值对中</li>
+<li>数据由逗号分隔</li>
+<li>大括号保存对象</li>
+<li>中括号保存数组</li>
+</ul>
+<p>JSON 值</p>
+<p>JSON 值可以是：</p>
+<ul>
+<li>数字（整数或浮点数）</li>
+<li>字符串（在双引号中）</li>
+<li>逻辑值（true 或 false）</li>
+<li>数组（在中括号中）</li>
+<li>对象（在大括号中）</li>
+<li>null</li>
+</ul>
+<p>JSON 文件</p>
+<ul>
+<li><p>JSON 文件的文件类型是 “.json”</p>
+</li>
+<li><p>JSON 文本的 MIME 类型是 “application/json”</p>
+</li>
+<li><p>MIME type：浏览器中显示的内容有 HTML、有 XML、有 GIF、还有 Flash ……那么，浏览器是如何区分它们，决定什么内容用什么形式来显示呢？答案是 MIME Type，也就是该资源的媒体类型。  媒体类型通常是通过 HTTP 协议，由 Web 服务器告知浏览器的，更准确地说，是通过 Content-Type 来表示的，例如:</p>
+<p>Content-Type: text/HTML  </p>
+<p>  MIME意为多目Internet邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。然而当它被HTTP协议支持之后，它的意义就更为显著了。它使得HTTP传输的不仅是普通的文本，而变得丰富多彩。</p>
+<p>每个MIME类型由两部分组成，前面是数据的大类别，例如声音audio、图象image等，后面定义具体的种类。</p>
+<p>常见的MIME类型</p>
+<p>超文本标记语言文本 .html,.html text/html<br>普通文本 .txt text/plain<br>RTF文本 .rtf application/rtf<br>GIF图形 .gif image/gif<br>JPEG图形 .ipeg,.jpg image/jpeg<br>au声音文件 .au audio/basic<br>MIDI音乐文件 mid,.midi audio/midi,audio/x-midi<br>RealAudio音乐文件 .ra, .ram audio/x-pn-realaudio<br>MPEG文件 .mpg,.mpeg video/mpeg<br>AVI文件 .avi video/x-msvideo<br>GZIP文件 .gz application/x-gzip<br>TAR文件 .tar application/x-tar   </p>
+<h3 id="JSON-对象"><a href="#JSON-对象" class="headerlink" title="JSON 对象"></a>JSON 对象</h3><p>JSON 对象使用在大括号({})中书写。</p>
+<p>对象可以包含多个 <strong>key/value（键/值）</strong>对。</p>
+<p>key 必须是字符串，value 可以是合法的 JSON 数据类型（字符串, 数字, 对象, 数组, 布尔值或 null）。</p>
+<p>key 和 value 中使用冒号(:)分割。</p>
+<p>每个 key/value 对使用逗号(,)分割。</p>
+<p>你可以使用点号（.）来访问对象的值：</p>
+</li>
+</ul>
+<p>你也可以使用中括号（[]）来访问对象的值：</p>
+<p>你可以使用 for-in 来循环对象的属性</p>
+<p>在 for-in 循环对象的属性时，使用中括号（[]）来访问属性的值</p>
+<p>JSON 对象中可以包含另外一个 JSON 对象</p>
+<p>你可以使用点号(.)或者中括号([])来访问嵌套的 JSON 对象</p>
+<p>你可以使用点号(.，【】)来修改 JSON 对象的值</p>
+<p>我们可以使用 <strong>delete</strong> 关键字来删除 JSON 对象的属性</p>
+<p><strong>json 对象和 json 字符串的区别</strong></p>
+<h3 id="JSON-parse"><a href="#JSON-parse" class="headerlink" title="JSON.parse()"></a>JSON.parse()</h3><p>JSON 通常用于与服务端交换数据。</p>
+<p>在接收服务器数据时一般是字符串。</p>
+<p>我们可以使用 JSON.parse() 方法将数据转换为 JavaScript 对象。</p>
+<h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JSON.parse(text[, reviver])</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><strong>text:</strong>必需， 一个有效的 JSON 字符串。</li>
+<li><strong>reviver:</strong> 可选，一个转换结果的函数， 将为对象的每个成员调用此函数。</li>
+</ul>
+<p>我们可以使用 AJAX 从服务器请求 JSON 数据，并解析为 JavaScript 对象。</p>
+<p>如果从服务端接收的是数组的 JSON 数据，则 JSON.parse 会将其转换为 JavaScript 数组</p>
+<p>//</p>
+<p>AJAX：AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。</p>
+<p>AJAX 不是新的编程语言，而是一种使用现有标准的新方法。</p>
+<p>AJAX 最大的优点是在不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。</p>
+<p>AJAX 不需要任何浏览器插件，但需要用户允许JavaScript在浏览器上执行。</p>
+<p>//</p>
+<p>JSON 不能存储 Date 对象。</p>
+<p>如果你需要存储 Date 对象，需要将其转换为字符串。</p>
+<p>之后再将字符串转换为 Date 对象。</p>
+<p>JSON 不允许包含函数，但你可以将函数作为字符串存储，之后再将字符串转换为函数.</p>
+<p>不建议在 JSON 中使用函数</p>
+<p>主流浏览器都支持 JSON.parse() 函数</p>
+<p>eval(string):函数可计算某个字符串，并执行其中的的 JavaScript 代码.</p>
+<p>我们可以使用 JSON.stringify() 方法将 JavaScript 对象转换为字符串。</p>
+<h3 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JSON.stringify(value[, replacer[, space]])</span><br></pre></td></tr></table></figure>
+
+<p>JSON 最常见的用法之一，是从 web 服务器上读取 JSON 数据（作为文件或作为 HttpRequest），将 JSON 数据转换为 JavaScript 对象，然后在网页中使用该数据。</p>
+<p>由于 JSON 语法是 JavaScript 语法的子集，JavaScript 函数 eval() 可用于将 JSON 文本转换为 JavaScript 对象。</p>
+<p>Jsonp(JSON with Padding) 是 json 的一种”使用模式”，可以让网页从别的域名（网站）那获取资料，即跨域读取数据。</p>
+<p>为什么我们从不同的域（网站）访问数据需要一个特殊的技术(JSONP )呢？这是因为同源策略。</p>
+<p>同源策略，它是由Netscape提出的一个著名的安全策略，现在所有支持JavaScript 的浏览器都会使用这个策略。</p>
+<p>最初，它的含义是指，A网页设置的 Cookie，B网页不能打开，除非这两个网页”同源”。所谓”同源”指的是”三个相同”。</p>
+<blockquote>
+<ul>
+<li>协议相同</li>
+<li>域名相同</li>
+<li>端口相同</li>
+</ul>
+</blockquote>
+<p>源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。</p>
+<p>设想这样一种情况：A网站是一家银行，用户登录以后，又去浏览其他网站。如果其他网站可以读取A网站的 Cookie，会发生什么？</p>
+<p>很显然，如果 Cookie 包含隐私（比如存款总额），这些信息就会泄漏。更可怕的是，Cookie 往往用来保存用户的登录状态，如果用户没有退出登录，其他网站就可以冒充用户，为所欲为。因为浏览器同时还规定，提交表单不受同源政策的限制。</p>
+<p>由此可见，”同源政策”是必需的，否则 Cookie 可以共享，互联网就毫无安全可言了。</p>
+<p>//</p>
+<p>Cookie 是服务器写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页一级域名相同，只是二级域名不同，浏览器允许通过设置<code>document.domain</code>共享 Cookie。</p>
+<p>//</p>
+<p>JSONP是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，老式浏览器全部支持，服务器改造非常小。</p>
+<p>它的基本思想是，网页通过添加一个<code>&lt;script&gt;</code>元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。</p>
+<p>首先，网页动态插入<code>&lt;script&gt;</code>元素，由它向跨源网址发出请求。</p>
+<p>//</p>
+<p>WebSocket是一种通信协议，使用<code>ws://</code>（非加密）和<code>wss://</code>（加密）作为协议前缀。该协议不实行同源政策，只要服务器支持，就可以通过它进行跨源通信。</p>
+<p>//</p>
+<p>CORS是跨源资源分享（Cross-Origin Resource Sharing）的缩写。它是W3C标准，是跨源AJAX请求的根本解决方法。相比JSONP只能发<code>GET</code>请求，CORS允许任何类型的请求。</p>
+<p>//</p>
+<p>PHP JSON</p>
+<p>//</p>
+<h2 id="HOW"><a href="#HOW" class="headerlink" title="HOW"></a>HOW</h2><p>综上</p>
+<p>实现 JSON 库，主要是完成 3 个需求：</p>
+<ol>
+<li><p>把 JSON 文本解析为一个树状数据结构（parse）。</p>
+</li>
+<li><p>提供接口访问该数据结构（access）。</p>
+</li>
+<li><p>把数据结构转换成 JSON 文本（stringify）。</p>
+<h4 id="搭建编译环境"><a href="#搭建编译环境" class="headerlink" title="搭建编译环境"></a>搭建编译环境</h4><ul>
+<li><p>跨平台、跨编译器：</p>
+<p>c/c++方向。跨平台最根本的两个字就是标准。源码里使用的一些函数，一些变量名的定义，比如typedef，一些宏定义，都要尽量使用标准定义，不能使用与某平台依赖的一些东西，比如一些常用的数据结构，为了方便移植，就可以使用STL（c++标准模版库），这样就可以通用，因为这些都是标准。windows和linux 或者是其他平台有支持c/c++标准的编译器，基本不用改动就可以直接移植源码</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>JSON 库名为 leptjson，代码文件只有 3 个：</p>
+<ol>
+<li><p>leptjson.h：leptjson 的头文件（header file），含有对外的类型和 API 函数声明。</p>
+</li>
+<li><p>leptjson.c：leptjson 的实现文件（implementation file），含有内部的类型声明和函数实现。此文件会编译成库。</p>
+</li>
+<li><p>test.c：我们使用测试驱动开发（test driven development, TDD）。此文件包含测试程序，需要链接 leptjson 库。</p>
+<p>为了方便跨平台开发，我们会使用一个现时最流行的软件配置工具 <a href="https://cmake.org/" target="_blank" rel="noopener">CMake</a>。</p>
+</li>
+</ol>
+<p>//</p>
+<p>cmake是一个构建C++代码的跨平台工具，他能够干什么呢？他能够搜索你的平台环境，然后生成平台上用于Build的文件。在Windows上安装了Visual Studio, 他能够帮你生成.sln, .vcxproj文件。如果在Linux上，能够帮你生成makefile。在MAC OS上，帮你生成xcode的项目文件。利用这些文件你就可以在本地编译，链接文件。生成这些项目，solution文件的输入信息，就是一套自己编写的和平台无关的配置文件。一般使用CMakeLists.txt文件。</p>
+<p>//</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/19/图灵是如何破译Enigma-machine的/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frank Yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="逸之blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/19/图灵是如何破译Enigma-machine的/" class="post-title-link" itemprop="url">图灵是如何破译Enigma machine的</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-19 14:09:46 / 修改时间：14:09:47" itemprop="dateCreated datePublished" datetime="2019-06-19T14:09:46+08:00">2019-06-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/19/数据挖掘书籍/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1175,1753 +2067,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/清华交叉信息研究院课程信息/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/清华交叉信息研究院课程信息/" class="post-title-link" itemprop="url">清华交叉信息研究院课程信息</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 14:30:37 / 修改时间：14:59:37" itemprop="dateCreated datePublished" datetime="2019-06-17T14:30:37+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="清华大学交叉信息研究院"><a href="#清华大学交叉信息研究院" class="headerlink" title="清华大学交叉信息研究院"></a>清华大学交叉信息研究院</h1><ul>
-<li><p><strong>瞄准信息科学最前沿</strong>,<strong>攻关未来量子计算机</strong></p>
-</li>
-<li><p>EECS信息科学，EE的一个本质就是是CS物理层的最基础编译器</p>
-</li>
-<li><p>交叉信息研究院研究方向：TCS（计算机，数学），量子信息（数学，物理，信息论），金融科技（金融安全、区块链技术、人工智能、智能投顾），量子通信网络，AI前沿，计算复杂性理论、密码学、量子信息学和博弈论。</p>
-</li>
-<li><p>理论计算机科学领域涉及计算与通讯复杂性、算法设计与分析、计算理论、量子计算、安全计算、计算逻辑、计算几何等研究方向；量子信息领域涉及量子计算、量子存储、量子通讯、量子网络、量子密码、量子仿真、量子模拟、复杂系统的量子测量、量子传感、多体理论等研究方向；信息安全领域涉及计算信息论及信息安全、密码学、密码理论与协议、数据安全、系统安全、网络安全等研究方向；网络科学领域涉及计算机网络与算法、无线传感器网络、复杂网络、社会网络、金融网络、智能电网、网络优化、各类复杂系统（包括金融和社会系统）的建模和理论研究等研究方向。</p>
-</li>
-<li><p><strong>理论计算机科学</strong>: 计算与通讯复杂性、算法设计与分析、计算理论、量子计算、安全计算、计算逻辑、计算几何等</p>
-<p><strong>安全计算</strong>: 计算信息论及信息安全、密码学、密码理论与协议、数据安全、系统安全、网络安全等</p>
-<p><strong>网络科学</strong>: 计算机网络与算法、无线传感器网络、复杂网络、社会网络、金融网络、智能电网、网络优化、各类复杂系统（包括金融和社会系统）的建模和理论研究。</p>
-<p><strong>机器智能</strong>：机器学习、机器翻译、语言技术、计算机视觉、计算机图形学、语音识别、数据挖掘、信息检索和机器人学等。</p>
-<p><strong>计算机科学与技术学科拥有清华学堂计算机科学实验班（姚班），</strong>培养<strong>领跑国际</strong>拔尖创新计算机科学人才，授予工学学士学位。同时招收硕士、博士研究生，授予工学硕士和博士学位。本学科设有计算机科学博士后流动站。 </p>
-<ol>
-<li><strong>物理学学科</strong></li>
-</ol>
-<p>2010年底，姚期智先生领导成立交叉信息研究院（IIIS）和量子信息中心（CQI），致力于计算机科学与物理学的交叉，开设<strong>物理学</strong>学科，重点攻关<strong>量子信息科学前沿，</strong>包括<strong>量子计算、量子通讯、量子网络、量子密码、量子仿真、量子模拟、多体理论</strong>等。</p>
-<p>本科课程</p>
-<table>
-<thead>
-<tr>
-<th align="left">No.</th>
-<th align="left">年级学期</th>
-<th align="left">课程名称</th>
-<th align="left">学分</th>
-<th align="left">任课教师</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class1" target="_blank" rel="noopener">计算机网络基础</a></td>
-<td align="left">3</td>
-<td align="left">黄隆波</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">二年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class2" target="_blank" rel="noopener">普通物理（2）英</a></td>
-<td align="left">4</td>
-<td align="left">孙麓岩</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">一年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class3" target="_blank" rel="noopener">普通物理（1）英</a></td>
-<td align="left">4</td>
-<td align="left">马雄峰</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class4" target="_blank" rel="noopener">言语科学技术及创新应用</a></td>
-<td align="left">4</td>
-<td align="left">P.C. Ching, Tan Lee, Helen Meng, William S.-Y. Wang</td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">三年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class5" target="_blank" rel="noopener">计算生物学</a></td>
-<td align="left">3</td>
-<td align="left">曾坚阳</td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">二年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class6" target="_blank" rel="noopener">博弈论</a></td>
-<td align="left">4</td>
-<td align="left">唐平中</td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class7" target="_blank" rel="noopener">高等计算机图形学</a></td>
-<td align="left">3</td>
-<td align="left">胡事民</td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class8" target="_blank" rel="noopener">机器学习</a></td>
-<td align="left">4</td>
-<td align="left">王立威</td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">三年级夏季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class9" target="_blank" rel="noopener">专题训练实践</a></td>
-<td align="left">5</td>
-<td align="left">交叉信息院一线骨干教师</td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">四年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class10" target="_blank" rel="noopener">计算机科学研究实践</a></td>
-<td align="left">9</td>
-<td align="left">交叉信息院一线骨干教师</td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class11" target="_blank" rel="noopener">密码学基础</a></td>
-<td align="left">4</td>
-<td align="left">吴文斐</td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">三年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class12" target="_blank" rel="noopener">分布式计算 （基础与系统）</a></td>
-<td align="left">4</td>
-<td align="left">陈卫</td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">三年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class13" target="_blank" rel="noopener">操作系统</a></td>
-<td align="left">4</td>
-<td align="left">徐葳</td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">三年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class14" target="_blank" rel="noopener">量子信息</a></td>
-<td align="left">4</td>
-<td align="left">马雄峰</td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">二年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class15" target="_blank" rel="noopener">网络科学</a></td>
-<td align="left">4</td>
-<td align="left">Thomas Moscibroda</td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">二年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class16" target="_blank" rel="noopener">计算理论</a></td>
-<td align="left">4</td>
-<td align="left">段然</td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">二年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class17" target="_blank" rel="noopener">算法设计</a></td>
-<td align="left">4</td>
-<td align="left">李建</td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">一年级春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class18" target="_blank" rel="noopener">计算机应用数学</a></td>
-<td align="left">3</td>
-<td align="left">姚期智</td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">一年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-127-1.html#class19" target="_blank" rel="noopener">计算机入门</a></td>
-<td align="left">3</td>
-<td align="left">崔学峰</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="2009年春季课程"><a href="#2009年春季课程" class="headerlink" title="2009年春季课程"></a>2009年春季课程</h4><table>
-<thead>
-<tr>
-<th>时间</th>
-<th>周一</th>
-<th>周二</th>
-<th>周三</th>
-<th>周四</th>
-<th>周五</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td></td>
-<td>理论计算机科学I孙晓明老师(6A207)助教:乔友明,王晨谷</td>
-<td></td>
-<td>计算机应用数学 姚期智,王跃宣 老师(6A115)助教:梁宏宇，何晶</td>
-<td>分布式计算 陈卫 老师(6A103)助教:贝小辉</td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td></td>
-<td></td>
-<td></td>
-<td>高等算法Elad Verbin(6B205)助教:陈世腾,唐邦昇</td>
-<td></td>
-<td>当前计算机研究热门课题姚期智老师 (6B201)助教:姚泓毅</td>
-</tr>
-<tr>
-<td>高等理论计算机科学姚期智 老师(FIT 1-222)助教:马长存</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:55</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>17:00</td>
-<td></td>
-<td></td>
-<td>TCS Problem-Solving Honors Class (FIT 1-222)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>18:00</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="2009年秋季课程"><a href="#2009年秋季课程" class="headerlink" title="2009年秋季课程"></a>2009年秋季课程</h4><table>
-<thead>
-<tr>
-<th>时间</th>
-<th>周一</th>
-<th>周二</th>
-<th>周三</th>
-<th>周四</th>
-<th>周五</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td><a href="http://itcs.tsinghua.edu.cn/zh/show-1035-1.html" target="_blank" rel="noopener">操作系统</a>张永光老师(6A101)助教:王乃峥</td>
-<td><a href="http://itcs.tsinghua.edu.cn/zh/show-1021-1.html" target="_blank" rel="noopener">程序设计与算法基础</a>王跃宣,潘爱民老师(6B106)助教:梁宏宇、何晶</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/zh/show-1024-1.html" target="_blank" rel="noopener">理论计算机科学（2）</a>KevinMatulef老师(6A115)助教:<a href="http://itcs.tsinghua.edu.cn/students/QiaoYM/index.html" target="_blank" rel="noopener">乔友明</a>, <a href="http://itcs.tsinghua.edu.cn/students/WangCG/index.html" target="_blank" rel="noopener">王晨谷</a></td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td><a href="http://itcs.tsinghua.edu.cn/zh/show-1032-1.html" target="_blank" rel="noopener">现代软件工程(英)</a> <a href="http://www.itcs.tsinghua.edu.cn/chn/pilotclass/faculty.php" target="_blank" rel="noopener">邹欣</a> 老师  (6A105) 助教:<a href="http://itcs.tsinghua.edu.cn/students/BeiXH/index.html" target="_blank" rel="noopener">贝小辉</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:55</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/zh/show-1004-1.html" target="_blank" rel="noopener">计算机入门</a><a href="http://itcs.tsinghua.edu.cn/~anke/" target="_blank" rel="noopener">Anke van Zuylen, </a><a href="http://itcs.tsinghua.edu.cn/~frans/" target="_blank" rel="noopener">Frans Schalekamp</a>(6B208)助教:<a href="http://itcs.tsinghua.edu.cn/students/ChenST/index.html" target="_blank" rel="noopener">陈世腾</a>, <a href="http://itcs.tsinghua.edu.cn/students/SongH/index.html" target="_blank" rel="noopener">宋浩</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="2010年春季课程"><a href="#2010年春季课程" class="headerlink" title="2010年春季课程"></a>2010年春季课程</h4><table>
-<thead>
-<tr>
-<th><strong>时间</strong></th>
-<th><strong>周一</strong></th>
-<th><strong>周二</strong></th>
-<th><strong>周三</strong></th>
-<th><strong>周四</strong></th>
-<th><strong>周五</strong></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/chn/pilotclass/courses.php" target="_blank" rel="noopener">理论计算机科学（1）</a> 孙晓明 老师 (六教6B113) 助教: 陈世腾，金恺</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/chn/pilotclass/courses.php" target="_blank" rel="noopener">计算机应用数学</a> 姚期智，王跃宣 老师 (六教6A102) 助教:王晨谷，宋浩</td>
-<td><a href="http://itcs.tsinghua.edu.cn/chn/pilotclass/courses.php" target="_blank" rel="noopener">分布式计算</a> 陈卫 老师 (六教6A104) 助教:张家琳</td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td><a href="http://itcs.tsinghua.edu.cn/chn/pilotclass/courses.php" target="_blank" rel="noopener">高等算法</a> Anke van Zuylen， Frans Schalekamp  老师 (六教6B210) 助教:唐邦晟，胡巍</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/chn/pilotclass/courses.php" target="_blank" rel="noopener">高等算法</a> Anke van Zuylen， Frans Schalekamp  老师 (六教6B210) 助教:唐邦晟，胡巍</td>
-<td></td>
-<td><a href="http://itcs.tsinghua.edu.cn/hottopic.php" target="_blank" rel="noopener">当前计算机研究热门课题</a> 姚期智 老师 (六教6A101) 助教:吴辰晔</td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="2010年秋季课程"><a href="#2010年秋季课程" class="headerlink" title="2010年秋季课程"></a>2010年秋季课程</h4><p><strong>2010年秋季课程</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>时间</strong></th>
-<th><strong>周一</strong></th>
-<th><strong>周二</strong></th>
-<th><strong>周三</strong></th>
-<th><strong>周四</strong></th>
-<th><strong>周五</strong></th>
-<th><strong>周六</strong></th>
-<th><strong>周日</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td>操作系统张永光 老师(6A101)助教: 宋浩</td>
-<td>程序设计与算法基础王跃宣 老师(6B106)助教: 梁宏宇、何晶</td>
-<td></td>
-<td>量子计算姚期智 老师(6B113)助教: 吴辰晔、郑波</td>
-<td>理论计算机科学(1)孙晓明 老师(6B113)助教: 陈世腾</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td>理论计算机科学（2）Kevin Matulef 老师(6A115)助教: 吴成钢、杨光</td>
-<td>计算机入门John Steinberger 老师(6B208)助教: 贝小辉</td>
-<td>理论计算机科学（2）Kevin Matulef 老师(6A115)助教: 吴成钢、杨光</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:55</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>17:00-19:00</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>19:00-21:00</td>
-<td>理论计算机科学(1)习题课（FIT-1-222）助教：陈世腾、梁宏宇</td>
-<td></td>
-<td></td>
-<td></td>
-<td>理论计算机科学(2)习题课（FIT-1-222）助教：吴成钢、杨光</td>
-<td>操作系统习题课（FIT-1-222）助教：宋浩</td>
-<td>理论计算机科学(1)习题课（FIT-1-222）助教：陈世腾、梁宏宇</td>
-</tr>
-</tbody></table>
-<h4 id="2013年秋季课程"><a href="#2013年秋季课程" class="headerlink" title="2013年秋季课程"></a>2013年秋季课程</h4><p><strong>2013**</strong>年秋季课程**</p>
-<table>
-<thead>
-<tr>
-<th><strong>时间</strong></th>
-<th><strong>周一</strong></th>
-<th><strong>周二</strong></th>
-<th><strong>周三</strong></th>
-<th><strong>周四</strong></th>
-<th><strong>周五</strong></th>
-<th><strong>周六</strong></th>
-<th><strong>周日</strong></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td>量子信息Giulio Chiribella 老师<strong>(**</strong>清华学堂<strong>**102)</strong>助教: 杨宇翔</td>
-<td>操作系统陈渝 老师<strong>(**</strong>清华学堂<strong>**112)</strong>助教: 戚啸</td>
-<td>计算机入门黄隆波 老师<strong>(**</strong>清华学堂<strong>**102)</strong>助教：吴成钢、吴限</td>
-<td>程序设计与算法基础华强胜 老师<strong>(**</strong>清华学堂<strong>**112)</strong>助教: 章乐、李浒</td>
-<td>机器学习王立威老师<strong>(**</strong>清华学堂<strong>**117)</strong>助教: 程勇</td>
-<td>高等计算机图形学胡事民老师<strong>(**</strong>清华学堂<strong>**112)</strong>助教: 高林</td>
-<td>操作系统陈渝老师<strong>(**</strong>清华学堂<strong>**112)</strong>助教:戚啸</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td>算法设计Periklis Papakonstantinou老师<strong>(**</strong>清华学堂<strong>**117)</strong>助教:  刘艺成</td>
-<td>云计算与软件工程徐葳 老师<strong>(**</strong>清华学堂<strong>**112)</strong>助教：贾永政</td>
-<td></td>
-<td></td>
-<td></td>
-<td>人类和机器的语音交流P.C. Ching、Tan Lee、Helen Meng、William S.-Y. Wang、徐佳老师<strong>(**</strong>清华学堂<strong><strong>112)</strong></strong>13:30-16:30**助教：郑波、王子贺</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:05</td>
-<td></td>
-<td></td>
-<td>人类和机器的语音交流P.C. Ching、Tan Lee、Helen Meng、William S.-Y. Wang、徐佳老师<strong>(**</strong>清华学堂<strong><strong>112)</strong></strong>15:00-18:00**助教：郑波、王子贺</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>16:10-16:55</td>
-<td></td>
-<td>云计算与软件工程<strong>习题课**</strong>(<strong><strong>清华学堂</strong></strong>112)**</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="2018年秋季课程"><a href="#2018年秋季课程" class="headerlink" title="2018年秋季课程"></a>2018年秋季课程</h4><table>
-<thead>
-<tr>
-<th><strong>2018**</strong>年秋季课程**</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>时间</strong></td>
-<td><strong>周一</strong></td>
-<td><strong>周二</strong></td>
-<td><strong>周三</strong></td>
-<td><strong>周四</strong></td>
-<td><strong>周五</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>08:00-09:35</td>
-<td>抽象代数 (<strong>清华学堂</strong> <strong>102</strong>) 邓东灵  助教: 赵天琪</td>
-<td></td>
-<td>抽象代数 (<strong>清华学堂</strong> <strong>102</strong>) 邓东灵  助教: 赵天琪</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td>算法设计 (<strong>清华学堂**</strong>117**) 李建  助教: 施宇、杜瑜皓</td>
-<td>高等计算机图形学(<strong>清华学堂</strong> <strong>112</strong>)胡事民助教: 杨晟</td>
-<td>线性代数 (<strong>清华学堂**</strong>102**) 徐勇  助教: 陶禹良</td>
-<td>计算机入门(<strong>清华学堂**</strong>117**)崔学峰助教: 马蓉</td>
-<td>机器学习 (<strong>清华学堂**</strong>102**) 王立威 助教：钟皓曦</td>
-<td>人工智能：原理与技术 (<strong>清华学堂</strong> <strong>112</strong>) 张崇洁 助教: 李斯源、王鉴浩</td>
-<td>网络科学 <strong>(**</strong>六教** <strong>6A101)</strong>吴辰晔 助教: 张家声</td>
-<td>线性代数 (<strong>清华学堂</strong> <strong>102</strong>) 徐勇  助教: 陶禹良</td>
-<td>量子信息 <strong>(**</strong>清华学堂<strong><strong>112</strong></strong>)** 马雄峰  助教: 曾培、张艺泓</td>
-<td>量化经济学<strong>(**</strong>清华学堂 112<strong>**)</strong>于洋助教: 孙健</td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td>普通物理(2)(英)<strong>(**</strong>清华学堂** <strong>102)</strong>孙麓岩助教: 潘啸轩</td>
-<td>量子信息 <strong>(**</strong>清华学堂** <strong>112**</strong>)** 马雄峰  助教: 曾培、张艺泓</td>
-<td>探索性数据分析(<strong>清华学堂</strong> <strong>102</strong>)崔学峰助教: 董书言</td>
-<td></td>
-<td>密码学基础<strong>(**</strong>清华学堂<strong>**112)</strong>吴文斐助教: 黄宏毅</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="2019年春季课程"><a href="#2019年春季课程" class="headerlink" title="2019年春季课程"></a>2019年春季课程</h4><table>
-<thead>
-<tr>
-<th><strong>2019**</strong>年春季课程**</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>时间</strong></td>
-<td><strong>周一</strong></td>
-<td><strong>周二</strong></td>
-<td><strong>周三</strong></td>
-<td><strong>周四</strong></td>
-<td><strong>周五</strong></td>
-<td><strong>周日</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>08:00-09:35</td>
-<td><strong>组合数学</strong>(清华学堂 117)孙晓明助教: 康宇衡</td>
-<td><strong>抽象代数</strong>  (清华学堂 117) 邓东灵  助教: 王歆</td>
-<td><strong>普通物理（**</strong>1<strong>**）英</strong>(清华学堂 117)马雄峰助教: 曾培、马玉林</td>
-<td><strong>抽象代数</strong>  (清华学堂 117) 邓东灵  助教: 王歆</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-10:35</td>
-<td><strong>博弈论</strong>(清华学堂 102)唐平中助教: 许娅伦</td>
-<td><strong>计算机应用数学</strong>(清华学堂 102)姚期智助教: 黄嘉泰、彭炳辉</td>
-<td><strong>优化理论</strong>  (清华学堂112) 魏朝晖  助教: 沈培鑫</td>
-<td></td>
-<td><strong>量子计算机科学</strong>(清华学堂102)段路明TA: 张胜、梅全鑫</td>
-<td><strong>操作系统</strong>(清华学堂117)徐葳助教: 李沛伦、李亦然</td>
-<td><strong>分布式计算**</strong>(<strong><strong>基础与系统</strong></strong>)**(清华学堂 117)陈卫助教: 吕凯风</td>
-<td></td>
-</tr>
-<tr>
-<td>10:40-11:25</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td><strong>普通物理（**</strong>1<strong>**）英</strong>(清华学堂117)马雄峰助教: 曾培、马玉林</td>
-<td><strong>计算生物学</strong>(清华学堂112)曾坚阳助教: 束晗涛</td>
-<td><strong>计算机网络基础</strong>(清华学堂 112)黄隆波助教: 汪思为</td>
-<td><strong>自动驾驶</strong>(清华学堂 117)楼天城助教: 曾梁</td>
-<td></td>
-<td><strong>计算理论</strong>(清华学堂 117)段然助教: 辜勇、陶润洲</td>
-<td><strong>探究科学的写作</strong>(六教 6A010)吴辰晔助教: 王魁</td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:05</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>19:20-21:45</td>
-<td><strong>量化经济学</strong>(六教 6A103)于洋助教: 张家声、陆言</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>研究生课程</p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">No.</td>
-<td align="left">年级学期</td>
-<td align="left">课程名称</td>
-<td align="left">学分</td>
-<td align="left">任课教师</td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class1" target="_blank" rel="noopener">随机网络优化理论</a></td>
-<td align="left">4</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class2" target="_blank" rel="noopener">信息物理学</a></td>
-<td align="left">2</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class3" target="_blank" rel="noopener">量子电子学和高等原子物理学</a></td>
-<td align="left">2</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class4" target="_blank" rel="noopener">高等量子信息学</a></td>
-<td align="left">3</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class5" target="_blank" rel="noopener">量化金融信用与风控分析</a></td>
-<td align="left">3</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class6" target="_blank" rel="noopener">计算生物学热门课题</a></td>
-<td align="left">3</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class7" target="_blank" rel="noopener">高等计算经济学</a></td>
-<td align="left">3</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class8" target="_blank" rel="noopener">计算理论导论</a></td>
-<td align="left">3</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class9" target="_blank" rel="noopener">算法分析与设计</a></td>
-<td align="left">2</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">春季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class10" target="_blank" rel="noopener">高等理论计算机科学（下）</a></td>
-<td align="left">4</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">研究生低年级秋季学期</td>
-<td align="left"><a href="https://iiis.tsinghua.edu.cn/list-147-1.html#class11" target="_blank" rel="noopener">高等理论计算机科学（上）</a></td>
-<td align="left">4</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h4 id="2019年春季学期课表"><a href="#2019年春季学期课表" class="headerlink" title="2019年春季学期课表"></a>2019年春季学期课表</h4><table>
-<thead>
-<tr>
-<th>Spring Semester 2019 Courses for Graduate Students</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Time</td>
-<td>Monday</td>
-<td>Tuesday</td>
-<td>Wednesday</td>
-<td>Thursday</td>
-<td>Friday</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>08:00-09:35</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>09:50-11:25</td>
-<td>网络空间中的安全技术 Security Technologies in Cyberspace Wenfei Wu 清华学堂113</td>
-<td>高等理论计算机科学 Advanced Theoretical Computer Science Jian Li 6B307 TA: Jin Xu</td>
-<td>深度强化学习 Deep Reinforcement Learning Chongjie Zhang 6A305 TA: Siyuan Li</td>
-<td>高等量子信息学  Advanced Quantum Information Theory Kihwan Kim 6B202 TA: Wentao Chen</td>
-<td>大规模数据分析专题  Topics in Large-Scale Data Analysis Changle Lin 三教1113 TA: Yuanqi Li</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11:30-12:15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:30-15:05</td>
-<td>量化金融信用与风控分析 Quantitative Financial Credit and Risk Models Ling Huang &amp; Jike Chong 6A409 TA: Wenshuo Ma, Shun Zheng</td>
-<td></td>
-<td></td>
-<td>信息物理学  Selected Topics in Information Physics  Luyan Sun 6B307 TA: Xiaoxuan Pan</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15:20-16:05</td>
-<td>计算能源经济学 Computational Energy Economics Chenye Wu&amp;Yang Yu 6A010 TA: Xingyu Gao</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>16:10-16:55</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/机器学习理论研究进展/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/机器学习理论研究进展/" class="post-title-link" itemprop="url">机器学习理论研究进展</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:42:44 / 修改时间：14:19:29" itemprop="dateCreated datePublished" datetime="2019-06-17T13:42:44+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="机器学习的回顾和展望"><a href="#机器学习的回顾和展望" class="headerlink" title="机器学习的回顾和展望"></a>机器学习的回顾和展望</h1><ul>
-<li><p>学习理论learning theory</p>
-</li>
-<li><p>机器学习–》深度学习</p>
-</li>
-<li><p>前苏联的概率学家、机器学习理论的先驱 V.Vapnik 提出SVM</p>
-</li>
-<li><p>Random Forest 也得益于统计学家 Leo Breiman 的贡献</p>
-</li>
-<li><p>理论的学习其实对算法的设计研究是有着极其重要的影响的。</p>
-</li>
-<li><p>国外一些做深度学习应用方面特别前沿的人，说（理论）在深度学习的时代毫无用处，因为你们理论通常是一些不等式，比如算法设计出来之后，理论会告诉你这个算法的准确度或者说错误率的上界，但通常这个得出来的数值奇大无比，他们还做了一个比较形象的比喻，说就好比证明一只鸡的体重一定要小于一吨一样</p>
-</li>
-<li><p>机器学习理论究竟是做什么来用的，它是不是只是为了证明这个界（bound），为了说明算法在实际应用的错误率能小于多少，还是说它在传达一些更高层的信息。我个人的观点是，机器学习理论是后者，绝对不是为了证明一个算法的边界如何；机器学习理论的目的，在于提供对机器学习的问题的洞察和理解。</p>
-</li>
-<li><p>第二点，很多人会有这样的观点，我们现在是一个大数据时代，像 ImageNet 这样的数据库资源有上千万。在过去，做机器学习理论的研究者可能处理的都是小数据集，也许理论还有一定的价值，但是今天我们做的都是动辄上千万的数据，是不是我们根本就完全不需要机器学习理论呢？我给大家提一个问题，一千万个数据就真的是大数据吗？我个人认为是小的数据，而且是非常非常小的。为什么呢？今天上千万的数据几乎都出现在视觉这个领域，人或者其他一些高等动物的视觉，经过多长的时间才形成这样的一个神经网络，能够以极快的速度去视觉感知、认知。这个长度是以亿年为单位，在亿年这样的进化过程当中，每一个时点都是生物以整体的角度在学习和进化，如果你从这个进化的角度来考虑，我们把进化看作一个学习的过程，这不是我提出来的理论，这是图灵奖得主 Leslie Valiant 提出来的。所以大家这么考虑，如果整个的生物群体经历上亿年的进化过程，接触到的数据是什么量级，我认为比千千万不知道要增加多少个零，所以我们今天的数据是非常小的数据。</p>
-</li>
-<li><p>那么，我们今天的神经网络和生物的进化以亿万年的进化得到的数据有多大的不同？我给大家举一个例子。大家知道人脑或很多高等动物的大脑也是由神经元组成的，比如说人脑有着 10 的 11 次方的神经元，大概 10 的 14 到 15 次方的连接。我个人认为动物的神经网络和机器神经网络的最大不同在哪儿呢？</p>
-<p>一个是在于结构，第二在于速度，第三在于运行机制。结构我刚刚讲了一点，在于容量不同，下面我谈一点很显著的区别就是速度。人脑中神经元的种类非常多，现在已知的就有上千种，当然我们可以考虑其中非常主流的一些神经元，对于这样的神经元，大家知道神经元和神经元之间信息的传递是靠一些生物电信号，实际上是化学物质的传递。在人或动物的大脑中，信息从一个神经元传递到相邻的神经元所需要的时间，大家知道是一个什么量级吗？是几十毫秒的量级。几十毫秒什么概念？比如说你突然看到一个场景、一幅图像，你马上就有一个反应，这个反应的时间肯定是在 1 秒钟之内。如果你的整个反应是在 1 秒钟之内，这意味着信息在你大脑的神经网络中传递的深度至多是多少，如果你这个大脑中从一个神经元到达下一层神经元传递的速度是几十毫秒的话，这意味着你大脑处理视觉信息所用的神经网络的深度至多就是几十层，如果你的大脑反应过来，可能已经过去将近 10 秒钟了。所以大家要意识到，我们今天所训练的最最先进的神经网络，和人脑中的、动物大脑中的神经网络依然是截然不同的。两者不一样的地方其实远远大于他们相似的地方。</p>
-<p>再举一个比较典型的例子，我们今天的神经网络，实际上都是用计算机模拟出来的，并不是一个真正的硬件。我们在计算机上进行模拟，认为层与层之间的信息的传递完全是同步的，必须上一层的信息全部同时传递到下一层的神经元才能够进行处理。在人脑中没有这样的同步控制信号，所以人脑中的神经元完全是高度分布式的一种计算，所以这就是一个重大的不同。所以今天我们深度学习所用的神经网络，即使从生物、从仿生的角度来讲，其实跟真正的生物依然差别很大。所以要想深度理解，必须有一个很基础的理论。当然我们也要面对现实，机器学习这个领域过去发展了几十年，所建立起来的机器学习的过去经典的理论，比如 SVM 等等这一系列的方法，它对于今天的深度学习确实没有非常好的解释或者说认知，但是这也正是一个很好的机会、一个挑战：我们应该如何建立一个新的理论去认知深度学习？根本目的是，我们能不能够将来设计出更加有效的方法？给大家举一个例子，人脑以这么慢的信息传递速度，其实在很多很多的问题上要比今天的深度学习训练出来的网络效果要好得多，如果我们要能够基于这些理论设计出类似于我刚才讲的人脑的一些方法，岂不是要比今天的深度学习的性能要提高百千万倍？</p>
-</li>
-<li><p>首先，我们来看看机器学习理论最核心的一个观点就是 generalization（泛化）。谈泛化之前，我们先了解一下机器学习理论是做什么的。机器学习理论是为了给整个机器学习建立完整的框架，所以必须要有很严谨的形式。概括来说，机器学习理论是建立在概率统计的基本理论框架之上。它研究的核心问题在于，如果要实现一个具体的学习任务，需要多少资源能达到这个目的。而在机器学习中，很重要的资源就是数据，所以我们就是要研究究竟需要多少数据我才能够学好。当然如果在数据已经给定的前提下，不同的方法规定了相同的数据，机器学习的成果是不一样的，所以也可以表示出来。</p>
-</li>
-<li><p>机器学习理论的一个基本框架：我们要通过收集数据来学习出一个模型，拿到这个模型以后我们根本的任务是做预测，这个预测是在未知的数据上去做的，所以一个很关键的问题是，我们的目的是希望在未知数据上学出来的模型能够表现出很好的性质，而不仅仅局限在我们已经收集到的数据。</p>
-</li>
-<li><p>非常典型的机器学习的过程：收集数据、建模、做出预测</p>
-</li>
-<li><p>哲学思想（奥卡姆剃刀理论）：「Everything should be made as simple as possible but no simpler」，这句话是爱因斯坦说的，意思是做理论的时候一定要尽可能的简单，但是你又不能过于简单。对应物理模型的时候一定要找到一些模型，允许存在一定的误差，但是又不能过于简单</p>
-</li>
-<li><p>VC理论：Vapnik和Chervonenkis，在学习的时候，其实有一个很重要的假设，也是一个基本的理论框架，就是我们一定假设我们观测到的数据，是按照一定的随机性产生的。比如我们现在拿到一个任务，要研究一个图像分类问题。我现在手里有1千万图像，例如ImageNet，大家可以想象这个ImageNet是从世界上所有可能的、相关性的图像中随机抽取来的，这个假设其实是相当合理的。这里面的数据认为是随机抽取来的，而且这个随机抽取我们可以认为它是按照某种分布状态随机抽取的。并且我们还可以假定，未来当我们从这些数据上学出一个分类器、学出一个模型之后，我们要应用场合的数据。也就是我们真正要去实际应用的时候，那些数据也是随机抽取出来的，并且应该和训练数据从同样的分布中抽取出来的，这种假设是有一定的必然性的。如果我未来应用的场合和我做训练的场景不是同一个分布，稍有区别还可以，但如果应用场景和训练场景没有任何关联，那么机器学习不可能获得成功。这是一些基本定义。还有一个定义，即你在学习时需要有一个模型，这个模型可能是一个线性模型，比如前面举的例子；也可能是SVM这样的非线性模型。如果是线性模型大家都理解，而SVM可以看成是高维空间，甚至是无穷维这样的线性模型。或者你在学一个深度学习、学一个网络，但是无论你是用哪一种模型，其实你都把分类器限制在某一个集合里了。线性模型就是所有的线性模型集合，SVM是在Hilbert空间中的线性分类器。如果你是一个Network，当你把Network的层级、结构都固定了，那就是在这样固定的层数结构下面，所有可能的Network的集合。因为不同的参数会得到不同的Network。当然如果你层数和结构可变的话，我可以把我的集合再扩展。这样的集合通常叫做假设空间（hypothesis space）。。换句话说你学习的模型总是从一个限定里面得出来的，而不是凭空选择的。这个概念其实非常重要。</p>
-</li>
-<li><p>泛化。什么叫做泛化，泛化其实非常简单。前面谈到，学习的目的是希望学好一个模型，并且让这个模型在未来要应用场景的数据上有非常高的准确度。所谓泛化的错误，就是指一个模型在未来的应用场景下的错误率，叫做泛化。为什么叫泛化呢？我们可以把它和我们经验的错误，或说在训练数据中的错误做对比。通常大家训练一个问题的时候，你拿到很多训练数据，你可以学一个分类器，在训练数据上得到一个错误率。而这个训练的错误率和刚才讲的泛化的错误率实际上后面要看到，这二者是有非常本质的区别的。这个区别正是机器学习理论要研究的内容。</p>
-</li>
-<li><p>过度拟合（over-fitted）。由于你是从一个很大的集合中挑选出来的这个模型，尽管这个模型把你的数据处理的非常好，但是你过度拟合了，没有达到泛化的目的。</p>
-</li>
-<li><p>如何保证机器学习有一个很好的泛化能力呢？这里面就提到一个很重要的概念uniform generation。简单来讲它意思是说，你现在的目的是保证你学出来的分类器未来能有很好的效果，而你要想保证这一点，实际在很大程度上是要保证你刚才模型侯选的这个空间里几乎所有的分类器都得有一个比较好的泛化能力，同时具有一个比较好的泛化能力。只有做到这一点的时候，你学出来分类器才能有一个比较好的泛化能力，因为你在观测到训练数据之前，不知道你学出来的将会是哪一个分类器，所以你如果能保证对集合里面所有可能的分类器都有很好的泛化能力，就能保证你学出来的也有这样的能力。</p>
-</li>
-<li><p>那么如何才能够保证所有的集合里面侯选的分类器都有很好的泛化能力呢？它和什么有关呢？我今天不讲太多数学上的细节，它的核心点在于，你侯选模型的集合究竟有多大。具体到这一个符号，指的是，如果你侯选的模型集合是有限的，只含有有限多的分类器，这个符号就代表了它所含分类器的个数。简而言之模型含有的分类器越多，那么要保证学出来的分类器有较好的泛化能力，就需要更多的数据。</p>
-</li>
-<li><p>VC维度（VC dimesnion）。它非常好的刻画了无穷大的集合，如果它含有的都是分类器的话，它的复杂度有多大。大家会发现它的应用范围之广，你会发现它在计算机很多领域都有广泛应用。</p>
-</li>
-<li></li>
-</ul>
-<p>简言之VC维度越大，说明模型越复杂。这样的模型想要训练好，就需要有很多的训练数据。如果感兴趣的老师、同学们可以具体去看一些例子，常见模型是可以计算VC维度的。如果用线性模型这种很经典的模型，它可以给大家一个大致的量化说明。如果你的模型的VC维度是10，你需要多少训练数据？我认为大概需要VC维度10倍，也就是100个训练数据。所以如果你的VC维度是1亿的模型，而你只有1千个训练数据，那就不可能训练好，过度拟合的肯定很严重。但如果你VC dimesnion比数据量小太多，就走向了另一个极端——拟合不足（under-fitted）。就是说最好的模型还不能拟合训练数据，所以在这些方面大家要多做注意。</p>
-<ul>
-<li><p>正则化（regularization）</p>
-</li>
-<li><p>结构风险最小化（SRM）</p>
-</li>
-<li><p>VC Theory和算法关系不大，它刻画的是集合的复杂程度；</p>
-</li>
-<li><p>Margin Theory大家可能都听说过，像SVM、Boosting这样的方法都包含有Large Margin的概念。它到底是什么含义呢？</p>
-<p>Margin Theory在SVM中怎么用大家都比较熟悉了，想象一下：比如空间中有正负两类点，现在要找一条线把这两类点分开。需要找一种个分法使得这两类点分完了以后，离分类面的间距越大越好，而<strong>这个间距就叫Margin。</strong></p>
-<p><strong>Boosting的Margin实际上体现了这个Boosting所用的基本分类器对数据分类结果的置信度（confidence）</strong></p>
-<p>Margin既可以对SVM刻画泛化，也可以对Boosting刻画泛化</p>
-</li>
-</ul>
-<p>大概在1995、1996年，人们提出了adaBoost算法。</p>
-<p>Algorithmic Stability（算法稳定性）：它的核心是说，当算法用一个训练数据集可以训练出一个结果，假如我的训练数据集有1万个数据，我把其中9999个都保持不变，就把其中的1个数据换成一个新的，那么这个时候你的学习算法学出来的分类器会不会有一个显著的变化？如果没有显著的变化，那么这个学习算法是stable的。如果有显著变化，我们说这个算法是不stable的。</p>
-<h3 id="深度学习算法"><a href="#深度学习算法" class="headerlink" title="深度学习算法"></a>深度学习算法</h3><p>今天大家用的这个深度学习的网络，它的VC Dimension是多少？数学上可以证明，如果用全连接的网络，它的VC Dimension基本上就是它的编的数目，可是今天我们用的网络，通常编的数目是我们训练数据要高一个数量级，编的数目就是我们参数的个数，所以实际上我们是在一个什么样的模型中间去学习呢？是在一个VC Dimension大概是10倍于训练数据的空间在做，这跟我们之前提到，你的训练数据 10倍于VC Dimension的空间做，是不一样的。在VC Dimension是训练数据10倍的情况下，如果你用training error最小化这样的简单的算法，是不能指望得到任何好的成果的。所以从我个人的角度来看，深度学习之所以能在VC Dimension是数据量的10倍的复杂度的模型里学习，并且能够取得成功，极大地依赖于SGD的算法。</p>
-<p>毫无疑问，深度学习的训练是最困难的，经常会发生以下几个现象中的一个或者多个。</p>
-<ul>
-<li>第一，过拟合。我一训练，training error很快下降了，但是一测试发现，测试数据集和训练数据集的差别巨大，什么原因呢？由于深度学习通常用的网络或者模型是非常复杂的，所以你一旦要在整个模型中找到一个training loss非常低的点，或者说你SGD在走的这条路径当中，实际上算法稳定性是有一定概率意义的，可能你这次走坏了，没走好，实际上stability就不存在了，这是第一种现象。在今天的深度学习中，过拟合还是一个非常常见的现象。</li>
-<li>第二种，training loss的问题。你训练很长时间就是不降下来，这是什么原因呢？我个人认为，这个原因就是，SGD由于是随机的，实在是没有找到一个loss，能够下降到可接受的点，比如说在很平坦的区域就卡在那儿了，大家看到有很多做深度学习应用的研究者，比如Bengio，给了很多这样的报告，经常出现训练不下降了，是因为你可能陷在一个很平坦的区域，在很大的一个领域里面你的training loss几乎没有什么变化，这个结论是不是真的对？我认为还不一定完全正确，还需要有更多的研究。</li>
-<li>还有其他一些现象，比如不同的超参数得到的训练结果差异非常大，大家知道深度学习里面有很多超参数要去调，你的这个数不一样，训练的结果完全不一样，所以这些都可以从理论学习的层面去研究，不仅研究，而且希望能够对大家未来能够有一切指导性，就是我如何能够设计这个算法，使其达到最终比较好的目的。如果从学术的角度来讲，这应该也是一个很值得探讨的问题，从应用的角度来讲，对于提高我们训练的效率是很有价值的。</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/最小生成树(MST)问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/最小生成树(MST)问题/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-14 22:31:50" itemprop="dateModified" datetime="2019-04-14T22:31:50+08:00">2019-04-14</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="最小生成树-MST-问题"><a href="#最小生成树-MST-问题" class="headerlink" title="最小生成树(MST)问题"></a>最小生成树(MST)问题</h1><p> 集合： 图（V，G）</p>
-<p>无向连通图G子图N点N-1边为生成树<br>$$<br>V\left(G^{\prime}\right)=V(G) ; E\left(G^{\prime}\right) \in E(G)<br>$$</p>
-<ul>
-<li><p>最小生成树：连通带权图权值大于0，权值最小生成树为最小生成树</p>
-</li>
-<li><p>prim算法：逐次加点</p>
-</li>
-</ul>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1555249563292.png" alt="1555249563292"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1555249709349.png" alt="1555249709349"></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ericyoungbit.github.io/2019/06/17/中国国家治理的制度逻辑  一个组织学研究笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Frank Yang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="逸之blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/中国国家治理的制度逻辑  一个组织学研究笔记/" class="post-title-link" itemprop="url">未命名</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 13:14:17" itemprop="dateCreated datePublished" datetime="2019-06-17T13:14:17+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-22 17:09:53" itemprop="dateModified" datetime="2019-05-22T17:09:53+08:00">2019-05-22</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="中国国家治理的制度逻辑-一个组织学研究笔记"><a href="#中国国家治理的制度逻辑-一个组织学研究笔记" class="headerlink" title="中国国家治理的制度逻辑  一个组织学研究笔记"></a>中国国家治理的制度逻辑  一个组织学研究笔记</h1><p>一统体制与有效治理：中国国家治理的一个深刻矛盾</p>
-<p>“一统体制与有效治理”矛盾的应对机制</p>
-<p>国家治理逻辑与中国官僚体制：一个韦伯理论视角</p>
-<p>合法性基础、权威类型与支配形式：</p>
-<p>君主官僚制：中国国家支配形式的一个历史考察</p>
-<p>君主官僚制”的延续与转型：当代中国 官僚体制分析</p>
-<p>中国政府的治理模式：一个“控制权”理论</p>
-<p>从不完全契约、产权到控制权</p>
-<p>“行政发包制”的重新思考</p>
-<p>理论模型的扩展：控制权分配与政府治理模式</p>
-<p>环境管制领域中的治理模式</p>
-<p>运动型治理机制</p>
-<p>叫魂事件、“大跃进”、“文革”：重新审视运动型治理机制</p>
-<p>常规与动员双重过程：官僚体制与运动型治理机制</p>
-<p>专断权力、卡理斯玛权威与运动型治理机制</p>
-<p>国家治理逻辑与政府行为</p>
-<p>政府内部上下级谈判：一个分析模型</p>
-<p>基层政府间的“共谋现象”</p>
-<p>“拼凑应对”：多重逻辑下的基层政府行为</p>
-<p>逆向软预算约束</p>
-<p>国家治理逻辑与中国社会</p>
-<p>通往集体债务之路：从官僚制逻辑到社会逻辑</p>
-<p>多重逻辑下的村庄选举</p>
-<p>无组织的利益与集体行动</p>
-<p>集体无作为：一种特殊的集体行动形式</p>
-<p>稳定、停滞与循环：中华帝国国家治理的基本特征</p>
-<p>当代中国的国家治理逻辑：延续与转型</p>
-<p>国家治理的挑战和未来</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2968,7 +2113,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">62</span>
+                    <span class="site-state-item-count">66</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
